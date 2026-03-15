@@ -12,9 +12,9 @@ const PORTFOLIO = {
   plaintiff: "Brendan Ngehsi Newanforbi",
   representation: "Pro Se / In Propria Persona",
   contact: { address: "1455 Cat Tail Drive, Stockton, CA 95204", phone: "(209) 801-4442", email: "bnn.cdl@gmail.com" },
-  active_matters_count: 18,
+  active_matters_count: 20,
   prepared_date: "March 31, 2026",
-  aggregate_exposure: { conservative: "$835,000", moderate: "$2,250,000", aggressive: "$4,750,000+" },
+  aggregate_exposure: { conservative: "$1,000,000", moderate: "$2,700,000", aggressive: "$5,500,000+" },
   jurisdictions: ["USDC E.D. Cal.", "San Joaquin Sup. Ct.", "Alameda Sup. Ct.", "Sacramento Sup. Ct.", "Santa Clara Sup. Ct."],
   cases: [
     {
@@ -214,6 +214,28 @@ const PORTFOLIO = {
       procedural_status: "Complaint ready. Gov. Claims Act compliance required (§900 et seq.) — claim must be filed with DGS before suit against CDCR. 45-day clock begins upon presentment. Filing imminent upon compliance.",
       damages: "$200,000 - $500,000+", risk: "§820.2 immunity — rebutted: condition approval and hold placement are ministerial acts under CDCR's own nexus requirements, not discretionary policy. Bane Act treble damages. Dodd as managing agent supports entity punitive damages.",
       evidence: ["Detention records (Santa Rita)", "Special Condition 063 + Reason Code 08", "CHP Detention Certificate", "DMV APS Decision (Case 34739340)", "Centerline paystubs ($33.35/$50.03)", "Form 1502-DR (unemployment as aggravating factor)", "Aug. 2025 updated conditions (reaffirmation)"]
+    },
+    {
+      number: 19, caption: "Newanforbi v. Candelaria", case_no: "TBD (USDC E.D. Cal.)", court: "USDC E.D. Cal.",
+      claims: "42 USC 1983: Procedural Due Process (DMV APS Structural Bias)", status: "Filing imminent",
+      filed: "Filing imminent", judge: "TBD", cluster: 1, type: "Federal",
+      defendants: "Diana Candelaria, DMV Hearing Officer (individual capacity)",
+      causes: ["Procedural Due Process (14th Amend.) — Structural bias; simultaneous prosecutor/adjudicator; irrebuttable presumption of official regularity"],
+      key_facts: "Candelaria sustained one-year CDL suspension and commercial disqualification despite: (1) CHP's own Detention Certificate under PC §849(b)(1) formally repudiating the arrest; (2) no criminal charges ever filed; (3) dashcam contradicting DS-367 on material points. Structural bias: Candelaria served simultaneously as prosecutor and adjudicator — condemned in California DUI Lawyers Ass'n and Knudsen v. DMV. Applied irrebuttable presumption of official regularity; refused to address Detention Certificate or binding Mercer v. DMV precedent; issued conclusory decision dismissing arguments as 'unpersuasive' without analysis. APS hearing Jan. 24, 2025; decision Feb. 11, 2025 (Case 34739340). Qualified immunity rebutted by clearly established law (Bell v. Burson, Mathews v. Eldridge, Knudsen).",
+      procedural_status: "APS hearing Jan. 24, 2025. Decision Feb. 11, 2025 (Case 34739340). Filing imminent.",
+      damages: "$150,000 - $400,000+", risk: "Qualified immunity — rebutted by clearly established law (Bell v. Burson, Mathews v. Eldridge, Knudsen v. DMV). Structural error doctrine may not require showing of prejudice.",
+      evidence: ["CHP Detention Certificate (PC §849(b)(1))", "DMV DS-367", "CHP Dashcam", "APS Decision (Case 34739340)", "California DUI Lawyers Ass'n decision", "Knudsen v. DMV", "Mercer v. DMV", "Centerline CDL earnings records"]
+    },
+    {
+      number: 20, caption: "Newanforbi v. DMV / Candelaria", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
+      claims: "Admin. Mandamus, Due Process, §1983, Bane Act, Mandatory Duty, Declaratory Relief", status: "Filing imminent",
+      filed: "Filing imminent", judge: "TBD", cluster: 1, type: "State",
+      defendants: "State of California / DMV; Steve Gordon, Director (official capacity); Diana Candelaria (individual capacity)",
+      causes: ["Writ of Administrative Mandamus (CCP §1094.5)", "Due Process (Cal. Const. Art. I §7)", "42 USC §1983", "Tom Bane Civil Rights Act (§52.1)", "Breach of Mandatory Duty (Gov. Code §815.6)", "Declaratory Relief (CCP §1060)"],
+      key_facts: "Combined verified petition for writ of administrative mandamus and complaint for damages arising from same APS hearing. Broader defendant roster: DMV, Director Steve Gordon (official capacity), and Candelaria (individual capacity). Seeks both equitable relief (set aside suspension, restore CDL) and compensatory damages including Bane Act treble damages. Same core APS facts as Matter 19: Detention Certificate ignored, structural bias, CDL commercially disqualified. CDL loss triggered cascading harm: unemployment → Nov. 2025 Discharge Review cites unemployment as aggravating factor to deny discharge.",
+      procedural_status: "Filing imminent. Gov. Claims Act compliance required before suing State/DMV (§900 et seq.). Claim presentment initiates 45-day clock.",
+      damages: "$200,000 - $500,000+", risk: "§820.2 immunity for Candelaria's adjudicatory function — rebutted by structural bias doctrine. DMV sovereign immunity partially waived by CCP §1094.5. Bane Act provides independent damages hook against Candelaria individually.",
+      evidence: ["Same as Matter 19", "DMV administrative record", "Steve Gordon Director documentation", "Gov. Claim (upon presentment)"]
     }
   ],
   timeline: [
@@ -222,6 +244,9 @@ const PORTFOLIO = {
     { date: "Mar. 2023", event: "In re Dwyer: Court condemns HOPE blanket retention policy", matters: "3,7,8,10,15,16,17", type: "ruling" },
     { date: "Dec. 2023", event: "ACSOL v. Macomber: Demurrer overruled", matters: "3,7,8,10,15", type: "ruling" },
     { date: "Nov. 1, 2024", event: "CHP stop on I-580; DUI arrest; 5-day parole hold", matters: "1,2,6,18", type: "event" },
+    { date: "Dec. 4, 2024", event: "DMV issues APS suspension notice following CHP arrest; CDL commercially disqualified", matters: "19,20", type: "event" },
+    { date: "Jan. 24, 2025", event: "DMV APS Hearing before Candelaria — Detention Certificate ignored, structural bias", matters: "19,20", type: "hearing" },
+    { date: "Feb. 11, 2025", event: "Candelaria sustains one-year CDL suspension (Case 34739340); conclusory decision dismisses Detention Certificate and Mercer precedent", matters: "19,20", type: "event" },
     { date: "Jan. 2025", event: "Derrick assigned; suppresses freedom of speech", matters: "4,5", type: "event" },
     { date: "Mar.–Apr. 2025", event: "FedEx employment sabotaged; forced resignation", matters: "4,5", type: "event" },
     { date: "Apr. 2025", event: "Section 3574 takes effect; supersedes Policy 19-03", matters: "3,7,8,10,15", type: "ruling" },
@@ -260,17 +285,18 @@ const PORTFOLIO = {
     { id: 5, title: "Post-Notice Continuation (Punitive Damages)", matters: "All CDCR", icon: "⚠️", desc: "Defendants continued conduct after Dwyer (2023), Macomber (2023), and April 2025 amendments. Demonstrates conscious disregard under Civ. Code 3294." },
     { id: 6, title: "Weaponization of Clinical Authority as Retaliation", matters: "16", icon: "🏥", desc: "HOPE's treatment providers weaponized gatekeeping authority over titration to punish protected legal advocacy. The Feb. 2026 CTM report's explicit 'fixation on lawsuits' language is direct documentary evidence. 'Supervisory contagion': trainees mirror Palacios's retaliatory biases because their careers depend on her approval of licensure hours." },
     { id: 7, title: "Facially Defective Discharge Review as Independent Tort", matters: "17", icon: "📋", desc: "The 'Eagan' copy-paste error proves no individualized review occurred. The fabricated 6.5-year minimum traces to academic research (Cortoni et al.), not statute — an underground regulation. W-2 documented $109,408 in lost wages from 6 CDL carriers provides the strongest quantified damages foundation in the portfolio." },
-    { id: 8, title: "Policy 19-03 as Ultra Vires Action", matters: "10,15", icon: "📜", desc: "Policy 19-03 is affirmatively contradictory to Section 3574. Regulation has force of statute (Tidewater Marine). Mathews v. Eldridge balancing confirms due process violation." }
+    { id: 8, title: "DMV Structural Bias and CDL Destruction", matters: "19,20", icon: "🚗", desc: "DMV hearing officer Candelaria operated within a structurally biased framework (simultaneous prosecutor/adjudicator). CHP's own Detention Certificate under PC §849(b)(1) repudiated the arrest, yet Candelaria sustained the suspension applying an irrebuttable presumption of official regularity. Connects Cluster 1 (CHP encounter) to Cluster 2 (CDL loss → unemployment → discharge denial)." },
+    { id: 9, title: "Policy 19-03 as Ultra Vires Administrative Action", matters: "10,15", icon: "📜", desc: "Policy 19-03 is affirmatively contradictory to Section 3574. Regulation has force of statute under Tidewater Marine. Mathews v. Eldridge balancing confirms due process violation. The 6.5-year temporal bar is an underground regulation under §11340.5 — never promulgated through APA notice-and-comment." }
   ],
   damages_table: [
-    { category: "Lost Wages / Economic Harm", matters: "1-8, 10, 14, 16-18", conservative: 275000, moderate: 625000, aggressive: 1100000 },
+    { category: "Lost Wages / Economic Harm", matters: "1-8, 10, 14, 16-20", conservative: 375000, moderate: 800000, aggressive: 1400000 },
     { category: "False Imprisonment", matters: "1, 2, 6, 8, 10, 14, 17, 18", conservative: 90000, moderate: 225000, aggressive: 450000 },
-    { category: "Emotional Distress", matters: "1, 2, 4, 5, 7, 8, 10, 16-18", conservative: 110000, moderate: 300000, aggressive: 600000 },
-    { category: "Bane Act / Treble", matters: "1, 2, 5, 10, 16, 18", conservative: 90000, moderate: 250000, aggressive: 525000 },
-    { category: "Punitive Damages", matters: "1, 2, 4, 5, 7, 8, 10-13, 16-18", conservative: 150000, moderate: 575000, aggressive: 1450000 },
+    { category: "Emotional Distress", matters: "1, 2, 4, 5, 7, 8, 10, 16-20", conservative: 110000, moderate: 300000, aggressive: 600000 },
+    { category: "Bane Act / Treble", matters: "1, 2, 5, 10, 16, 18, 20", conservative: 120000, moderate: 325000, aggressive: 700000 },
+    { category: "Punitive Damages", matters: "1, 2, 4, 5, 7, 8, 10-13, 16-20", conservative: 200000, moderate: 700000, aggressive: 1750000 },
     { category: "Prof. Negligence / Malpractice", matters: "16", conservative: 25000, moderate: 75000, aggressive: 150000 },
     { category: "Consumer Fraud", matters: "9", conservative: 40000, moderate: 75000, aggressive: 150000 },
-    { category: "Attorneys' Fees", matters: "1, 4, 6, 7, 10, 12, 15, 16, 18", conservative: 40000, moderate: 110000, aggressive: 300000 }
+    { category: "Attorneys' Fees", matters: "1, 4, 6, 7, 10, 12, 15, 16, 18-20", conservative: 55000, moderate: 135000, aggressive: 350000 }
   ]
 };
 
@@ -390,7 +416,7 @@ export default function LitigationPortfolio() {
               <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
                 <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Case Clusters</h3>
                 {[
-                  { n: 1, label: "CHP Traffic Stop & DUI Arrest", matters: "1–2", color: "#60A5FA", count: 2 },
+                  { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", matters: "1–2, 19–20", color: "#60A5FA", count: 4 },
                   { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", matters: "3–8, 10–18", color: "#A78BFA", count: 15 },
                   { n: 3, label: "Consumer Fraud / Defective Vehicle", matters: "9", color: "#FBBF24", count: 1 }
                 ].map(cl => (
@@ -400,7 +426,7 @@ export default function LitigationPortfolio() {
                       <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{cl.count} matters</span>
                     </div>
                     <div style={{ height: 6, background: "#1E293B", borderRadius: 3, overflow: "hidden" }}>
-                      <div style={{ height: "100%", width: `${(cl.count / 18) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
+                      <div style={{ height: "100%", width: `${(cl.count / 20) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
                     </div>
                   </div>
                 ))}
