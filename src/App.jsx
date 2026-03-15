@@ -12,9 +12,7 @@ const PORTFOLIO = {
   plaintiff: "Brendan Ngehsi Newanforbi",
   representation: "Pro Se / In Propria Persona",
   contact: { address: "1455 Cat Tail Drive, Stockton, CA 95204" },
-  active_matters_count: 20,
   prepared_date: "March 15, 2026",
-  aggregate_exposure: { conservative: "$1,000,000", moderate: "$2,700,000", aggressive: "$5,500,000+" },
   jurisdictions: ["USDC E.D. Cal.", "San Joaquin Sup. Ct.", "Alameda Sup. Ct.", "Sacramento Sup. Ct.", "Santa Clara Sup. Ct."],
   cases: [
     {
@@ -344,8 +342,34 @@ export default function LitigationPortfolio() {
   const federalCount = PORTFOLIO.cases.filter(c => c.type === "Federal").length;
   const stateCount = PORTFOLIO.cases.filter(c => c.type === "State").length;
   const upcomingEvents = PORTFOLIO.timeline.filter(t => t.upcoming);
+  const totalMatters = PORTFOLIO.cases.length;
 
   const formatCurrency = (n) => "$" + n.toLocaleString();
+
+  const aggregateExposure = {
+    conservative: formatCurrency(PORTFOLIO.damages_table.reduce((s, r) => s + r.conservative, 0)),
+    moderate: formatCurrency(PORTFOLIO.damages_table.reduce((s, r) => s + r.moderate, 0)),
+    aggressive: formatCurrency(PORTFOLIO.damages_table.reduce((s, r) => s + r.aggressive, 0)) + "+",
+  };
+
+  const clusterCounts = {
+    1: PORTFOLIO.cases.filter(c => c.cluster === 1).length,
+    2: PORTFOLIO.cases.filter(c => c.cluster === 2).length,
+    3: PORTFOLIO.cases.filter(c => c.cluster === 3).length,
+  };
+
+  const clusterMatters = (n) => {
+    const nums = PORTFOLIO.cases.filter(c => c.cluster === n).map(c => c.number).sort((a, b) => a - b);
+    if (!nums.length) return "—";
+    const ranges = [];
+    let start = nums[0], end = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+      if (nums[i] === end + 1) { end = nums[i]; }
+      else { ranges.push(start === end ? `${start}` : `${start}–${end}`); start = end = nums[i]; }
+    }
+    ranges.push(start === end ? `${start}` : `${start}–${end}`);
+    return ranges.join(", ");
+  };
 
   return (
     <div style={{ minHeight: "100vh", background: DARK_BG, color: "#E2E8F0", fontFamily: "'Cormorant Garamond', 'Georgia', serif" }}>
@@ -380,9 +404,9 @@ export default function LitigationPortfolio() {
             {/* Stats Row */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 28 }}>
               {[
-                { label: "Active Matters", value: PORTFOLIO.active_matters_count, sub: `${federalCount} Federal · ${stateCount} State` },
+                { label: "Active Matters", value: totalMatters, sub: `${federalCount} Federal · ${stateCount} State` },
                 { label: "Jurisdictions", value: PORTFOLIO.jurisdictions.length, sub: "Courts across CA" },
-                { label: "Aggregate Exposure", value: PORTFOLIO.aggregate_exposure.moderate, sub: "Moderate estimate" },
+                { label: "Aggregate Exposure", value: aggregateExposure.moderate, sub: "Moderate estimate" },
                 { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
               ].map((s, i) => (
                 <div key={i} style={{ background: CARD_BG, borderRadius: 10, padding: "20px 22px", border: `1px solid ${NAVY}`, position: "relative", overflow: "hidden" }}>
@@ -416,17 +440,18 @@ export default function LitigationPortfolio() {
               <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
                 <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Case Clusters</h3>
                 {[
-                  { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", matters: "1–2, 19–20", color: "#60A5FA", count: 4 },
-                  { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", matters: "3–8, 10–18", color: "#A78BFA", count: 15 },
-                  { n: 3, label: "Consumer Fraud / Defective Vehicle", matters: "9", color: "#FBBF24", count: 1 }
+                  { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
+                  { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
+                  { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" }
                 ].map(cl => (
                   <div key={cl.n} style={{ marginBottom: 16, cursor: "pointer" }} onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
                       <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#CBD5E1" }}>{cl.label}</span>
-                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{cl.count} matters</span>
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{clusterCounts[cl.n]} matters</span>
                     </div>
+                    <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: "#475569", marginBottom: 6 }}>Matters {clusterMatters(cl.n)}</div>
                     <div style={{ height: 6, background: "#1E293B", borderRadius: 3, overflow: "hidden" }}>
-                      <div style={{ height: "100%", width: `${(cl.count / 20) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
+                      <div style={{ height: "100%", width: `${(clusterCounts[cl.n] / totalMatters) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
                     </div>
                   </div>
                 ))}
