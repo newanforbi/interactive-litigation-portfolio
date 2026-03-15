@@ -341,7 +341,9 @@ export default function LitigationPortfolio() {
 
   const federalCount = PORTFOLIO.cases.filter(c => c.type === "Federal").length;
   const stateCount = PORTFOLIO.cases.filter(c => c.type === "State").length;
-  const upcomingEvents = PORTFOLIO.timeline.filter(t => t.upcoming);
+  const upcomingEvents = PORTFOLIO.timeline
+    .filter(t => t.upcoming)
+    .sort((a, b) => new Date(a.date.replace(/\./g, "")) - new Date(b.date.replace(/\./g, "")));
   const totalMatters = PORTFOLIO.cases.length;
 
   const formatCurrency = (n) => "$" + n.toLocaleString();
