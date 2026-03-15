@@ -11,7 +11,7 @@ const CARD_BG = "#162034";
 const PORTFOLIO = {
   plaintiff: "Brendan Ngehsi Newanforbi",
   representation: "Pro Se / In Propria Persona",
-  contact: { address: "1455 Cat Tail Drive, Stockton, CA 95204", phone: "(209) 801-4442", email: "bnn.cdl@gmail.com" },
+  contact: { address: "1455 Cat Tail Drive, Stockton, CA 95204" },
   active_matters_count: 20,
   prepared_date: "March 15, 2026",
   aggregate_exposure: { conservative: "$1,000,000", moderate: "$2,700,000", aggressive: "$5,500,000+" },
@@ -200,7 +200,7 @@ const PORTFOLIO = {
       defendants: "Glenn Urrea, Parole Agent (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Keely Dodd (#6462), Parole Administrator (individually); State of California / CDCR; DOES 1-10",
       causes: ["False Imprisonment", "Bane Act (Civ. Code §52.1)", "IIED", "Negligent Supervision (against CDCR)"],
       key_facts: "State tort parallel to federal Matter 6. On Nov. 1, 2024, at the precise moment Plaintiff was eligible for release from Santa Rita Jail on the DUI detention, Agent Urrea placed a parole hold based on Special Condition 063 — a Halloween curfew ('Operation Boo') categorically applied without individualized nexus to Plaintiff's adult-victim commitment offense. Five days of arbitrary imprisonment. No written notice, no hearing, no neutral decision-maker. Housed with dangerous cellmate; transported to holding tank for court appearance that never occurred; released only after bail bond company intervened. Cascading harm: arrest triggered DMV APS suspension (Dec. 4, 2024), CDL commercially disqualified, lost Centerline Drivers employment on his first scheduled shift. Ongoing lost wages: $104,000–$143,620 over ~65 weeks ($1,600–$2,209/week). Nov. 2025 Discharge Review cited Plaintiff's unemployment — caused by Defendants' own conduct — as aggravating factor to deny discharge. Condition 063 reaffirmed in Aug. 2025 update, demonstrating systemic practice.",
-      procedural_status: "Filed 05/29/2026. Gov. Claim presented 03/02/2026; deemed rejected ~04/16/2026. Filed within 6-month suit deadline (Gov. Code §945.6(a)(1)).",
+      procedural_status: "Filed 05/29/2026. Gov. Claim presented 03/02/2026; deemed rejected 05/15/2026. Filed within 6-month suit deadline (Gov. Code §945.6(a)(1)).",
       damages: "$200,000 - $500,000+", risk: "§820.2 immunity — rebutted: condition approval and hold placement are ministerial acts under CDCR's own nexus requirements, not discretionary policy. Bane Act treble damages. Dodd as managing agent supports entity punitive damages.",
       evidence: ["Detention records (Santa Rita)", "Special Condition 063 + Reason Code 08", "CHP Detention Certificate", "DMV APS Decision (Case 34739340)", "Centerline paystubs ($33.35/$50.03)", "Form 1502-DR (unemployment as aggravating factor)", "Aug. 2025 updated conditions (reaffirmation)"]
     },
@@ -249,7 +249,6 @@ const PORTFOLIO = {
     { date: "Jan. 22, 2026", event: "4 federal complaints filed (Urrea, HOPE, Maloney, Barocio)", matters: "6,7,12,13", type: "filing" },
     { date: "Jan. 30, 2026", event: "Writ of Mandamus filed, Sacramento", matters: "3", type: "filing" },
     { date: "Feb. 4, 2026", event: "State tort filed, Alameda", matters: "2", type: "filing" },
-    { date: "Feb. 10, 2026", event: "Gov. tort claim filed — Moua discharge review & Derrick state tort", matters: "5,17", type: "filing" },
     { date: "Feb. 10, 2026", event: "HOPE/Palacios state tort filed (STK-CV-UF-2026-1032)", matters: "8", type: "filing" },
     { date: "Feb. 13, 2026", event: "Diamond Truck Sales complaint filed", matters: "9", type: "filing" },
     { date: "Feb. 23, 2026", event: "Habeas corpus petition filed in Santa Clara (Case No. C2602632)", matters: "14", type: "filing" },
@@ -259,15 +258,15 @@ const PORTFOLIO = {
     { date: "Mar. 3, 2026", event: "Fee Waiver Hearing, Alameda (Hayward) — Completed; POS-010 for Palacios filed", matters: "2,8", type: "hearing" },
     { date: "Mar. 9, 2026", event: "Palacios POS-015 executed — federal case (Sims, Lawrence & Broghammer confirmed service)", matters: "4", type: "event" },
     { date: "Mar. 19, 2026", event: "Motion Hearings (Docs 9 & 14) at 10:00 AM — Judge Calabretta (Motion to Quash + related)", matters: "4", type: "hearing", upcoming: true },
-    { date: "Mar. 27, 2026", event: "Gov. claim deemed rejected (§912.4(c)) for Moua tort; Answer due — Derrick FAC (Doc 5)", matters: "4,17", type: "event", upcoming: true },
-    { date: "Mar. 27, 2026", event: "Mandamus Hearing, Sacramento, Dept. 32", matters: "3", type: "hearing", upcoming: true },
+    { date: "Mar. 27, 2026", event: "Answer due — Derrick FAC (Doc 5)", matters: "4", type: "event", upcoming: true },
+    { date: "May 15, 2026", event: "Gov. claims deemed rejected (§912.4(c)) — Urrea, Moua, Candelaria, and Derrick state torts", matters: "5,17,18,19,20", type: "event", upcoming: true },
+    { date: "May 29, 2026", event: "Mandamus Hearing, Sacramento, Dept. 32", matters: "3", type: "hearing", upcoming: true },
     { date: "May 29, 2026", event: "Complaints filed — Derrick State Tort, Urrea State Tort, Moua State Tort, Candelaria §1983 (Federal), Candelaria/DMV State Tort", matters: "5,17,18,19,20", type: "filing", upcoming: true },
     { date: "Apr. 7, 2026", event: "Service deadline — all defendants Meza-Gonzalez (60 days from filing, Cal. Rules of Court 3.110(b))", matters: "2", type: "filing", upcoming: true },
     { date: "Apr. 9, 2026", event: "Opt-out declination due — Derrick Federal (Doc 20, filed 03/10/2026)", matters: "4", type: "filing", upcoming: true },
     { date: "Apr. 10, 2026", event: "Service deadline — HOPE Psychotherapy, Inc. (packet mailed to Alameda Sheriff 02/25/2026; follow up required)", matters: "8", type: "filing", upcoming: true },
     { date: "Apr. 16, 2026", event: "Gov. claim deemed rejected — Policy 19-03 state tort (45 days from 03/02/2026 mailing)", matters: "10", type: "event", upcoming: true },
     { date: "Apr. 20, 2026", event: "State tort filing planned — Policy 19-03 (Newanforbi v. CDCR)", matters: "10", type: "filing", upcoming: true },
-    { date: "Apr. 16, 2026", event: "Gov. claim deemed rejected — Urrea state tort (~45 days from 03/02/2026 presentment)", matters: "18", type: "event", upcoming: true },
     { date: "Apr. 25, 2026", event: "Katie Palacios response deadline (est. 30 days from 02/24/2026 service; monitor docket)", matters: "8", type: "filing", upcoming: true },
     { date: "Jun. 1, 2026", event: "Gov. claim accrual deadline — Derrick & Urrea state torts (6 months from Dec. 1, 2025 accrual; claims already filed)", matters: "5,18", type: "filing", upcoming: true },
     { date: "Jun. 3, 2026", event: "Case Management Statement (CM-110) due — Meza-Gonzalez; meet-and-confer (Rule 3.724); post jury fees (CCP §631)", matters: "2", type: "filing", upcoming: true },
@@ -680,7 +679,7 @@ export default function LitigationPortfolio() {
       {/* Footer */}
       <div style={{ borderTop: `1px solid ${NAVY}`, padding: "16px 32px", display: "flex", justifyContent: "space-between", fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#475569" }}>
         <span>Confidential — Attorney Work Product</span>
-        <span>{PORTFOLIO.contact.email} · {PORTFOLIO.contact.phone}</span>
+        <span>{PORTFOLIO.contact.address}</span>
       </div>
     </div>
   );
