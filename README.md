@@ -50,8 +50,8 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 | 5 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | State | Gov. Claim rejected; filing imminent |
 | 6 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 7 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 8 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | Service deadline ~04/11/2026 |
-| 9 | Ngwa Nforbi v. Diamond Truck Sales | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Service deadline ~04/14/2026 |
+| 8 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | Palacios served 02/24/2026; response due 03/26/2026; HOPE service pending |
+| 9 | Ngwa Nforbi v. Diamond Truck Sales | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Diamond served 03/11/2026; response due 04/10/2026; Dakota service pending |
 | 10 | Newanforbi v. CDCR et al. | TBD | San Joaquin Sup. Ct. | State | Gov. Claim mailed; filing planned 04/20/2026 |
 | 11 | Newanforbi v. Rojo | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 12 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
