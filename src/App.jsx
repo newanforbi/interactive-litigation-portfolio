@@ -270,7 +270,7 @@ const PORTFOLIO = {
     { date: "Mar. 26, 2026", event: "Katie Palacios response deadline (30 days from 02/24/2026 personal service)", matters: "8", type: "filing", upcoming: true },
     { date: "Jun. 1, 2026", event: "Gov. claim accrual deadline — Derrick & Urrea state torts (6 months from Dec. 1, 2025 accrual; claims already filed)", matters: "5,18", type: "filing", upcoming: true },
     { date: "Jun. 3, 2026", event: "Case Management Statement (CM-110) due — Meza-Gonzalez; meet-and-confer (Rule 3.724); post jury fees (CCP §631)", matters: "2", type: "filing", upcoming: true },
-    { date: "Jun. 18, 2026", event: "Motion Hearing — I-918 Supp. B Certification, 2:30 PM, Dept. 518, Hayward Hall of Justice (Reservation ID: 471280427959)", matters: "2", type: "hearing", upcoming: true },
+    { date: "Jun. 18, 2026", event: "Motion Hearing — I-918 Supp. B Certification, 2:30 PM, Dept. 518, Hayward Hall of Justice", matters: "2", type: "hearing", upcoming: true },
     { date: "Jul. 6, 2026", event: "Case Management Conference, 2:30 PM, Dept. 518, Hayward — Judge Mark Fickes", matters: "2", type: "hearing", upcoming: true },
     { date: "Aug. 12, 2026", event: "CMC, San Joaquin Superior Court", matters: "9", type: "hearing", upcoming: true },
     { date: "Aug. 19, 2026", event: "Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS)", matters: "19,20", type: "filing", upcoming: true },
