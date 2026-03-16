@@ -733,9 +733,8 @@ export default function LitigationPortfolio() {
       </div>
 
       {/* Footer */}
-      <div style={{ borderTop: `1px solid ${NAVY}`, padding: "16px 32px", display: "flex", justifyContent: "space-between", fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#475569" }}>
+      <div style={{ borderTop: `1px solid ${NAVY}`, padding: "16px 32px", fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#475569" }}>
         <span>Confidential — Attorney Work Product</span>
-        <span>{PORTFOLIO.contact.address}</span>
       </div>
     </div>
   );
