@@ -592,7 +592,7 @@ export default function LitigationPortfolio() {
 
         {/* ============ TIMELINE ============ */}
         {activeTab === "Timeline" && (() => {
-          const cutoff = new Date("2026-01-01");
+          const cutoff = (() => { const d = new Date(); d.setHours(0,0,0,0); return d; })();
           const sorted = [...PORTFOLIO.timeline].sort((a, b) => new Date(a.date.replace(/\./g, "")) - new Date(b.date.replace(/\./g, "")));
           const pastEvents = sorted.filter(t => new Date(t.date.replace(/\./g, "")) < cutoff);
           const recentEvents = sorted.filter(t => new Date(t.date.replace(/\./g, "")) >= cutoff);
@@ -637,7 +637,7 @@ export default function LitigationPortfolio() {
                 <div style={{ position: "relative", marginBottom: 24, paddingLeft: 24 }}>
                   <div style={{ position: "absolute", left: -30, top: "50%", transform: "translateY(-50%)", width: 20, height: 20, borderRadius: "50%", background: GOLD, border: `2px solid ${GOLD}`, display: "flex", alignItems: "center", justifyContent: "center" }} />
                   <div style={{ borderTop: `1px dashed ${GOLD}40`, paddingTop: 8 }}>
-                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: 1, textTransform: "uppercase" }}>2026 — Active Litigation Period</span>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: 1, textTransform: "uppercase" }}>Upcoming & Present</span>
                   </div>
                 </div>
                 {recentEvents.map((t, i) => renderEvent(t, i))}
