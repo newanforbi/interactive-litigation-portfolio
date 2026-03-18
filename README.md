@@ -45,22 +45,22 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 |---|---|---|---|---|---|
 | 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | MTD briefed |
 | 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | Service deadline ~04/05/2026 |
-| 3 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | State | Hearing 03/27/2026 |
-| 4 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Federal | Ex Parte filed |
-| 5 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | State | Gov. Claim rejected; filing imminent |
-| 6 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 7 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 8 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | Palacios served 02/24/2026; response due 03/26/2026; HOPE service pending |
-| 9 | Ngwa Nforbi v. Diamond Truck Sales | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Diamond served 03/11/2026; response due 04/10/2026; Dakota service pending |
-| 11 | Newanforbi v. Rojo | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 12 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 13 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 14 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | State | Awaiting OSC |
-| 15 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | Federal | Filed 03/02/2026 |
-| 17 | Newanforbi v. Moua et al. | TBD | San Joaquin Sup. Ct. | State | Filed 03/31/2026 |
-| 18 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | State | Complaint ready |
-| 19 | Newanforbi v. Candelaria | TBD | USDC E.D. Cal. | Federal | Filed 05/29/2026 |
-| 20 | Newanforbi v. DMV / Candelaria | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026 |
+| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Federal | Ex Parte filed |
+| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | State | Gov. Claim rejected; filing imminent |
+| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | Palacios served 02/24/2026; response due 03/26/2026; HOPE service pending |
+| 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
+| 7 | Newanforbi v. Candelaria | TBD | USDC E.D. Cal. | Federal | Filed 05/29/2026 |
+| 8 | Newanforbi v. DMV / Candelaria | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026 |
+| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | State | Hearing 03/27/2026 |
+| 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | State | Awaiting OSC |
+| 11 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | Federal | Filed 03/02/2026 |
+| 12 | Ngwa Nforbi v. Diamond Truck Sales | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Diamond served 03/11/2026; response due 04/10/2026; Dakota service pending |
+| 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
+| 14 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | State | Complaint ready |
+| 15 | Newanforbi v. Moua et al. | TBD | San Joaquin Sup. Ct. | State | Filed 03/31/2026 |
+| 16 | Newanforbi v. Rojo | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
+| 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
+| 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 
 ---
 
