@@ -12,11 +12,11 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 18 |
+| Active Matters | 19 |
 | Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Aggregate Exposure (Moderate) | $2,250,000 |
-| Aggregate Exposure (Aggressive) | $4,750,000+ |
-| Prepared | March 31, 2026 |
+| Aggregate Exposure (Moderate) | $2,560,000 |
+| Aggregate Exposure (Aggressive) | $5,400,000+ |
+| Prepared | March 18, 2026 |
 
 ---
 
@@ -58,9 +58,10 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 | 13 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 14 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | State | Awaiting OSC |
 | 15 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | Federal | Filed 03/02/2026 |
-| 16 | Newanforbi v. HOPE Psychotherapy, Inc. et al. | TBD | San Joaquin Sup. Ct. | State | Filed 03/16/2026 |
 | 17 | Newanforbi v. Moua et al. | TBD | San Joaquin Sup. Ct. | State | Filed 03/31/2026 |
 | 18 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | State | Complaint ready |
+| 19 | Newanforbi v. Candelaria | TBD | USDC E.D. Cal. | Federal | Filed 05/29/2026 |
+| 20 | Newanforbi v. DMV / Candelaria | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026 |
 
 ---
 
@@ -68,15 +69,14 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 
 | Category | Conservative | Moderate | Aggressive |
 |---|---|---|---|
-| Lost Wages / Economic Harm | $275,000 | $625,000 | $1,100,000 |
+| Lost Wages / Economic Harm | $375,000 | $800,000 | $1,400,000 |
 | False Imprisonment | $90,000 | $225,000 | $450,000 |
 | Emotional Distress | $110,000 | $300,000 | $600,000 |
-| Bane Act / Treble | $90,000 | $250,000 | $525,000 |
-| Punitive Damages | $150,000 | $575,000 | $1,450,000 |
-| Prof. Negligence / Malpractice | $25,000 | $75,000 | $150,000 |
+| Bane Act / Treble | $120,000 | $325,000 | $700,000 |
+| Punitive Damages | $200,000 | $700,000 | $1,750,000 |
 | Consumer Fraud | $40,000 | $75,000 | $150,000 |
-| Attorneys' Fees | $40,000 | $110,000 | $300,000 |
-| **Total** | **$820,000** | **$2,235,000** | **$4,725,000+** |
+| Attorneys' Fees | $55,000 | $135,000 | $350,000 |
+| **Total** | **$990,000** | **$2,560,000** | **$5,400,000+** |
 
 ---
 
