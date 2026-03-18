@@ -115,17 +115,6 @@ const PORTFOLIO = {
       evidence: ["Buyer's Order", "Dakota financing agreement", "Emissions records", "CHP out-of-service docs"]
     },
     {
-      number: 10, caption: "Newanforbi v. CDCR et al.", case_no: "TBD", court: "San Joaquin Sup. Ct.",
-      claims: "Mandatory Duty Breach, Bane Act, False Imprisonment, Negligent Supervision", status: "Gov. Claim mailed 03/02/2026; deemed rejected ~04/16/2026",
-      filed: "Gov. Claim 03/02/2026; Filing planned 04/20/2026", judge: "TBD", cluster: 2, type: "State",
-      defendants: "CDCR; Jeff Macomber; Long Moua (#7472); Gary Noguchi (#7284); Joseelyn Rojo; Keely Dodd (#6462); DOES 1-20",
-      causes: ["Breach of Mandatory Duty (§815.6)", "Tom Bane Civil Rights Act (§52.1)", "False Imprisonment (§236)", "Negligent Supervision (§815.2)"],
-      key_facts: "Policy 19-03 state tort. LS/CMI score of 5 vs. retention threshold of 11. Coercive enforcement: PACT referrals, COP violations. GPS required 12-hour daily charging — tethered to wall outlet. Centerline Drivers: $33.35/hr regular, $50.03/hr OT. Past damages exceed $104,000 (65 weeks × $1,600/week). Policy 19-03 'affirmatively contradictory' to Section 3574.",
-      procedural_status: "Gov. Claim mailed 03/02/2026. 45-day clock: deemed rejected by operation of law ~04/16/2026 (§912.4(c)). Filing planned 04/20/2026. Must file within 6 months of deemed rejection (~Oct. 2026). Jury trial demanded.",
-      damages: "$300,000 - $700,000+", risk: "§820.2/§845.8 immunity arguments; complaint establishes ministerial duty exception.",
-      evidence: ["Form 1502-DR", "Policy 19-03", "Section 3574/NCR 25-01", "Centerline wage records", "GPS/PACT records", "Form 602 grievance", "Dwyer order"]
-    },
-    {
       number: 11, caption: "Newanforbi v. Rojo", case_no: "2:26-cv-00193-DC-CKD", court: "USDC E.D. Cal.",
       claims: "42 USC 1983: Civil Rights", status: "Filed 01/22/2026",
       filed: "January 22, 2026", judge: "Hon. Dena M. Coggins / Mag. Delaney", cluster: 2, type: "Federal",
@@ -228,20 +217,20 @@ const PORTFOLIO = {
   timeline: [
     { date: "Dec. 2, 2020", event: "Released on parole; HOPE Program begins", matters: "All", type: "milestone" },
     { date: "Apr. 4, 2023", event: "Purchased defective Volvo semi-truck from Diamond", matters: "9", type: "event" },
-    { date: "Mar. 2023", event: "In re Dwyer: Court condemns HOPE blanket retention policy", matters: "3,7,8,10,15,17", type: "ruling" },
-    { date: "Dec. 2023", event: "ACSOL v. Macomber: Demurrer overruled", matters: "3,7,8,10,15", type: "ruling" },
+    { date: "Mar. 2023", event: "In re Dwyer: Court condemns HOPE blanket retention policy", matters: "3,7,8,15,17", type: "ruling" },
+    { date: "Dec. 2023", event: "ACSOL v. Macomber: Demurrer overruled", matters: "3,7,8,15", type: "ruling" },
     { date: "Nov. 1, 2024", event: "CHP stop on I-580; DUI arrest; 5-day parole hold", matters: "1,2,6,18", type: "event" },
     { date: "Dec. 4, 2024", event: "DMV issues APS suspension notice following CHP arrest; CDL commercially disqualified", matters: "19,20", type: "event" },
     { date: "Jan. 2025", event: "Derrick assigned; suppresses freedom of speech", matters: "4,5", type: "event" },
     { date: "Jan. 24, 2025", event: "DMV APS Hearing before Candelaria — Detention Certificate ignored; structural bias; irrebuttable presumption applied", matters: "19,20", type: "hearing" },
     { date: "Feb. 11, 2025", event: "Candelaria sustains one-year CDL suspension (Case 34739340); conclusory decision dismisses Detention Certificate and Mercer precedent", matters: "19,20", type: "event" },
     { date: "Mar.–Apr. 2025", event: "FedEx employment sabotaged; forced resignation", matters: "4,5", type: "event" },
-    { date: "Apr. 2025", event: "Section 3574 takes effect; supersedes Policy 19-03", matters: "3,7,8,10,15", type: "ruling" },
+    { date: "Apr. 2025", event: "Section 3574 takes effect; supersedes Policy 19-03", matters: "3,7,8,15", type: "ruling" },
     { date: "May 27, 2025", event: "Federal CHP complaint filed", matters: "1", type: "filing" },
     { date: "Mid-2025", event: "Palacios labels Plaintiff 'ringleader'", matters: "4,5,8", type: "event" },
-    { date: "Nov. 14–19, 2025", event: "Discharge Review: Noguchi cites Policy 19-03; 'Eagan' copy-paste error; unemployment (caused by Defendants) cited as aggravating factor", matters: "3,4,7,10,14,15,17,18", type: "event" },
+    { date: "Nov. 14–19, 2025", event: "Discharge Review: Noguchi cites Policy 19-03; 'Eagan' copy-paste error; unemployment (caused by Defendants) cited as aggravating factor", matters: "3,4,7,14,15,17,18", type: "event" },
     { date: "Dec. 2, 2025", event: "Five-year statutory minimum expires", matters: "3,14", type: "milestone" },
-    { date: "Dec. 2025", event: "Form 602 grievance exhausted (3 levels)", matters: "10,15", type: "event" },
+    { date: "Dec. 2025", event: "Form 602 grievance exhausted (3 levels)", matters: "15", type: "event" },
     { date: "Jan. 5, 2026", event: "Federal Complaint (Derrick) filed", matters: "4", type: "filing" },
     { date: "Jan. 15, 2026", event: "Derrick visits witness Huybers", matters: "4,5", type: "event" },
     { date: "Jan. 22, 2026", event: "4 federal complaints filed (Urrea, HOPE, Maloney, Barocio)", matters: "6,7,12,13", type: "filing" },
@@ -251,7 +240,7 @@ const PORTFOLIO = {
     { date: "Feb. 13, 2026", event: "Diamond Truck Sales complaint filed", matters: "9", type: "filing" },
     { date: "Feb. 23, 2026", event: "Habeas corpus petition filed in Santa Clara (Case No. C2602632)", matters: "14", type: "filing" },
     { date: "Feb. 24, 2026", event: "Katie Palacios personally served (SJC Sheriff); POS-010 to be filed", matters: "8", type: "event" },
-    { date: "Mar. 2, 2026", event: "Federal Policy 19-03 challenge filed; Gov. Claim mailed for Policy 19-03 state tort", matters: "10,15", type: "filing" },
+    { date: "Mar. 2, 2026", event: "Federal Policy 19-03 challenge filed; Gov. Claim mailed for Policy 19-03 state tort", matters: "15", type: "filing" },
     { date: "Mar. 2, 2026", event: "Gov. Claim presented — Urrea state tort (45-day clock begins)", matters: "18", type: "filing" },
     { date: "Mar. 3, 2026", event: "Fee Waiver Hearing, Alameda (Hayward) — Completed; POS-010 for Palacios filed", matters: "2,8", type: "hearing" },
     { date: "Mar. 9, 2026", event: "Palacios POS-015 executed — federal case (Sims, Lawrence & Broghammer confirmed service)", matters: "4", type: "event" },
@@ -265,8 +254,6 @@ const PORTFOLIO = {
     { date: "Apr. 9, 2026", event: "Opt-out declination due — Derrick Federal (Doc 20, filed 03/10/2026)", matters: "4", type: "filing", upcoming: true },
     { date: "Apr. 10, 2026", event: "Service deadline — HOPE Psychotherapy, Inc. (packet mailed to Alameda Sheriff 02/25/2026; follow up required)", matters: "8", type: "filing", upcoming: true },
     { date: "Apr. 10, 2026", event: "Diamond Truck Sales response deadline (30 days from 03/11/2026 service)", matters: "9", type: "filing", upcoming: true },
-    { date: "Apr. 16, 2026", event: "Gov. claim deemed rejected — Policy 19-03 state tort (45 days from 03/02/2026 mailing)", matters: "10", type: "event", upcoming: true },
-    { date: "Apr. 20, 2026", event: "State tort filing planned — Policy 19-03 (Newanforbi v. CDCR)", matters: "10", type: "filing", upcoming: true },
     { date: "Mar. 26, 2026", event: "Katie Palacios response deadline (30 days from 02/24/2026 personal service)", matters: "8", type: "filing", upcoming: true },
     { date: "Jun. 1, 2026", event: "Gov. claim accrual deadline — Derrick & Urrea state torts (6 months from Dec. 1, 2025 accrual; claims already filed)", matters: "5,18", type: "filing", upcoming: true },
     { date: "Jun. 3, 2026", event: "Case Management Statement (CM-110) due — Meza-Gonzalez; meet-and-confer (Rule 3.724); post jury fees (CCP §631)", matters: "2", type: "filing", upcoming: true },
@@ -287,16 +274,16 @@ const PORTFOLIO = {
     { id: 5, title: "Post-Notice Continuation (Punitive Damages)", matters: "All CDCR", icon: "⚠️", desc: "Defendants continued conduct after Dwyer (2023), Macomber (2023), and April 2025 amendments. Demonstrates conscious disregard under Civ. Code 3294." },
     { id: 7, title: "Facially Defective Discharge Review as Independent Tort", matters: "17", icon: "📋", desc: "The 'Eagan' copy-paste error proves no individualized review occurred. The fabricated 6.5-year minimum traces to academic research (Cortoni et al.), not statute — an underground regulation. W-2 documented $109,408 in lost wages from 6 CDL carriers provides the strongest quantified damages foundation in the portfolio." },
     { id: 8, title: "DMV Structural Bias and CDL Destruction", matters: "19,20", icon: "🚗", desc: "DMV hearing officer Candelaria operated within a structurally biased framework (simultaneous prosecutor/adjudicator). CHP's own Detention Certificate under PC §849(b)(1) repudiated the arrest, yet Candelaria sustained the suspension applying an irrebuttable presumption of official regularity. Connects Cluster 1 (CHP encounter) to Cluster 2 (CDL loss → unemployment → discharge denial)." },
-    { id: 9, title: "Policy 19-03 as Ultra Vires Administrative Action", matters: "10,15", icon: "📜", desc: "Policy 19-03 is affirmatively contradictory to Section 3574. Regulation has force of statute under Tidewater Marine. Mathews v. Eldridge balancing confirms due process violation. The 6.5-year temporal bar is an underground regulation under §11340.5 — never promulgated through APA notice-and-comment." }
+    { id: 9, title: "Policy 19-03 as Ultra Vires Administrative Action", matters: "15", icon: "📜", desc: "Policy 19-03 is affirmatively contradictory to Section 3574. Regulation has force of statute under Tidewater Marine. Mathews v. Eldridge balancing confirms due process violation. The 6.5-year temporal bar is an underground regulation under §11340.5 — never promulgated through APA notice-and-comment." }
   ],
   damages_table: [
-    { category: "Lost Wages / Economic Harm", matters: "1-8, 10, 14, 17-20", conservative: 375000, moderate: 800000, aggressive: 1400000 },
-    { category: "False Imprisonment", matters: "1, 2, 6, 8, 10, 14, 17, 18", conservative: 90000, moderate: 225000, aggressive: 450000 },
-    { category: "Emotional Distress", matters: "1, 2, 4, 5, 7, 8, 10, 17-20", conservative: 110000, moderate: 300000, aggressive: 600000 },
-    { category: "Bane Act / Treble", matters: "1, 2, 5, 10, 18, 20", conservative: 120000, moderate: 325000, aggressive: 700000 },
-    { category: "Punitive Damages", matters: "1, 2, 4, 5, 7, 8, 10-13, 17-20", conservative: 200000, moderate: 700000, aggressive: 1750000 },
+    { category: "Lost Wages / Economic Harm", matters: "1-8, 14, 17-20", conservative: 375000, moderate: 800000, aggressive: 1400000 },
+    { category: "False Imprisonment", matters: "1, 2, 6, 8, 14, 17, 18", conservative: 90000, moderate: 225000, aggressive: 450000 },
+    { category: "Emotional Distress", matters: "1, 2, 4, 5, 7, 8, 17-20", conservative: 110000, moderate: 300000, aggressive: 600000 },
+    { category: "Bane Act / Treble", matters: "1, 2, 5, 18, 20", conservative: 120000, moderate: 325000, aggressive: 700000 },
+    { category: "Punitive Damages", matters: "1, 2, 4, 5, 7, 8, 11-13, 17-20", conservative: 200000, moderate: 700000, aggressive: 1750000 },
     { category: "Consumer Fraud", matters: "9", conservative: 40000, moderate: 75000, aggressive: 150000 },
-    { category: "Attorneys' Fees", matters: "1, 4, 6, 7, 10, 12, 15, 18-20", conservative: 55000, moderate: 135000, aggressive: 350000 }
+    { category: "Attorneys' Fees", matters: "1, 4, 6, 7, 12, 15, 18-20", conservative: 55000, moderate: 135000, aggressive: 350000 }
   ]
 };
 
