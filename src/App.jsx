@@ -331,8 +331,9 @@ export default function LitigationPortfolio() {
 
   const federalCount = PORTFOLIO.cases.filter(c => c.type === "Federal").length;
   const stateCount = PORTFOLIO.cases.filter(c => c.type === "State").length;
+  const today = (() => { const d = new Date(); d.setHours(0,0,0,0); return d; })();
   const upcomingEvents = PORTFOLIO.timeline
-    .filter(t => t.upcoming)
+    .filter(t => t.upcoming && new Date(t.date.replace(/\./g, "")) >= today)
     .sort((a, b) => new Date(a.date.replace(/\./g, "")) - new Date(b.date.replace(/\./g, "")));
   const totalMatters = PORTFOLIO.cases.length;
 
@@ -586,14 +587,15 @@ export default function LitigationPortfolio() {
           const renderEvent = (t, i) => {
             const typeColors = { filing: "#34D399", hearing: "#F472B6", ruling: "#60A5FA", event: "#94A3B8", milestone: GOLD };
             const col = typeColors[t.type] || "#94A3B8";
+            const isUpcoming = t.upcoming && new Date(t.date.replace(/\./g, "")) >= cutoff;
             return (
               <div key={i} style={{ position: "relative", marginBottom: 20, paddingLeft: 24 }}>
-                <div style={{ position: "absolute", left: -26, top: 5, width: 12, height: 12, borderRadius: "50%", background: t.upcoming ? col : DARK_BG, border: `2px solid ${col}`, boxShadow: t.upcoming ? `0 0 12px ${col}60` : "none" }} />
-                <div style={{ background: t.upcoming ? `${col}10` : CARD_BG, borderRadius: 8, padding: "12px 18px", border: t.upcoming ? `1px solid ${col}30` : `1px solid ${NAVY}` }}>
+                <div style={{ position: "absolute", left: -26, top: 5, width: 12, height: 12, borderRadius: "50%", background: isUpcoming ? col : DARK_BG, border: `2px solid ${col}`, boxShadow: isUpcoming ? `0 0 12px ${col}60` : "none" }} />
+                <div style={{ background: isUpcoming ? `${col}10` : CARD_BG, borderRadius: 8, padding: "12px 18px", border: isUpcoming ? `1px solid ${col}30` : `1px solid ${NAVY}` }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
                     <div>
                       <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: col }}>{t.date}</span>
-                      {t.upcoming && <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, marginLeft: 8, padding: "1px 6px", borderRadius: 4, background: `${col}20`, color: col, fontWeight: 700 }}>UPCOMING</span>}
+                      {isUpcoming && <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, marginLeft: 8, padding: "1px 6px", borderRadius: 4, background: `${col}20`, color: col, fontWeight: 700 }}>UPCOMING</span>}
                     </div>
                     <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: "#64748B", textTransform: "uppercase", letterSpacing: 1, fontWeight: 600 }}>{t.type}</span>
                   </div>
