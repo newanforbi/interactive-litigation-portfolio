@@ -489,7 +489,7 @@ export default function LitigationPortfolio() {
             <div key={l} style={{ display: "flex", alignItems: "center", gap: 4 }}>
               {i > 0 && <span style={{ color: "#334155", fontSize: 18, lineHeight: 1, paddingBottom: 10 }}>:</span>}
               <div style={{ textAlign: "center", minWidth: 36 }}>
-                <div style={{ fontSize: 22, fontWeight: 700, color: timeLeft.urgent ? "#EF4444" : "white", fontFamily: "'DM Sans', sans-serif", lineHeight: 1, animation: timeLeft.frozen ? "clockPulse 2.8s ease-in-out infinite" : "none" }}>
+                <div style={{ fontSize: 22, fontWeight: 700, color: timeLeft.frozen ? "#EF4444" : timeLeft.urgent ? "#EF4444" : "white", fontFamily: "'DM Sans', sans-serif", lineHeight: 1, animation: timeLeft.frozen ? "clockPulse 2.8s ease-in-out infinite" : "none" }}>
                   {String(v).padStart(2, "0")}
                 </div>
                 <div style={{ fontSize: 9, color: "#475569", fontFamily: "'DM Sans', sans-serif", letterSpacing: 1.5, textTransform: "uppercase", marginTop: 2 }}>{l}</div>
