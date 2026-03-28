@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 const NAVY = "#1A2A49";
 const GOLD = "#C8A84B";
@@ -7,6 +7,34 @@ const CLUSTER_NAVY = "#2B3D6B";
 const BORDER_BLUE = "#CAD4DF";
 const DARK_BG = "#0F1A2E";
 const CARD_BG = "#162034";
+
+// Deadline clock — permanent target: Mon Mar 30 2026 5:00 PM PDT
+// After this passes the clock auto-advances to the next upcoming event.
+const DEFAULT_DEADLINE = new Date("2026-03-30T17:00:00-07:00");
+
+// Returns midnight for a given date expressed in Pacific time (PDT/PST aware).
+const getPDTMidnight = (date = new Date()) => {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric", month: "2-digit", day: "2-digit"
+  }).formatToParts(date);
+  const y = parts.find(p => p.type === "year").value;
+  const m = parts.find(p => p.type === "month").value;
+  const d = parts.find(p => p.type === "day").value;
+  // Determine current PT offset (PDT = UTC-7, PST = UTC-8)
+  const tzLabel = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles", timeZoneName: "short"
+  }).formatToParts(date).find(p => p.type === "timeZoneName")?.value || "PDT";
+  const offsetHrs = tzLabel === "PST" ? 8 : 7;
+  return new Date(Date.UTC(+y, +m - 1, +d, offsetHrs, 0, 0));
+};
+
+// Parse a timeline date string (e.g. "Mar. 27, 2026") as midnight Pacific time.
+const parseEventDatePDT = (dateStr) => {
+  const temp = new Date(dateStr.replace(/\./g, ""));
+  // Use same offset logic: all portfolio dates are in PDT (Mar–Oct 2026 = UTC-7)
+  return new Date(Date.UTC(temp.getFullYear(), temp.getMonth(), temp.getDate(), 7, 0, 0));
+};
 
 const PORTFOLIO = {
   plaintiff: "Brendan Ngehsi Newanforbi",
@@ -334,10 +362,47 @@ export default function LitigationPortfolio() {
 
   const federalCount = PORTFOLIO.cases.filter(c => c.type === "Federal").length;
   const stateCount = PORTFOLIO.cases.filter(c => c.type === "State").length;
-  const today = (() => { const d = new Date(); d.setHours(0,0,0,0); return d; })();
+  const today = getPDTMidnight();
   const upcomingEvents = PORTFOLIO.timeline
-    .filter(t => t.upcoming && new Date(t.date.replace(/\./g, "")) >= today)
-    .sort((a, b) => new Date(a.date.replace(/\./g, "")) - new Date(b.date.replace(/\./g, "")));
+    .filter(t => t.upcoming && parseEventDatePDT(t.date) >= today)
+    .sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
+
+  const [timeLeft, setTimeLeft] = useState({ label: "", days: 0, hours: 0, mins: 0, secs: 0, urgent: false });
+  useEffect(() => {
+    const tick = () => {
+      const now = new Date();
+      let target, label;
+      if (now < DEFAULT_DEADLINE) {
+        target = DEFAULT_DEADLINE;
+        label = "Palacios Federal Default — Action Deadline";
+      } else if (upcomingEvents.length > 0) {
+        const ev = upcomingEvents[0];
+        // Target 5:00 PM PDT on that event's date (PDT midnight + 17 hours)
+        target = new Date(parseEventDatePDT(ev.date).getTime() + 17 * 3600 * 1000);
+        label = ev.date + " \u2014 " + ev.event.slice(0, 55);
+      } else {
+        setTimeLeft({ label: "No upcoming deadlines", days: 0, hours: 0, mins: 0, secs: 0, urgent: false });
+        return;
+      }
+      const diff = target - now;
+      if (diff <= 0) {
+        setTimeLeft({ label, days: 0, hours: 0, mins: 0, secs: 0, urgent: true });
+        return;
+      }
+      setTimeLeft({
+        label,
+        days: Math.floor(diff / 86400000),
+        hours: Math.floor((diff % 86400000) / 3600000),
+        mins: Math.floor((diff % 3600000) / 60000),
+        secs: Math.floor((diff % 60000) / 1000),
+        urgent: diff < 86400000,
+      });
+    };
+    tick();
+    const id = setInterval(tick, 1000);
+    return () => clearInterval(id);
+  }, [upcomingEvents]);
+
   const totalMatters = PORTFOLIO.cases.length;
 
   const formatCurrency = (n) => "$" + n.toLocaleString();
@@ -389,6 +454,34 @@ export default function LitigationPortfolio() {
               }}>{t}</button>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* ── Deadline Clock Banner (permanent fixture) ── */}
+      <div style={{
+        background: "linear-gradient(90deg, #0F1A2E 0%, #1A2A49 50%, #0F1A2E 100%)",
+        borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : GOLD + "30"}`,
+        padding: "10px 32px",
+        display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "wrap"
+      }}>
+        <div style={{ color: GOLD, fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, textTransform: "uppercase", whiteSpace: "nowrap" }}>
+          ⚖ Deadline Clock
+        </div>
+        <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+          {[{ v: timeLeft.days, l: "Days" }, { v: timeLeft.hours, l: "Hrs" }, { v: timeLeft.mins, l: "Min" }, { v: timeLeft.secs, l: "Sec" }].map(({ v, l }, i) => (
+            <div key={l} style={{ display: "flex", alignItems: "center", gap: 4 }}>
+              {i > 0 && <span style={{ color: "#334155", fontSize: 18, lineHeight: 1, paddingBottom: 10 }}>:</span>}
+              <div style={{ textAlign: "center", minWidth: 36 }}>
+                <div style={{ fontSize: 22, fontWeight: 700, color: timeLeft.urgent ? "#EF4444" : "white", fontFamily: "'DM Sans', sans-serif", lineHeight: 1 }}>
+                  {String(v).padStart(2, "0")}
+                </div>
+                <div style={{ fontSize: 9, color: "#475569", fontFamily: "'DM Sans', sans-serif", letterSpacing: 1.5, textTransform: "uppercase", marginTop: 2 }}>{l}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#94A3B8", maxWidth: 380, textAlign: "center", lineHeight: 1.4 }}>
+          {timeLeft.label}
         </div>
       </div>
 
@@ -583,14 +676,14 @@ export default function LitigationPortfolio() {
 
         {/* ============ TIMELINE ============ */}
         {activeTab === "Timeline" && (() => {
-          const cutoff = (() => { const d = new Date(); d.setHours(0,0,0,0); return d; })();
-          const sorted = [...PORTFOLIO.timeline].sort((a, b) => new Date(a.date.replace(/\./g, "")) - new Date(b.date.replace(/\./g, "")));
-          const pastEvents = sorted.filter(t => new Date(t.date.replace(/\./g, "")) < cutoff);
-          const recentEvents = sorted.filter(t => new Date(t.date.replace(/\./g, "")) >= cutoff);
+          const cutoff = getPDTMidnight();
+          const sorted = [...PORTFOLIO.timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
+          const pastEvents = sorted.filter(t => parseEventDatePDT(t.date) < cutoff);
+          const recentEvents = sorted.filter(t => parseEventDatePDT(t.date) >= cutoff);
           const renderEvent = (t, i) => {
             const typeColors = { filing: "#34D399", hearing: "#F472B6", ruling: "#60A5FA", event: "#94A3B8", milestone: GOLD };
             const col = typeColors[t.type] || "#94A3B8";
-            const isUpcoming = t.upcoming && new Date(t.date.replace(/\./g, "")) >= cutoff;
+            const isUpcoming = t.upcoming && parseEventDatePDT(t.date) >= cutoff;
             return (
               <div key={i} style={{ position: "relative", marginBottom: 20, paddingLeft: 24 }}>
                 <div style={{ position: "absolute", left: -26, top: 5, width: 12, height: 12, borderRadius: "50%", background: isUpcoming ? col : DARK_BG, border: `2px solid ${col}`, boxShadow: isUpcoming ? `0 0 12px ${col}60` : "none" }} />
