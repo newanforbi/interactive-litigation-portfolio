@@ -70,7 +70,7 @@ const PORTFOLIO = {
       number: 3, caption: "Newanforbi v. Derrick et al.", case_no: "2:26-cv-00004-DJC-JDP", court: "USDC E.D. Cal.",
       claims: "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process", status: "Active; Palacios FEDERAL DEFAULT — answer deadline 03/27/2026 passed without appearance",
       filed: "January 5, 2026", judge: "Hon. Daniel J. Calabretta / Mag. Peterson", cluster: 2, type: "Federal",
-      defendants: "Agent Derrick (#6910); Katie Palacios; G. Noguchi; Jeff Macomber",
+      defendants: "Agent Andrew Derrick (#6910); Katie Palacios; Gary Noguchi; Jeff Macomber",
       causes: ["First Amendment Retaliation", "Equal Protection (race-based)", "Substantive Due Process"],
       key_facts: "Derrick told Plaintiff: 'You do not have freedom of speech. Not in HOPE group you don't.' Escalating retaliation: FedEx employment sabotage ($20/hr), pretextual violations, witness interference (Huybers visit Jan. 15, 2026). Sworn declarations from white and Black comparator parolees.",
       procedural_status: "Ex Parte Motion filed. FAC filed. Mar. 19, 2026: Motion Hearings (Docs 9 & 14). Mar. 27, 2026: Palacios answer deadline PASSED — no Answer, MTD, or appearance filed by SLB or any counsel. SLB retained for state case (STK-CV-UF-2026-1032) only; written record (subject line, POS-015 form, state claims) confirms extension does not extend to federal matter. Palacios technically in default as of 03/28/2026. Next step: PACER check Mar. 30; meet-and-confer email to Malone/Schmitt; Rule 55(a) RFED to file by Apr. 1, 2026 at 5:00 PM if no response.",
