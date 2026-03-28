@@ -8,9 +8,10 @@ const BORDER_BLUE = "#CAD4DF";
 const DARK_BG = "#0F1A2E";
 const CARD_BG = "#162034";
 
-// Deadline clock — permanent target: Mon Mar 30 2026 5:00 PM PDT
-// After this passes the clock auto-advances to the next upcoming event.
-const DEFAULT_DEADLINE = new Date("2026-03-30T17:00:00-07:00");
+// Deadline clock — counts down to Mar 28 2026 midnight PDT (Palacios federal default).
+// Freezes at 00:00:00:00 until Apr 1 2026, then auto-advances to the next upcoming event.
+const DEFAULT_DEADLINE = new Date("2026-03-28T00:00:00-07:00"); // midnight PDT Mar 28
+const CLOCK_FREEZE_UNTIL = new Date("2026-04-01T00:00:00-07:00"); // midnight PDT Apr 1
 
 // Returns midnight for a given date expressed in Pacific time (PDT/PST aware).
 const getPDTMidnight = (date = new Date()) => {
@@ -371,32 +372,47 @@ export default function LitigationPortfolio() {
   useEffect(() => {
     const tick = () => {
       const now = new Date();
-      let target, label;
+
+      // Phase 1: counting down to default deadline
       if (now < DEFAULT_DEADLINE) {
-        target = DEFAULT_DEADLINE;
-        label = "Palacios Federal Default — Action Deadline";
-      } else if (upcomingEvents.length > 0) {
+        const diff = DEFAULT_DEADLINE - now;
+        setTimeLeft({
+          label: "Palacios Federal Default — Answer Deadline",
+          days: Math.floor(diff / 86400000),
+          hours: Math.floor((diff % 86400000) / 3600000),
+          mins: Math.floor((diff % 3600000) / 60000),
+          secs: Math.floor((diff % 60000) / 1000),
+          urgent: diff < 86400000,
+        });
+        return;
+      }
+
+      // Phase 2: frozen at zeros between Mar 28 midnight PDT and Apr 1 midnight PDT
+      if (now < CLOCK_FREEZE_UNTIL) {
+        setTimeLeft({ label: "Palacios Federal Default — 03/28/2026", days: 0, hours: 0, mins: 0, secs: 0, urgent: false });
+        return;
+      }
+
+      // Phase 3: Apr 1+ — count to the next upcoming event (5:00 PM PDT that day)
+      if (upcomingEvents.length > 0) {
         const ev = upcomingEvents[0];
-        // Target 5:00 PM PDT on that event's date (PDT midnight + 17 hours)
-        target = new Date(parseEventDatePDT(ev.date).getTime() + 17 * 3600 * 1000);
-        label = ev.date + " \u2014 " + ev.event.slice(0, 55);
+        const target = new Date(parseEventDatePDT(ev.date).getTime() + 17 * 3600 * 1000);
+        const diff = target - now;
+        if (diff <= 0) {
+          setTimeLeft({ label: ev.date + " \u2014 " + ev.event.slice(0, 55), days: 0, hours: 0, mins: 0, secs: 0, urgent: true });
+          return;
+        }
+        setTimeLeft({
+          label: ev.date + " \u2014 " + ev.event.slice(0, 55),
+          days: Math.floor(diff / 86400000),
+          hours: Math.floor((diff % 86400000) / 3600000),
+          mins: Math.floor((diff % 3600000) / 60000),
+          secs: Math.floor((diff % 60000) / 1000),
+          urgent: diff < 86400000,
+        });
       } else {
         setTimeLeft({ label: "No upcoming deadlines", days: 0, hours: 0, mins: 0, secs: 0, urgent: false });
-        return;
       }
-      const diff = target - now;
-      if (diff <= 0) {
-        setTimeLeft({ label, days: 0, hours: 0, mins: 0, secs: 0, urgent: true });
-        return;
-      }
-      setTimeLeft({
-        label,
-        days: Math.floor(diff / 86400000),
-        hours: Math.floor((diff % 86400000) / 3600000),
-        mins: Math.floor((diff % 3600000) / 60000),
-        secs: Math.floor((diff % 60000) / 1000),
-        urgent: diff < 86400000,
-      });
     };
     tick();
     const id = setInterval(tick, 1000);
