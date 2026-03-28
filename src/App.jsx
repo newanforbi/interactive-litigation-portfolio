@@ -368,7 +368,7 @@ export default function LitigationPortfolio() {
     .filter(t => t.upcoming && parseEventDatePDT(t.date) >= today)
     .sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
 
-  const [timeLeft, setTimeLeft] = useState({ label: "", days: 0, hours: 0, mins: 0, secs: 0, urgent: false });
+  const [timeLeft, setTimeLeft] = useState({ label: "", days: 0, hours: 0, mins: 0, secs: 0, urgent: false, frozen: false });
   useEffect(() => {
     const tick = () => {
       const now = new Date();
@@ -389,7 +389,7 @@ export default function LitigationPortfolio() {
 
       // Phase 2: frozen at zeros between Mar 28 midnight PDT and Apr 1 midnight PDT
       if (now < CLOCK_FREEZE_UNTIL) {
-        setTimeLeft({ label: "Palacios Federal Default — 03/28/2026", days: 0, hours: 0, mins: 0, secs: 0, urgent: false });
+        setTimeLeft({ label: "Palacios Federal Default — 03/28/2026", days: 0, hours: 0, mins: 0, secs: 0, urgent: false, frozen: true });
         return;
       }
 
@@ -451,6 +451,7 @@ export default function LitigationPortfolio() {
   return (
     <div style={{ minHeight: "100vh", background: DARK_BG, color: "#E2E8F0", fontFamily: "'Cormorant Garamond', 'Georgia', serif" }}>
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      <style>{`@keyframes clockPulse { 0%,100%{opacity:1} 50%{opacity:0.25} }`}</style>
 
       {/* Header */}
       <div style={{ background: `linear-gradient(135deg, ${NAVY} 0%, ${DARK_BG} 100%)`, borderBottom: `2px solid ${GOLD}`, padding: "28px 32px 20px" }}>
@@ -488,7 +489,7 @@ export default function LitigationPortfolio() {
             <div key={l} style={{ display: "flex", alignItems: "center", gap: 4 }}>
               {i > 0 && <span style={{ color: "#334155", fontSize: 18, lineHeight: 1, paddingBottom: 10 }}>:</span>}
               <div style={{ textAlign: "center", minWidth: 36 }}>
-                <div style={{ fontSize: 22, fontWeight: 700, color: timeLeft.urgent ? "#EF4444" : "white", fontFamily: "'DM Sans', sans-serif", lineHeight: 1 }}>
+                <div style={{ fontSize: 22, fontWeight: 700, color: timeLeft.urgent ? "#EF4444" : "white", fontFamily: "'DM Sans', sans-serif", lineHeight: 1, animation: timeLeft.frozen ? "clockPulse 2.8s ease-in-out infinite" : "none" }}>
                   {String(v).padStart(2, "0")}
                 </div>
                 <div style={{ fontSize: 9, color: "#475569", fontFamily: "'DM Sans', sans-serif", letterSpacing: 1.5, textTransform: "uppercase", marginTop: 2 }}>{l}</div>
