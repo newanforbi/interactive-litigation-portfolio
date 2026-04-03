@@ -1,18 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { StatusBadge, ClusterBadge, TypeBadge } from "./components/Badges";
-
-const NAVY = "#1A2A49";
-const GOLD = "#C8A84B";
-const BODY_GRAY = "#495467";
-const CLUSTER_NAVY = "#2B3D6B";
-const BORDER_BLUE = "#CAD4DF";
-const DARK_BG = "#0F1A2E";
-const CARD_BG = "#162034";
-
-// Deadline clock — counts down to Mar 28 2026 midnight PDT (Palacios federal default).
-// Freezes at 00:00:00:00 until Apr 1 2026, then auto-advances to the next upcoming event.
-const DEFAULT_DEADLINE = new Date("2026-03-28T00:00:00-07:00"); // midnight PDT Mar 28
-const CLOCK_FREEZE_UNTIL = new Date("2026-04-01T00:00:00-07:00"); // midnight PDT Apr 1
+import { NAVY, GOLD, BODY_GRAY, CLUSTER_NAVY, BORDER_BLUE, DARK_BG, CARD_BG, DEFAULT_DEADLINE, CLOCK_FREEZE_UNTIL } from "./constants";
 
 // Returns midnight for a given date expressed in Pacific time (PDT/PST aware).
 const getPDTMidnight = (date = new Date()) => {
