@@ -352,8 +352,8 @@ const StatusBadge = ({ status }) => {
 };
 
 const ClusterBadge = ({ cluster }) => {
-  const labels = { 1: "CHP Stop", 2: "Parole/HOPE", 3: "Vehicle Fraud" };
-  const colors = { 1: "#60A5FA", 2: "#A78BFA", 3: "#FBBF24" };
+  const labels = { 1: "CHP Stop", 2: "Parole/HOPE", 3: "Vehicle Fraud", 4: "Writs/Habeas" };
+  const colors = { 1: "#60A5FA", 2: "#A78BFA", 3: "#FBBF24", 4: "#34D399" };
   return <span style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: colors[cluster], border: `1px solid ${colors[cluster]}40`, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase" }}>{labels[cluster]}</span>;
 };
 
