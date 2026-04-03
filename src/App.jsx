@@ -456,6 +456,7 @@ export default function LitigationPortfolio() {
     1: PORTFOLIO.cases.filter(c => c.cluster === 1).length,
     2: PORTFOLIO.cases.filter(c => c.cluster === 2).length,
     3: PORTFOLIO.cases.filter(c => c.cluster === 3).length,
+    4: PORTFOLIO.cases.filter(c => c.cluster === 4).length,
   };
 
   const clusterMatters = (n) => {
@@ -571,7 +572,8 @@ export default function LitigationPortfolio() {
                 {[
                   { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
                   { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
-                  { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" }
+                  { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" },
+                  { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" }
                 ].map(cl => (
                   <div key={cl.n} style={{ marginBottom: 16, cursor: "pointer" }} onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
