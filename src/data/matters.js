@@ -8,7 +8,8 @@ export const cases = [
       key_facts: "CHP officers encountered Plaintiff resting in a rented Tesla on I-580. Despite dashcam showing cup contained urine (not alcohol), officers arrested Plaintiff upon refusal of optional PAS test. DUI report fabricated observations of slurred speech and alcohol odor. No charges filed. 5-day parole hold.",
       procedural_status: "MTD briefed. Awaiting ruling.",
       damages: "$150,000 - $400,000+", risk: "Qualified immunity defense; dashcam evidence critical to defeat.",
-      evidence: ["CHP Dashcam", "DUI Report", "Detention Certificate", "DMV Decision"]
+      evidence: ["CHP Dashcam", "DUI Report", "Detention Certificate", "DMV Decision"],
+      documents: []
     },
     {
       number: 2, caption: "Newanforbi v. Meza-Gonzalez et al.", case_no: "26CV168913", court: "Alameda Sup. Ct.",
@@ -19,7 +20,8 @@ export const cases = [
       key_facts: "Parallel state tort action from same Nov. 1, 2024 CHP encounter. Bane Act claim targets coerced waiver of PAS refusal right. Fabricated report constitutes independent wrongfulness.",
       procedural_status: "Filed 02/04/2026. Fee Waiver Hearing 03/03/2026. CMC 07/06/2026. Mar. 25, 2026: State of California/CHP and Melano served. Meza-Gonzalez service in progress. Court-ordered extension granted — all parties must be served by May 4, 2026. Apr. 2, 2026: DAG Allen Haiyang Li (DOJ) notified Defendants plan to demur under CCP §430.10(c) (other action pending — federal case 2:25-cv-01460-DC-CSK) and (e) (insufficient facts). M&C required per CCP §430.41; call scheduled Apr. 9, 2026, 1:00 p.m., (213) 269-6404.",
       damages: "$100,000 - $300,000+", risk: "",
-      evidence: ["Same as Matter 1", "State procedural records"]
+      evidence: ["Same as Matter 1", "State procedural records"],
+      documents: []
     },
     {
       number: 3, caption: "Newanforbi v. Derrick et al.", case_no: "2:26-cv-00004-DJC-JDP", court: "USDC E.D. Cal.",
@@ -30,7 +32,8 @@ export const cases = [
       key_facts: "Derrick told Plaintiff: 'You do not have freedom of speech. Not in HOPE group you don't.' Escalating retaliation: FedEx employment sabotage ($20/hr), pretextual violations, witness interference (Huybers visit Jan. 15, 2026). Sworn declarations from white and Black comparator parolees.",
       procedural_status: "Ex Parte Motion filed. FAC filed. Mar. 19, 2026: Motion Hearings (Docs 9 & 14). Mar. 27, 2026: Palacios answer deadline passed without appearance. Apr. 2, 2026: SLB (Sims, Lawrence & Broghammer — Cynthia G. Lawrence / Bryan L. Malone) filed Stipulation and Proposed Order (Doc 22) extending Palacios federal response deadline to April 6, 2026; signed by Plaintiff pro se. All defenses reserved per stipulation. No prior extensions. Awaiting Palacios response by Apr. 6, 2026.",
       damages: "$250,000 - $750,000+", risk: "Qualified immunity; strong factual support including recordings and declarations.",
-      evidence: ["HOPE Recordings", "Beard Declaration", "Huybers Declaration", "FedEx Records", "Form 1502-DR"]
+      evidence: ["HOPE Recordings", "Beard Declaration", "Huybers Declaration", "FedEx Records", "Form 1502-DR"],
+      documents: []
     },
     {
       number: 4, caption: "Newanforbi v. Derrick et al.", case_no: "TBD", court: "San Joaquin Sup. Ct.",
@@ -41,7 +44,8 @@ export const cases = [
       key_facts: "State law parallel to Matter 3. Bane Act claim based on Derrick's speech suppression threats and witness intimidation. Intentional and negligent economic interference: documented FedEx relationship ($20/hr) destroyed. Negligent supervision: Noguchi had actual knowledge of retaliation and failed to intervene. CDCR vicariously liable under §815.2(a). Must file within 6 months of deemed rejection (~Sep. 2026).",
       procedural_status: "Filed 05/29/2026. Gov. Claim filed Feb. 2026; deemed rejected ~Apr. 2026. Filed well within 6-month suit deadline (Gov. Code §945.6(a)(1)).",
       damages: "$200,000 - $500,000+", risk: "Discretionary immunity argument; ministerial duties exception applies.",
-      evidence: ["Same as Matter 3", "Gov. Claim documentation"]
+      evidence: ["Same as Matter 3", "Gov. Claim documentation"],
+      documents: []
     },
     {
       number: 5, caption: "Newanforbi v. Palacios et al.", case_no: "STK-CV-UF-2026-0001032", court: "San Joaquin Sup. Ct.",
@@ -52,7 +56,8 @@ export const cases = [
       key_facts: "Targets HOPE as private defendant — no gov. claim required. Blanket retention policy admitted under oath in Dwyer. Fee-for-service billing ($85/group, $600/polygraph) creates ~$9,690/year incentive to retain. No qualified immunity.",
       procedural_status: "Filed 02/10/2026. Fee waiver approved. Summons issued. CMC 10/13/2026. Katie Palacios personally served 02/24/2026 (SJC Sheriff); POS-010 filed 03/03/2026; original response due 03/26/2026. Sims, Lawrence & Broghammer contacted 03/27/2026 and requested 30-day extension — stipulated to Apr. 27, 2026 (state case only; written record tethered exclusively to STK-CV-UF-2026-1032 and state tort claims; does NOT extend to federal matter 2:26-cv-00004-DJC-JDP). Mar. 26, 2026: HOPE Psychotherapy, Inc., d/b/a HOPE Program served — signed Notice of Acknowledgment and Receipt (NAR) returned executed. Service complete as to all named defendants.",
       damages: "$250,000 - $750,000+", risk: "Key advantage: no qualified/sovereign immunity for private defendant.",
-      evidence: ["Dwyer order", "Alameda Contract billing rates", "Form 1502-DR", "CTM records", "HOPE billing"]
+      evidence: ["Dwyer order", "Alameda Contract billing rates", "Form 1502-DR", "CTM records", "HOPE billing"],
+      documents: []
     },
     {
       number: 6, caption: "Newanforbi v. HOPE et al.", case_no: "2:26-cv-00195-TLN-AC", court: "USDC E.D. Cal.",
@@ -63,7 +68,8 @@ export const cases = [
       key_facts: "Broadest systemic challenge. Defendants fabricated '10-year parole term' ineligibility rule. HOPE's blanket retention policy judicially condemned in Dwyer. Discharge Review Report facially defective. Targets entire discharge review apparatus.",
       procedural_status: "Filed 01/22/2026. Early stage.",
       damages: "$250,000 - $750,000+", risk: "HOPE state actor argument; West v. Atkins supports delegated function theory.",
-      evidence: ["HOPE billing docs", "Alameda Contract", "Dwyer decision", "BCP Fiscal Detail", "Form 1502-DR"]
+      evidence: ["HOPE billing docs", "Alameda Contract", "Dwyer decision", "BCP Fiscal Detail", "Form 1502-DR"],
+      documents: []
     },
     {
       number: 7, caption: "Newanforbi v. Candelaria", case_no: "TBD (USDC E.D. Cal.)", court: "USDC E.D. Cal.",
@@ -74,7 +80,8 @@ export const cases = [
       key_facts: "Candelaria sustained one-year CDL suspension and commercial disqualification despite: (1) CHP's own Detention Certificate under PC §849(b)(1) formally repudiating the arrest; (2) no criminal charges ever filed; (3) dashcam contradicting DS-367 on material points. Structural bias: Candelaria served simultaneously as prosecutor and adjudicator — condemned in California DUI Lawyers Ass'n and Knudsen v. DMV. Applied irrebuttable presumption of official regularity; refused to address Detention Certificate or binding Mercer v. DMV precedent; issued conclusory decision dismissing arguments as 'unpersuasive' without analysis. APS hearing Jan. 24, 2025; decision Feb. 11, 2025 (Case 34739340). Qualified immunity rebutted by clearly established law (Bell v. Burson, Mathews v. Eldridge, Knudsen).",
       procedural_status: "Filed 05/29/2026. APS hearing Jan. 24, 2025. Decision Feb. 11, 2025 (Case 34739340).",
       damages: "$150,000 - $400,000+", risk: "Qualified immunity — rebutted by clearly established law (Bell v. Burson, Mathews v. Eldridge, Knudsen v. DMV). Structural error doctrine may not require showing of prejudice.",
-      evidence: ["CHP Detention Certificate (PC §849(b)(1))", "DMV DS-367", "CHP Dashcam", "APS Decision (Case 34739340)", "California DUI Lawyers Ass'n decision", "Knudsen v. DMV", "Mercer v. DMV", "Centerline CDL earnings records"]
+      evidence: ["CHP Detention Certificate (PC §849(b)(1))", "DMV DS-367", "CHP Dashcam", "APS Decision (Case 34739340)", "California DUI Lawyers Ass'n decision", "Knudsen v. DMV", "Mercer v. DMV", "Centerline CDL earnings records"],
+      documents: []
     },
     {
       number: 8, caption: "Newanforbi v. DMV / Candelaria", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
@@ -85,7 +92,8 @@ export const cases = [
       key_facts: "Combined verified petition for writ of administrative mandamus and complaint for damages arising from same APS hearing. Broader defendant roster: DMV, Director Steve Gordon (official capacity), and Candelaria (individual capacity). Seeks both equitable relief (set aside suspension, restore CDL) and compensatory damages including Bane Act treble damages. Same core APS facts as Matter 7: Detention Certificate ignored, structural bias, CDL commercially disqualified. CDL loss triggered cascading harm: unemployment → Nov. 2025 Discharge Review cites unemployment as aggravating factor to deny discharge.",
       procedural_status: "Filed 05/29/2026. Gov. Claims Act compliance required before suing State/DMV (§900 et seq.). Gov. claim to be presented to DGS prior to filing.",
       damages: "$200,000 - $500,000+", risk: "§820.2 immunity for Candelaria's adjudicatory function — rebutted by structural bias doctrine. DMV sovereign immunity partially waived by CCP §1094.5. Bane Act provides independent damages hook against Candelaria individually.",
-      evidence: ["Same as Matter 7", "DMV administrative record", "Steve Gordon Director documentation", "Gov. Claim (upon presentment)"]
+      evidence: ["Same as Matter 7", "DMV administrative record", "Steve Gordon Director documentation", "Gov. Claim (upon presentment)"],
+      documents: []
     },
     {
       number: 9, caption: "Newanforbi v. Macomber", case_no: "26WM000028", court: "Sacramento Sup. Ct.",
@@ -96,7 +104,8 @@ export const cases = [
       key_facts: "Challenges November 2025 Discharge Review decision. CDCR abused discretion: facial scoring errors in Form 1502-DR, retaliatory input from compromised agents, wrong legal standard, blanket denial based on treatment non-completion.",
       procedural_status: "Opening Brief filed. Hearing 03/27/2026 VACATED per Minute Order 03/10/2026 — service by mail insufficient; must serve per CCP §1096. Re-set: 05/29/2026, 11:00 a.m., Dept. 13A, Tani G. Cantil-Sakauye Courthouse, 500 G Street, Sacramento. Dept. 32 relocated to Dept. 13A effective 04/20/2026; Hon. Arguelles remains.",
       damages: "Equitable: Vacate denial; order new review or discharge", risk: "",
-      evidence: ["Admin. Record", "Form 1502-DR", "Opening Brief"]
+      evidence: ["Admin. Record", "Form 1502-DR", "Opening Brief"],
+      documents: []
     },
     {
       number: 10, caption: "Newanforbi v. Macomber", case_no: "C2602632", court: "Santa Clara Sup. Ct.",
@@ -107,7 +116,8 @@ export const cases = [
       key_facts: "On parole since Dec. 2020. Over 5 years of sex offender treatment. No new convictions, no revocations, low risk. Repeated clinician turnover and administrative resets. No good-cause finding issued for continued retention.",
       procedural_status: "Filed 02/23/2026 (Case No. C2602632). Proof of service on AG and DA. Awaiting OSC.",
       damages: "Equitable: Immediate termination of treatment", risk: "Habeas vehicle challenge; admin. exhaustion argument.",
-      evidence: ["Form 1502-DR", "CSRA score docs", "Compliance history", "15 CCR 3574"]
+      evidence: ["Form 1502-DR", "CSRA score docs", "Compliance history", "15 CCR 3574"],
+      documents: []
     },
     {
       number: 11, caption: "Newanforbi v. Macomber", case_no: "TBD (USDC E.D. Cal.)", court: "USDC E.D. Cal.",
@@ -118,7 +128,8 @@ export const cases = [
       key_facts: "Challenges CDCR's enforcement of Policy 19-03's categorical 6.5-year bar after Section 3574 adoption (April 2025). Noguchi cited Policy 19-03 as sole basis: 'only completed approximately 4 years of the required 6.5 years.' No Section 3574 analysis. LS/CMI 5 vs. threshold 11. Form 602 exhausted through 3 levels. Equitable relief only.",
       procedural_status: "Filed 03/02/2026. Early stage.",
       damages: "Equitable: Declaratory judgment; permanent injunction; de novo review; DAPO training order; §1988 fees", risk: "Heck v. Humphrey (addressed via Wilkinson v. Dotson); abstention arguments (distinguished).",
-      evidence: ["Form 1502-DR", "Policy 19-03", "Section 3574/NCR 25-01", "Form 602 grievance", "LS/CMI documentation", "Dwyer/ACSOL decisions"]
+      evidence: ["Form 1502-DR", "Policy 19-03", "Section 3574/NCR 25-01", "Form 602 grievance", "LS/CMI documentation", "Dwyer/ACSOL decisions"],
+      documents: []
     },
     {
       number: 12, caption: "Ngwa Nforbi v. Diamond Truck Sales", case_no: "STK-CV-UF-2026-0001094", court: "San Joaquin Sup. Ct.",
@@ -129,7 +140,8 @@ export const cases = [
       key_facts: "Purchased 2014 Volvo VNL for $26,900. Diamond concealed DEF/emissions defect and prior CHP out-of-service. Truck entered catastrophic derate mode — unable to exceed 35 mph.",
       procedural_status: "Filed 02/13/2026. Fee waiver approved. Summons issued. CMC 08/12/2026. Diamond Truck Sales Inc. served 03/11/2026; POS filed 03/11/2026; response due 04/10/2026. Dakota Financial LLC — service still needed.",
       damages: "$75,000 - $150,000+", risk: "Diamond is Texas corp.; service/jurisdiction issues. Dakota is CA-based.",
-      evidence: ["Buyer's Order", "Dakota financing agreement", "Emissions records", "CHP out-of-service docs"]
+      evidence: ["Buyer's Order", "Dakota financing agreement", "Emissions records", "CHP out-of-service docs"],
+      documents: []
     },
     {
       number: 13, caption: "Newanforbi v. Urrea et al.", case_no: "2:26-cv-00190-DC-SCR", court: "USDC E.D. Cal.",
@@ -140,7 +152,8 @@ export const cases = [
       key_facts: "Agent Urrea exploited pretextual Halloween curfew to detain Plaintiff for 5 days. No nexus to commitment offense. No individualized assessment, notice, hearing, or judicial oversight.",
       procedural_status: "Filed 01/22/2026. Early stage.",
       damages: "$100,000 - $250,000+", risk: "",
-      evidence: ["Detention records", "Parole conditions", "Lack of nexus documentation"]
+      evidence: ["Detention records", "Parole conditions", "Lack of nexus documentation"],
+      documents: []
     },
     {
       number: 14, caption: "Newanforbi v. Urrea et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
@@ -151,7 +164,8 @@ export const cases = [
       key_facts: "State tort parallel to federal Matter 13. On Nov. 1, 2024, at the precise moment Plaintiff was eligible for release from Santa Rita Jail on the DUI detention, Agent Urrea placed a parole hold based on Special Condition 063 — a Halloween curfew ('Operation Boo') categorically applied without individualized nexus to Plaintiff's adult-victim commitment offense. Five days of arbitrary imprisonment. No written notice, no hearing, no neutral decision-maker. Housed with dangerous cellmate; transported to holding tank for court appearance that never occurred; released only after bail bond company intervened. Cascading harm: arrest triggered DMV APS suspension (Dec. 4, 2024), CDL commercially disqualified, lost Centerline Drivers employment on his first scheduled shift. Ongoing lost wages: $104,000–$143,620 over ~65 weeks ($1,600–$2,209/week). Nov. 2025 Discharge Review cited Plaintiff's unemployment — caused by Defendants' own conduct — as aggravating factor to deny discharge. Condition 063 reaffirmed in Aug. 2025 update, demonstrating systemic practice.",
       procedural_status: "Filed 05/29/2026. Gov. Claim presented 03/02/2026; deemed rejected 05/15/2026. Filed within 6-month suit deadline (Gov. Code §945.6(a)(1)).",
       damages: "$200,000 - $500,000+", risk: "§820.2 immunity — rebutted: condition approval and hold placement are ministerial acts under CDCR's own nexus requirements, not discretionary policy. Bane Act treble damages. Dodd as managing agent supports entity punitive damages.",
-      evidence: ["Detention records (Santa Rita)", "Special Condition 063 + Reason Code 08", "CHP Detention Certificate", "DMV APS Decision (Case 34739340)", "Centerline paystubs ($33.35/$50.03)", "Form 1502-DR (unemployment as aggravating factor)", "Aug. 2025 updated conditions (reaffirmation)"]
+      evidence: ["Detention records (Santa Rita)", "Special Condition 063 + Reason Code 08", "CHP Detention Certificate", "DMV APS Decision (Case 34739340)", "Centerline paystubs ($33.35/$50.03)", "Form 1502-DR (unemployment as aggravating factor)", "Aug. 2025 updated conditions (reaffirmation)"],
+      documents: []
     },
     {
       number: 15, caption: "Newanforbi v. Moua et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
@@ -162,7 +176,8 @@ export const cases = [
       key_facts: "Attacks the Nov. 2025 Discharge Review itself — ten documented facial defects: (a) Case Type contradiction (PC 3000(b)(5)(B) vs '10-year term'); (b) fabricated 6.5-year minimum from academic research (Cortoni et al. 2010), not statute; (c) fabricated Policy 19-03 exclusion; (d) 'Eagan' copy-paste error — Noguchi's review names a different parolee, proving no individualized review; (e) contradictory treatment characterizations; (f) scoring without aggregation (14 pts = 'Increase' band, yet 'Retain'); (g) violations from unpromulgated GPS protocol (underground regulation); (h) failure to weigh mitigating evidence (LS/CMI 5, Noguchi's own commendation); (i) no CTM, Form 3043, or good-cause findings; (j) report never served (notice field blank). W-2 documented earnings from 6 carriers: $39,553 (2022), $11,145 (2023), $55,894 (2024). But-for capacity: $72,000/year. Documented lost wages: $109,408.",
       procedural_status: "Filed 05/29/2026. Gov. claim deemed rejected 03/27/2026 (§912.4(c)). Jury trial demanded. Filed within 6-month suit deadline (Gov. Code §945.6(a)(1)).",
       damages: "$250,000 - $600,000+", risk: "§820.2 discretionary immunity — rebutted by mandatory/ministerial duties under PC §3001(a)(2) and §3574 (Johnson v. State, Sullivan v. County of LA). 'Eagan' error is uniquely powerful proof. Continuing tort: each day = separate act.",
-      evidence: ["Form 1502-DR (10 defects)", "W-2 wage statements (6 carriers)", "Centerline wage notice ($33.35/$50.03)", "Dwyer order", "ACSOL v. Macomber ruling", "Section 3574/NCR 25-01", "Gov. Claim + deemed rejection"]
+      evidence: ["Form 1502-DR (10 defects)", "W-2 wage statements (6 carriers)", "Centerline wage notice ($33.35/$50.03)", "Dwyer order", "ACSOL v. Macomber ruling", "Section 3574/NCR 25-01", "Gov. Claim + deemed rejection"],
+      documents: []
     },
     {
       number: 16, caption: "Newanforbi v. Rojo", case_no: "2:26-cv-00193-DC-CKD", court: "USDC E.D. Cal.",
@@ -173,7 +188,8 @@ export const cases = [
       key_facts: "Agent Rojo assumed AOR on Nov. 19, 2025 and withheld finalized Discharge Review Report from Plaintiff. Perpetuated unlawful retention.",
       procedural_status: "Filed. Early stage.",
       damages: "TBD", risk: "",
-      evidence: ["Discharge Review Report", "Non-disclosure records"]
+      evidence: ["Discharge Review Report", "Non-disclosure records"],
+      documents: []
     },
     {
       number: 17, caption: "Newanforbi v. Maloney et al.", case_no: "2:26-cv-00194-DAD-SCR", court: "USDC E.D. Cal.",
@@ -184,7 +200,8 @@ export const cases = [
       key_facts: "Maloney sued individually for parole supervision violations. Macomber sued officially for declaratory/injunctive relief to halt unconstitutional parole term enforcement.",
       procedural_status: "Filed 01/22/2026. Early stage.",
       damages: "$50,000 - $200,000+", risk: "",
-      evidence: ["Parole records", "Supervision documentation"]
+      evidence: ["Parole records", "Supervision documentation"],
+      documents: []
     },
     {
       number: 18, caption: "Newanforbi v. Barocio", case_no: "2:26-cv-00191-DJC-CSK", court: "USDC E.D. Cal.",
@@ -195,7 +212,8 @@ export const cases = [
       key_facts: "Actions by Barocio in connection with parole supervision. Part of broader pattern of constitutional violations by CDCR agents.",
       procedural_status: "Filed. Early stage.",
       damages: "TBD", risk: "",
-      evidence: ["Parole supervision records"]
+      evidence: ["Parole supervision records"],
+      documents: []
     },
     {
       number: 19, caption: "Newanforbi v. Macomber", case_no: "TBD (Santa Clara Sup. Ct.)", court: "Santa Clara Sup. Ct.",
@@ -206,6 +224,7 @@ export const cases = [
       key_facts: "Companion habeas to Matter 10 (treatment termination), but seeking full unconditional discharge from parole. Petitioner has been on parole since Dec. 2, 2020 — over 5 years. No new convictions, no revocations, low LS/CMI score (5 vs. threshold 11). November 2025 Discharge Review fatally defective on ten independent grounds (see Matter 15). Discharge criteria under §3574 are ministerial once statutory factors are satisfied. Petition supplements equitable record already established in Matters 9, 10, and 11.",
       procedural_status: "Filed 04/03/2026, Santa Clara Superior Court. OSC anticipated by 06/05/2026. Companion to Matter 10 (C2602632), which targets treatment compulsion. This petition targets the parole term itself and seeks immediate unconditional discharge.",
       damages: "Equitable: Immediate unconditional discharge from parole", risk: "Habeas exhaustion and ripeness arguments; Matter 10 OSC still pending — courts may consolidate or sequence.",
-      evidence: ["Form 1502-DR (10 defects)", "LS/CMI documentation (score 5)", "Section 3574/NCR 25-01", "PC §3000/§3001 parole term records", "Parole history since Dec. 2020", "Same administrative record as Matters 9, 10, 11, 15"]
+      evidence: ["Form 1502-DR (10 defects)", "LS/CMI documentation (score 5)", "Section 3574/NCR 25-01", "PC §3000/§3001 parole term records", "Parole history since Dec. 2020", "Same administrative record as Matters 9, 10, 11, 15"],
+      documents: []
     }
 ];
