@@ -61,6 +61,7 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 | 16 | Newanforbi v. Rojo | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
+| 19 | Newanforbi v. Macomber | TBD | Santa Clara Sup. Ct. | State | Filed 04/03/2026; OSC anticipated 06/05/2026 |
 
 ---
 
