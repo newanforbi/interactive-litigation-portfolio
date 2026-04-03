@@ -1,8 +1,9 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { StatusBadge, ClusterBadge, TypeBadge } from "./components/Badges";
 import { NAVY, GOLD, BODY_GRAY, CLUSTER_NAVY, BORDER_BLUE, DARK_BG, CARD_BG, DEFAULT_DEADLINE, CLOCK_FREEZE_UNTIL } from "./constants";
 import { getPDTMidnight, parseEventDatePDT } from "./utils/dateUtils";
 import { useDeadlineClock } from "./hooks/useDeadlineClock";
+import { useCaseFilters } from "./hooks/useCaseFilters";
 
 import { PORTFOLIO } from "./data";
 
@@ -12,24 +13,7 @@ const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories"];
 export default function LitigationPortfolio() {
   const [activeTab, setActiveTab] = useState("Dashboard");
   const [expandedMatter, setExpandedMatter] = useState(null);
-  const [clusterFilter, setClusterFilter] = useState(null);
-  const [typeFilter, setTypeFilter] = useState(null);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [damagesView, setDamagesView] = useState("moderate");
-  const [showPastEvents, setShowPastEvents] = useState(false);
-  const [showClock, setShowClock] = useState(false);
-
-  const filteredCases = useMemo(() => {
-    return PORTFOLIO.cases.filter(c => {
-      if (clusterFilter && c.cluster !== clusterFilter) return false;
-      if (typeFilter && c.type !== typeFilter) return false;
-      if (searchQuery) {
-        const q = searchQuery.toLowerCase();
-        return c.caption.toLowerCase().includes(q) || c.claims.toLowerCase().includes(q) || c.defendants.toLowerCase().includes(q) || c.key_facts.toLowerCase().includes(q);
-      }
-      return true;
-    });
-  }, [clusterFilter, typeFilter, searchQuery]);
+  const { clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, filteredCases } = useCaseFilters();
 
   const federalCount = PORTFOLIO.cases.filter(c => c.type === "Federal").length;
   const stateCount = PORTFOLIO.cases.filter(c => c.type === "State").length;
