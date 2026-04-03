@@ -1,4 +1,4 @@
-const GOLD = "#C8A84B";
+import { GOLD } from "../constants";
 
 export const StatusBadge = ({ status }) => {
   let color = "#6B7280";
