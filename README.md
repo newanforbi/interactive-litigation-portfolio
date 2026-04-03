@@ -12,7 +12,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 18 |
+| Active Matters | 19 |
 | Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Aggregate Exposure (Moderate) | $2,560,000 |
 | Aggregate Exposure (Aggressive) | $5,400,000+ |
