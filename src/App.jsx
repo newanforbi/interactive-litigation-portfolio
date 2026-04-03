@@ -241,6 +241,17 @@ const PORTFOLIO = {
       procedural_status: "Filed. Early stage.",
       damages: "TBD", risk: "",
       evidence: ["Parole supervision records"]
+    },
+    {
+      number: 19, caption: "Newanforbi v. Macomber", case_no: "TBD (Santa Clara Sup. Ct.)", court: "Santa Clara Sup. Ct.",
+      claims: "Habeas Corpus — Immediate Discharge from Parole (PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)", status: "Filed 04/03/2026; OSC anticipated 06/05/2026",
+      filed: "April 3, 2026", judge: "TBD", cluster: 2, type: "State",
+      defendants: "Jeffrey Macomber, Secretary of CDCR (official capacity)",
+      causes: ["Habeas Corpus — Immediate and Unconditional Discharge from Parole", "PC §3000 / §3001 — mandatory discharge duty", "15 CCR §3574 — individualized discharge criteria", "Cal. Const. Art. I §7 — Due Process"],
+      key_facts: "Companion habeas to Matter 10 (treatment termination), but seeking full unconditional discharge from parole. Petitioner has been on parole since Dec. 2, 2020 — over 5 years. No new convictions, no revocations, low LS/CMI score (5 vs. threshold 11). November 2025 Discharge Review fatally defective on ten independent grounds (see Matter 15). Discharge criteria under §3574 are ministerial once statutory factors are satisfied. Petition supplements equitable record already established in Matters 9, 10, and 11.",
+      procedural_status: "Filed 04/03/2026, Santa Clara Superior Court. OSC anticipated by 06/05/2026. Companion to Matter 10 (C2602632), which targets treatment compulsion. This petition targets the parole term itself and seeks immediate unconditional discharge.",
+      damages: "Equitable: Immediate unconditional discharge from parole", risk: "Habeas exhaustion and ripeness arguments; Matter 10 OSC still pending — courts may consolidate or sequence.",
+      evidence: ["Form 1502-DR (10 defects)", "LS/CMI documentation (score 5)", "Section 3574/NCR 25-01", "PC §3000/§3001 parole term records", "Parole history since Dec. 2020", "Same administrative record as Matters 9, 10, 11, 15"]
     }
   ],
   timeline: [
