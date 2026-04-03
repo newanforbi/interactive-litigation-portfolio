@@ -12,7 +12,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 18 |
+| Active Matters | 19 |
 | Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Aggregate Exposure (Moderate) | $2,560,000 |
 | Aggregate Exposure (Aggressive) | $5,400,000+ |
@@ -25,7 +25,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 ### Cluster 1 — CHP Traffic Stop & DUI Arrest (Matters 1–2)
 Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed. A 5-day parole hold followed. The cluster spans a federal §1983 complaint (MTD briefed) and a parallel Alameda state tort action asserting False Imprisonment, Battery, and Bane Act claims.
 
-### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–8, 10–18)
+### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–8, 10–19)
 The largest cluster — 15 matters — targeting CDCR's parole supervision apparatus and the HOPE Psychotherapy program. Core allegations include:
 - **First Amendment retaliation** by Agent Derrick, who suppressed speech and sabotaged Plaintiff's FedEx employment
 - **Facially defective Discharge Review** (November 2025) containing a copy-paste error naming a different parolee ("Eagan"), a fabricated 6.5-year retention minimum sourced from academic research rather than statute, and unemployment (caused by Defendants' own conduct) cited as an aggravating factor
@@ -61,6 +61,7 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 | 16 | Newanforbi v. Rojo | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
+| 19 | Newanforbi v. Macomber | TBD | Santa Clara Sup. Ct. | State | Filed 04/03/2026; OSC anticipated 06/05/2026 |
 
 ---
 
