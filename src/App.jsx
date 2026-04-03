@@ -371,7 +371,7 @@ export default function LitigationPortfolio() {
   const [searchQuery, setSearchQuery] = useState("");
   const [damagesView, setDamagesView] = useState("moderate");
   const [showPastEvents, setShowPastEvents] = useState(false);
-  const [showClock, setShowClock] = useState(true);
+  const [showClock, setShowClock] = useState(false);
 
   const filteredCases = useMemo(() => {
     return PORTFOLIO.cases.filter(c => {
