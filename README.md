@@ -25,7 +25,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 ### Cluster 1 — CHP Traffic Stop & DUI Arrest (Matters 1–2)
 Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed. A 5-day parole hold followed. The cluster spans a federal §1983 complaint (MTD briefed) and a parallel Alameda state tort action asserting False Imprisonment, Battery, and Bane Act claims.
 
-### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–8, 10–19)
+### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–8, 11–18)
 The largest cluster — 15 matters — targeting CDCR's parole supervision apparatus and the HOPE Psychotherapy program. Core allegations include:
 - **First Amendment retaliation** by Agent Derrick, who suppressed speech and sabotaged Plaintiff's FedEx employment
 - **Facially defective Discharge Review** (November 2025) containing a copy-paste error naming a different parolee ("Eagan"), a fabricated 6.5-year retention minimum sourced from academic research rather than statute, and unemployment (caused by Defendants' own conduct) cited as an aggravating factor
@@ -34,8 +34,14 @@ The largest cluster — 15 matters — targeting CDCR's parole supervision appar
 - **Policy 19-03** enforced after Section 3574 superseded it in April 2025, constituting an ultra vires categorical bar
 - Documented CDL wage losses: $109,408 over ~65 weeks across 6 carriers (W-2 verified)
 
-### Cluster 3 — Consumer Fraud / Defective Vehicle (Matter 9)
+### Cluster 3 — Consumer Fraud / Defective Vehicle (Matter 12)
 Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial for concealing a DEF/emissions defect and prior CHP out-of-service on a 2014 Volvo VNL purchased for $26,900. The truck entered catastrophic derate mode immediately after purchase.
+
+### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
+Three purely equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. All three target the Secretary of CDCR in his official capacity:
+- **Matter 9** (Writ of Mandate, Sacramento): Compels CDCR to conduct a lawful, individualized discharge determination. Hearing set 05/29/2026, Dept. 13A.
+- **Matter 10** (Habeas Corpus, Santa Clara): Challenges continued compelled sex offender treatment as unlawful restraint after five-plus years of parole with no new convictions. Awaiting OSC.
+- **Matter 19** (Habeas Corpus, Santa Clara): Seeks immediate and unconditional discharge from parole. Filed 04/03/2026; OSC anticipated 06/05/2026. Companion to Matter 10, targeting the parole term itself rather than treatment conditions.
 
 ---
 

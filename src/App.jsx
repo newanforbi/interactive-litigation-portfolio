@@ -135,7 +135,7 @@ const PORTFOLIO = {
     {
       number: 9, caption: "Newanforbi v. Macomber", case_no: "26WM000028", court: "Sacramento Sup. Ct.",
       claims: "Writ of Mandate (CCP §1085)", status: "Filed 01/30/2026; Hearing 05/29/2026, Dept. 13A",
-      filed: "January 30, 2026", judge: "Hon. James P. Arguelles", cluster: 2, type: "State",
+      filed: "January 30, 2026", judge: "Hon. James P. Arguelles", cluster: 4, type: "State",
       defendants: "Jeff Macomber, Secretary of CDCR",
       causes: ["Writ of Mandate (CCP §1085) — Compel ministerial duty to conduct individualized discharge determination"],
       key_facts: "Challenges November 2025 Discharge Review decision. CDCR abused discretion: facial scoring errors in Form 1502-DR, retaliatory input from compromised agents, wrong legal standard, blanket denial based on treatment non-completion.",
@@ -146,7 +146,7 @@ const PORTFOLIO = {
     {
       number: 10, caption: "Newanforbi v. Macomber", case_no: "C2602632", court: "Santa Clara Sup. Ct.",
       claims: "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination", status: "Filed 02/23/2026",
-      filed: "February 23, 2026", judge: "TBD", cluster: 2, type: "State",
+      filed: "February 23, 2026", judge: "TBD", cluster: 4, type: "State",
       defendants: "Jeffrey Macomber, Secretary of CDCR (official capacity)",
       causes: ["PC §3008(d)(2)", "15 CCR §3574", "Challenge to compelled treatment as unlawful restraint"],
       key_facts: "On parole since Dec. 2020. Over 5 years of sex offender treatment. No new convictions, no revocations, low risk. Repeated clinician turnover and administrative resets. No good-cause finding issued for continued retention.",
@@ -245,7 +245,7 @@ const PORTFOLIO = {
     {
       number: 19, caption: "Newanforbi v. Macomber", case_no: "TBD (Santa Clara Sup. Ct.)", court: "Santa Clara Sup. Ct.",
       claims: "Habeas Corpus — Immediate Discharge from Parole (PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)", status: "Filed 04/03/2026; OSC anticipated 06/05/2026",
-      filed: "April 3, 2026", judge: "TBD", cluster: 2, type: "State",
+      filed: "April 3, 2026", judge: "TBD", cluster: 4, type: "State",
       defendants: "Jeffrey Macomber, Secretary of CDCR (official capacity)",
       causes: ["Habeas Corpus — Immediate and Unconditional Discharge from Parole", "PC §3000 / §3001 — mandatory discharge duty", "15 CCR §3574 — individualized discharge criteria", "Cal. Const. Art. I §7 — Due Process"],
       key_facts: "Companion habeas to Matter 10 (treatment termination), but seeking full unconditional discharge from parole. Petitioner has been on parole since Dec. 2, 2020 — over 5 years. No new convictions, no revocations, low LS/CMI score (5 vs. threshold 11). November 2025 Discharge Review fatally defective on ten independent grounds (see Matter 15). Discharge criteria under §3574 are ministerial once statutory factors are satisfied. Petition supplements equitable record already established in Matters 9, 10, and 11.",
@@ -352,8 +352,8 @@ const StatusBadge = ({ status }) => {
 };
 
 const ClusterBadge = ({ cluster }) => {
-  const labels = { 1: "CHP Stop", 2: "Parole/HOPE", 3: "Vehicle Fraud" };
-  const colors = { 1: "#60A5FA", 2: "#A78BFA", 3: "#FBBF24" };
+  const labels = { 1: "CHP Stop", 2: "Parole/HOPE", 3: "Vehicle Fraud", 4: "Writs/Habeas" };
+  const colors = { 1: "#60A5FA", 2: "#A78BFA", 3: "#FBBF24", 4: "#34D399" };
   return <span style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: colors[cluster], border: `1px solid ${colors[cluster]}40`, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase" }}>{labels[cluster]}</span>;
 };
 
@@ -456,6 +456,7 @@ export default function LitigationPortfolio() {
     1: PORTFOLIO.cases.filter(c => c.cluster === 1).length,
     2: PORTFOLIO.cases.filter(c => c.cluster === 2).length,
     3: PORTFOLIO.cases.filter(c => c.cluster === 3).length,
+    4: PORTFOLIO.cases.filter(c => c.cluster === 4).length,
   };
 
   const clusterMatters = (n) => {
@@ -571,7 +572,8 @@ export default function LitigationPortfolio() {
                 {[
                   { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
                   { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
-                  { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" }
+                  { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" },
+                  { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" }
                 ].map(cl => (
                   <div key={cl.n} style={{ marginBottom: 16, cursor: "pointer" }} onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
@@ -613,12 +615,12 @@ export default function LitigationPortfolio() {
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 20, alignItems: "center" }}>
               <input value={searchQuery} onChange={e => setSearchQuery(e.target.value)} placeholder="Search matters…"
                 style={{ flex: "1 1 200px", padding: "10px 16px", borderRadius: 8, border: `1px solid ${NAVY}`, background: CARD_BG, color: "#E2E8F0", fontFamily: "'DM Sans', sans-serif", fontSize: 13, outline: "none" }} />
-              {[null, 1, 2, 3].map(c => (
+              {[null, 1, 2, 3, 4].map(c => (
                 <button key={c ?? "all"} onClick={() => setClusterFilter(c)} style={{
                   padding: "8px 14px", borderRadius: 6, border: clusterFilter === c ? `1px solid ${GOLD}` : `1px solid ${NAVY}`,
                   background: clusterFilter === c ? `${GOLD}18` : CARD_BG, color: clusterFilter === c ? GOLD : "#94A3B8",
                   fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
-                }}>{c === null ? "All" : c === 1 ? "CHP" : c === 2 ? "Parole/HOPE" : "Vehicle"}</button>
+                }}>{c === null ? "All" : c === 1 ? "CHP" : c === 2 ? "Parole/HOPE" : c === 3 ? "Vehicle" : "Writs"}</button>
               ))}
               <span style={{ color: "#475569", fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
               {[null, "Federal", "State"].map(t => (
