@@ -615,12 +615,12 @@ export default function LitigationPortfolio() {
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 20, alignItems: "center" }}>
               <input value={searchQuery} onChange={e => setSearchQuery(e.target.value)} placeholder="Search matters…"
                 style={{ flex: "1 1 200px", padding: "10px 16px", borderRadius: 8, border: `1px solid ${NAVY}`, background: CARD_BG, color: "#E2E8F0", fontFamily: "'DM Sans', sans-serif", fontSize: 13, outline: "none" }} />
-              {[null, 1, 2, 3].map(c => (
+              {[null, 1, 2, 3, 4].map(c => (
                 <button key={c ?? "all"} onClick={() => setClusterFilter(c)} style={{
                   padding: "8px 14px", borderRadius: 6, border: clusterFilter === c ? `1px solid ${GOLD}` : `1px solid ${NAVY}`,
                   background: clusterFilter === c ? `${GOLD}18` : CARD_BG, color: clusterFilter === c ? GOLD : "#94A3B8",
                   fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
-                }}>{c === null ? "All" : c === 1 ? "CHP" : c === 2 ? "Parole/HOPE" : "Vehicle"}</button>
+                }}>{c === null ? "All" : c === 1 ? "CHP" : c === 2 ? "Parole/HOPE" : c === 3 ? "Vehicle" : "Writs"}</button>
               ))}
               <span style={{ color: "#475569", fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
               {[null, "Federal", "State"].map(t => (
