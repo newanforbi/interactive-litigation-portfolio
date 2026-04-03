@@ -51,7 +51,7 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 | 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 7 | Newanforbi v. Candelaria | TBD | USDC E.D. Cal. | Federal | Filed 05/29/2026 |
 | 8 | Newanforbi v. DMV / Candelaria | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026 |
-| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | State | Hearing 03/27/2026 |
+| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | State | Hearing 05/29/2026, Dept. 13A |
 | 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | State | Awaiting OSC |
 | 11 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | Federal | Filed 03/02/2026 |
 | 12 | Ngwa Nforbi v. Diamond Truck Sales | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Diamond served 03/11/2026; response due 04/10/2026; Dakota service pending |
