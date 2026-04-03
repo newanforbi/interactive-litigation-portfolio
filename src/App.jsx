@@ -371,6 +371,7 @@ export default function LitigationPortfolio() {
   const [searchQuery, setSearchQuery] = useState("");
   const [damagesView, setDamagesView] = useState("moderate");
   const [showPastEvents, setShowPastEvents] = useState(false);
+  const [showClock, setShowClock] = useState(true);
 
   const filteredCases = useMemo(() => {
     return PORTFOLIO.cases.filter(c => {
@@ -503,27 +504,38 @@ export default function LitigationPortfolio() {
         background: "linear-gradient(90deg, #0F1A2E 0%, #1A2A49 50%, #0F1A2E 100%)",
         borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : GOLD + "30"}`,
         padding: "10px 32px",
-        display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "wrap"
+        display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "wrap",
+        position: "relative"
       }}>
         <div style={{ color: GOLD, fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, textTransform: "uppercase", whiteSpace: "nowrap" }}>
           ⚖ Deadline Clock
         </div>
-        <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
-          {[{ v: timeLeft.days, l: "Days" }, { v: timeLeft.hours, l: "Hrs" }, { v: timeLeft.mins, l: "Min" }, { v: timeLeft.secs, l: "Sec" }].map(({ v, l }, i) => (
-            <div key={l} style={{ display: "flex", alignItems: "center", gap: 4 }}>
-              {i > 0 && <span style={{ color: "#334155", fontSize: 18, lineHeight: 1, paddingBottom: 10 }}>:</span>}
-              <div style={{ textAlign: "center", minWidth: 36 }}>
-                <div style={{ fontSize: 22, fontWeight: 700, color: timeLeft.frozen ? "#EF4444" : timeLeft.urgent ? "#EF4444" : "white", fontFamily: "'DM Sans', sans-serif", lineHeight: 1, animation: timeLeft.frozen ? "clockPulse 2.8s ease-in-out infinite" : "none" }}>
-                  {String(v).padStart(2, "0")}
+        {showClock && <>
+          <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+            {[{ v: timeLeft.days, l: "Days" }, { v: timeLeft.hours, l: "Hrs" }, { v: timeLeft.mins, l: "Min" }, { v: timeLeft.secs, l: "Sec" }].map(({ v, l }, i) => (
+              <div key={l} style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                {i > 0 && <span style={{ color: "#334155", fontSize: 18, lineHeight: 1, paddingBottom: 10 }}>:</span>}
+                <div style={{ textAlign: "center", minWidth: 36 }}>
+                  <div style={{ fontSize: 22, fontWeight: 700, color: timeLeft.frozen ? "#EF4444" : timeLeft.urgent ? "#EF4444" : "white", fontFamily: "'DM Sans', sans-serif", lineHeight: 1, animation: timeLeft.frozen ? "clockPulse 2.8s ease-in-out infinite" : "none" }}>
+                    {String(v).padStart(2, "0")}
+                  </div>
+                  <div style={{ fontSize: 9, color: "#475569", fontFamily: "'DM Sans', sans-serif", letterSpacing: 1.5, textTransform: "uppercase", marginTop: 2 }}>{l}</div>
                 </div>
-                <div style={{ fontSize: 9, color: "#475569", fontFamily: "'DM Sans', sans-serif", letterSpacing: 1.5, textTransform: "uppercase", marginTop: 2 }}>{l}</div>
               </div>
-            </div>
-          ))}
-        </div>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#94A3B8", maxWidth: 380, textAlign: "center", lineHeight: 1.4 }}>
-          {timeLeft.label}
-        </div>
+            ))}
+          </div>
+          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#94A3B8", maxWidth: 380, textAlign: "center", lineHeight: 1.4 }}>
+            {timeLeft.label}
+          </div>
+        </>}
+        <button onClick={() => setShowClock(v => !v)} style={{
+          position: "absolute", right: 16, top: "50%", transform: "translateY(-50%)",
+          padding: "4px 10px", borderRadius: 5, border: `1px solid #475569`,
+          background: "transparent", color: "#64748B", fontFamily: "'DM Sans', sans-serif",
+          fontSize: 10, fontWeight: 600, cursor: "pointer", letterSpacing: 0.5, textTransform: "uppercase"
+        }}>
+          {showClock ? "Hide" : "Show"}
+        </button>
       </div>
 
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 24px 60px" }}>
