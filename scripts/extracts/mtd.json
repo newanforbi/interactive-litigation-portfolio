@@ -1,0 +1,81 @@
+{
+  "doc_type": "motion_to_dismiss",
+  "defense_arguments": [
+    "FRCP 12(b)(6) — Failure to state a claim: Defendants argue that all three of Plaintiff's causes of action (unreasonable search and seizure, due process violation, and Monell liability) fail to state a valid claim because the Complaint offers only conclusory allegations devoid of factual support, insufficient under Twombly/Iqbal.",
+    "Qualified immunity — No constitutional violation (Fourth Amendment unreasonable search and seizure): Defendants Meza-Gonzalez and Melano argue probable cause existed to search Plaintiff's vehicle and arrest him for DUI. They contend that observing a cup in the center console suspected to be alcohol, coupled with field sobriety tests and Plaintiff's (presumed) refusal of a breathalyzer, provided probable cause under California Vehicle Code §§ 23152(a) and 23223. Therefore, no Fourth Amendment violation occurred and the individual officers are entitled to qualified immunity on Plaintiff's search and seizure claim.",
+    "Qualified immunity — No constitutional violation (due process): Because the arrest and search were supported by probable cause, Defendants argue no due process violation occurred, entitling the individual officers to qualified immunity on the due process claim as well.",
+    "Qualified immunity — No clearly established law: Even assuming arguendo that probable cause was lacking, Defendants argue that no clearly established law put them on notice that probable cause was absent under the specific circumstances — Plaintiff resting on the freeway shoulder at night, a cup of suspected alcohol visible in the vehicle, field sobriety tests administered, and a (presumed) breathalyzer refusal. They assert that all reasonable officers could have believed probable cause existed, so immunity still attaches.",
+    "Plaintiff's denials of intoxication are conclusory and not entitled to the presumption of truth: Defendants argue that Plaintiff's repeated allegations that 'no evidence of intoxication was found' are conclusory statements unsupported by facts, and that Plaintiff could not have personally evaluated his own field sobriety test results or observable signs of intoxication (e.g., bloodshot eyes) visible only to another observer.",
+    "Monell liability against the State fails — State is not a 'person' under 42 U.S.C. § 1983: Defendants argue the Monell claim against the State of California (acting through the CHP) must be dismissed because a State is not a 'person' subject to suit under Section 1983 per Will v. Michigan Dep't of State Police.",
+    "Official capacity claims against individual officers fail — Eleventh Amendment sovereign immunity: Plaintiff's claims against Meza-Gonzalez and Melano in their official capacities are treated as suits against the State itself and are barred by the Eleventh Amendment because California has not consented to this damages action. No prospective relief is sought, so the Ex Parte Young exception does not apply.",
+    "Official capacity claims against individual officers fail — Not 'persons' under Section 1983: State officials sued in their official capacity are not 'persons' under Section 1983 and therefore cannot be sued in a damages-only action.",
+    "Motion to Strike punitive damages (FRCP 12(f)): Defendants move to strike Plaintiff's prayer for punitive damages (Prayer for Relief #2) because the Complaint contains no factual allegations that Defendants acted with evil motive or intent, or with reckless or callous indifference to Plaintiff's federally protected rights, as required under Smith v. Wade.",
+    "Motion to Strike attorneys' fees (FRCP 12(f)): Defendants move to strike Plaintiff's prayer for attorneys' fees (Prayer for Relief #3) because Plaintiff is proceeding pro se and pro se litigants are not entitled to attorneys' fees under 42 U.S.C. § 1988 per Kay v. Ehrler."
+  ],
+  "legal_standards_cited": [
+    "FRCP 12(b)(6) — Motion to dismiss for failure to state a claim: tests legal sufficiency of the complaint; requires more than labels and conclusions; formulaic recitation of elements insufficient.",
+    "FRCP 12(f) — Motion to strike: may be used to strike any part of the Prayer for Relief when the damages sought are not recoverable as a matter of law.",
+    "Twombly/Iqbal pleading standard: complaint must allege plausible factual basis for relief; 'naked assertions devoid of further factual enhancement' do not suffice; 'threadbare recitals of elements supported by mere conclusory statements do not suffice.'",
+    "Qualified immunity standard (two-prong): plaintiff must plead facts showing (1) the official violated a statutory or constitutional right, and (2) the right was clearly established at the time of the challenged conduct. Court may address either prong first.",
+    "Clearly established law standard for qualified immunity: existing precedent must place lawfulness of particular arrest or search 'beyond debate'; no case directly on point required but precedent must clearly prohibit the conduct; plaintiff bears burden of proof that right was clearly established.",
+    "Qualified immunity as applied to arrests/searches: officer protected if they had probable cause or reasonably believed they had probable cause; does not depend on whether charges were filed or plaintiff was found innocent; immunity lost only if 'all reasonable officers would agree that there was no probable cause.'",
+    "Fourth Amendment probable cause standard for warrantless arrest or search: reasonable where there is probable cause to believe a criminal offense has been or is being committed; probable cause exists when a prudent person would have concluded there was a fair probability the suspect committed a crime based on totality of circumstances; does not require certainty or a preponderance of the evidence.",
+    "Probable cause as a question of law for the court.",
+    "Eleventh Amendment sovereign immunity: bars damages suits against a State or state officials in their official capacity absent State consent; narrow Ex Parte Young exception for prospective injunctive relief only.",
+    "Section 1983 'person' requirement: a State is not a 'person' within the meaning of 42 U.S.C. § 1983; state officials sued in their official capacity are also not 'persons' under Section 1983 for damages actions.",
+    "Monell liability standard: municipality or governmental entity can be liable under Section 1983 only if the constitutional violation resulted from an official policy or custom; State entities are categorically excluded because the State is not a 'person' under Section 1983.",
+    "Punitive damages standard under Section 1983: available when defendant's conduct is motivated by evil motive or intent, or involves reckless or callous indifference to federally protected rights (Smith v. Wade).",
+    "Attorneys' fees under 42 U.S.C. § 1988: available to prevailing plaintiffs in Section 1983 actions, but not available to pro se litigants (Kay v. Ehrler)."
+  ],
+  "key_facts_disputed": [
+    "Whether probable cause existed to search Plaintiff's vehicle: Plaintiff alleges the search was without probable cause or a warrant; Defendants contend the officers' observation of a cup they believed to be alcohol in the center console provided probable cause to believe Plaintiff violated Cal. Veh. Code § 23223 (open container on a highway).",
+    "Whether probable cause existed to arrest Plaintiff for DUI: Plaintiff alleges the arrest was without probable cause; Defendants argue probable cause arose from the totality of circumstances — the suspected alcohol container, field sobriety tests, and Plaintiff's presumed refusal of a breathalyzer.",
+    "Whether any signs of intoxication or evidence of a crime were found: Plaintiff's Complaint repeatedly denies that any signs of intoxication or evidence of a crime were found during the vehicle search or field sobriety testing; Defendants characterize these denials as conclusory allegations unsupported by facts and not entitled to the presumption of truth.",
+    "Whether Plaintiff refused a breathalyzer test: Defendants infer from the Complaint's allegations (chemical test advisements and transport for chemical testing) that Plaintiff 'presumably refused' a breathalyzer; Plaintiff does not explicitly allege refusal.",
+    "Whether the search was 'invasive' and unlawful: Plaintiff characterizes the search as 'invasive' (reaching into cupholders, central console area, footwells, and floorboards); Defendants treat this as a lawful DUI investigation incident to a valid probable cause stop.",
+    "Whether Plaintiff was 'resting' or potentially impaired: Plaintiff frames himself as merely fatigued and resting safely on the shoulder; Defendants frame the same facts (stopped on freeway shoulder in the early morning hours with a suspected alcohol container visible) as grounds for a DUI investigation.",
+    "Plaintiff's ability to assess his own sobriety indicators: Defendants dispute that Plaintiff could self-assess field sobriety test results or objective signs of intoxication such as bloodshot eyes, undercutting his conclusory denial of intoxication."
+  ],
+  "cases_cited": [
+    "Navarro v. Black, 250 F.3d 729, 732 (9th Cir. 2001) — purpose of a Rule 12(b)(6) motion is to test the legal sufficiency of the claims asserted in the complaint.",
+    "Bell Atlantic Corp. v. Twombly, 550 U.S. 544, 555 (2007) — plaintiff's entitlement to relief requires more than labels and conclusions; formulaic recitation of elements insufficient.",
+    "Ashcroft v. Iqbal, 556 U.S. 662, 667, 678 (2009) — naked assertions devoid of factual enhancement do not suffice; threadbare recitals supported by conclusory statements do not suffice; standard for pleading facial plausibility.",
+    "Ashcroft v. al-Kidd, 563 U.S. 731, 735, 741 (2011) — qualified immunity standard (two-prong test); existing precedent must place lawfulness of particular conduct beyond debate.",
+    "Chavez v. Robinson, 12 F.4th 978, 995 (9th Cir. 2021) — reaffirms two-prong qualified immunity standard.",
+    "Devenpeck v. Alford, 543 U.S. 146, 152 (2004) — a warrantless arrest by a law officer is reasonable under the Fourth Amendment where there is probable cause to believe a criminal offense has been or is being committed.",
+    "Crowe v. County of San Diego, 608 F.3d 406, 434 (9th Cir. 2010) — probable cause exists when a prudent person would have concluded there was a fair probability the suspect committed a crime based on the totality of circumstances known to the officer.",
+    "United States v. Gourde, 440 F.3d 1065, 1069 (9th Cir. 2006) — fair probability (probable cause) does not require certainty or even a preponderance of the evidence.",
+    "Roberts v. McAfee, Inc., 660 F.3d 1156, 1164 (9th Cir. 2011) — whether probable cause existed on facts known to the defendant is a question of law for the court.",
+    "Rosenbaum v. Washoe County, 663 F.3d 1071, 1076 (9th Cir. 2011) — qualified immunity as to arrests is afforded if officers had or reasonably believed they had probable cause; applies to knowledge at time of arrest, not whether charges were filed or plaintiff was found innocent.",
+    "Johnson v. Barr, 79 F.4th 996, 1005 (9th Cir. 2023) — officer's decision to search or arrest is protected by qualified immunity unless all reasonable officers would agree that there was no probable cause.",
+    "District of Columbia v. Wesby, 583 U.S. 48, 64 (2018) — existing precedent must place lawfulness of particular arrest or search beyond debate; no case directly on point required.",
+    "Romero v. Kitsap Cty., 931 F.2d 624, 627 (9th Cir. 1991) — plaintiff bears burden of proof that the right allegedly violated was clearly established at the time of alleged misconduct.",
+    "Hartmann v. California Dep't of Corr. & Rehab., 707 F.3d 1114, 1127 (9th Cir. 2013) — a damages action against a state official in official capacity is treated like a suit against the State itself.",
+    "Krainski v. Nevada ex rel. Bd. of Regents of Nevada Sys. of Higher Educ., 616 F.3d 963, 967 (9th Cir. 2010) — Eleventh Amendment immunity shields state officials from official capacity suits absent State consent.",
+    "Will v. Michigan Dep't of State Police, 491 U.S. 58, 65, 71 (1989) — a State is not a 'person' within the meaning of § 1983; state officials acting in their official capacities are also not 'persons' under § 1983.",
+    "Bureerong v. Uvawas, 922 F. Supp. 1450, 1479 n.34 (C.D. Cal. 1996) — a motion to strike may be used to strike any part of the Prayer for Relief when the damages sought are not recoverable as a matter of law.",
+    "Wilkerson v. Butler, 229 F.R.D. 166, 172 (E.D. Cal. 2005) — a motion to strike is appropriate to address requested relief such as punitive damages which is not recoverable as a matter of law.",
+    "Smith v. Wade, 461 U.S. 30, 56 (1983) — punitive damages in a Section 1983 action are available when defendant's conduct is motivated by evil motive or intent, or involves reckless or callous indifference to the federally protected rights of others.",
+    "Kay v. Ehrler, 499 U.S. 432, 438 (1991) — an award of attorneys' fees under 42 U.S.C. § 1988 is not available to pro se litigants."
+  ],
+  "relief_requested": "Defendants request that the Court: (1) dismiss all claims in Plaintiff's Complaint with prejudice pursuant to FRCP 12(b)(6); and (2) strike Plaintiff's prayer for punitive damages (Prayer for Relief #2) and prayer for attorneys' fees (Prayer for Relief #3) from the Complaint pursuant to FRCP 12(f).",
+  "dates": [
+    {
+      "event": "Underlying incident — Plaintiff resting in rental Tesla on shoulder of Interstate 580 East; CHP officers initiate DUI investigation, search vehicle, administer field sobriety tests, and arrest Plaintiff for DUI (approximately 12:54 a.m.)",
+      "date": "November 1, 2024"
+    },
+    {
+      "event": "Complaint filed (action filed)",
+      "date": "May 27, 2025"
+    },
+    {
+      "event": "Motion to Dismiss with Motion to Strike filed (ECF Document 12)",
+      "date": "December 10, 2025"
+    },
+    {
+      "event": "Hearing on Motion to Dismiss scheduled — Courtroom 10, 501 I Street, Sacramento, before District Judge Dena Coggins at 1:30 p.m.",
+      "date": "January 16, 2026"
+    }
+  ],
+  "procedural_significance": "This is Defendants' first responsive pleading, seeking dismissal of all three Section 1983 claims with prejudice at the threshold stage before any discovery; its strongest arguments are the Eleventh Amendment/Section 1983 'person' bar (which categorically forecloses the State and official-capacity claims as a matter of law) and qualified immunity (which, if granted, would dispose of the only remaining individual-capacity claims by establishing that the officers had or reasonably believed they had probable cause based on the facts Plaintiff himself pled)."
+}
