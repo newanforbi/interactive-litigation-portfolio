@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "extract:matter1": "node scripts/extract-matter-pdfs.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
     "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.4.2"
   }
