@@ -1,0 +1,70 @@
+{
+  "scheduling_order": {
+    "doc_type": "scheduling_order",
+    "key_dates": [
+      {
+        "event": "Order issued",
+        "date": "October 28, 2025"
+      },
+      {
+        "event": "Service of process deadline (90 days from order date)",
+        "date": "January 26, 2026"
+      },
+      {
+        "event": "Certificate of service filing deadline (within 10 days after service on each defendant)",
+        "date": "Rolling — 10 days after each defendant is served"
+      },
+      {
+        "event": "Consent to Assignment or Request for Reassignment form due (within 30 days of service, or 60 days if United States, its agencies, corporations, officers, or employees are a party)",
+        "date": "Rolling — 30 or 60 days after service"
+      },
+      {
+        "event": "Opposition to defendant's motion due (within 14 days of defendant's motion)",
+        "date": "Rolling — 14 days after any defendant's motion"
+      },
+      {
+        "event": "Rule 26(a) conference (within 30 days after an answer is filed)",
+        "date": "Rolling — 30 days after answer filed"
+      },
+      {
+        "event": "Joint status report due (within 7 days after Rule 26 conference)",
+        "date": "Rolling — 7 days after Rule 26 conference"
+      }
+    ],
+    "deadlines": [
+      "Complete service of process on all defendants within 90 days of October 28, 2025 (by January 26, 2026); case may be dismissed if not accomplished per FRCP 4(m)",
+      "File certificate of service within 10 days after service on each defendant",
+      "File Consent to Assignment or Request for Reassignment form within 30 days of service (60 days if a government entity is a party)",
+      "File opposition to any defendant's motion within 14 days of that motion",
+      "Plaintiff may amend complaint once as of right within 21 days of service of a defendant's Rule 12(b), (e), or (f) motion",
+      "Hold Rule 26(a) conference within 30 days after any defendant's answer is filed",
+      "File joint status report within 7 days after Rule 26(a) conference",
+      "No trial date set in this order"
+    ],
+    "judge_assignments": [
+      "Magistrate Judge Chi Soo Kim — assigned to resolve all non-dispositive matters and conduct all hearings, issuing findings and recommendations on dispositive matters (Local Rule 302(c)(21))"
+    ],
+    "procedural_significance": "This initial scheduling order governs the early procedural posture of the pro se case, setting a 90-day service deadline and laying out the sequential obligations triggered by service, defendant responses, and any subsequent answer, while warning that non-compliance may result in sanctions or dismissal. It also directs the parties to promptly elect whether to consent to full Magistrate Judge jurisdiction under 28 U.S.C. § 636(c)."
+  },
+  "consent_form": {
+    "doc_type": "magistrate_consent",
+    "outcome": "not yet determined — document is an informational notice and consent solicitation issued by Chief Judge Troy L. Nunley, not a completed consent or declination form; no party election is recorded in this document",
+    "procedural_significance": "This document informs all parties of their right to consent to full Magistrate Judge jurisdiction under 28 U.S.C. § 636(c), explains the benefits of doing so in the congested Eastern District of California, and directs them to the court's consent form, but does not itself record any party's consent or declination."
+  },
+  "summons": {
+    "doc_type": "summons",
+    "parties_named": [
+      "California Highway Patrol",
+      "Melano",
+      "Santiago Meza-Gonzalez",
+      "State of California"
+    ],
+    "issued_date": "October 28, 2025",
+    "procedural_significance": "The summons formally commands the named defendants — California Highway Patrol, Melano, Santiago Meza-Gonzalez, and the State of California — to appear and answer the complaint within 21 days of service, and was issued by the Clerk of Court on the same day as the Initial Scheduling Order."
+  },
+  "return_of_service": {
+    "doc_type": "return_of_service",
+    "served_parties": [],
+    "procedural_significance": "The Return of Service form filed in this case is a blank, unfilled template — no server name, date, method of service, or party information has been completed — indicating that proof of service had not yet been documented in this filing at the time the document was included in the record."
+  }
+}
