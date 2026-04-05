@@ -1,0 +1,126 @@
+{
+  "doc_type": "California Highway Patrol Driving Under the Influence Arrest-Investigation Report (CHP 202, Rev. 2-24, OPI 066), 5 pages, Misdemeanor",
+  "key_facts": [
+    "Subject: Newanforbi, Brendan, Ngehsi; DOB 09/16/1996; California Driver License F7953179 (Valid); Race: Black or African American; Sex: Male; Height: 5'08\"; Weight: 225 lbs; Place of Birth: Camaroon; Self-employed",
+    "Date/time of arrest: 11/01/2024 at 0112 hours; Date/time of incident: 11/01/2024 at 0055 hours",
+    "Location of arrest/incident: I-580 eastbound, west of Isabel Avenue",
+    "Arresting officer: Meza, Officer; ID Number 023295; California Highway Patrol",
+    "Witness/partner officer: Officer Melano, ID 023054; address 4999 Gleason Drive Dublin CA, 94568; Bus. phone (925) 828-0466",
+    "Report reviewed by: Sg. Den (phonetic), ID Number 11747, dated 11/5/24",
+    "File Number: 202400898; Citation Number: RJ68845; CAD Number: 241101GG0064; Area 390, Beat 052",
+    "Charges investigated: 23152(a) VC (DUI Alcohol) and 23152(b) VC (.08% BAC or above)",
+    "Booking number: CAR913358; booked at Santa Rita Jail at 0325 hours on 11/01/2024",
+    "Vehicle: 2023 Gray Tesla Model Y (SUV); License 9EAX768 CA, Reg. Year 2025; VIN 7SAYGDEE3PF638736",
+    "Registered owner: PV Holding Corp., 5721 W. 96th Street Los Angeles CA, 90045",
+    "Legal owner: The Bank of New York Mellow Trust Company, 26933 Northwestern Hwy Southfield MI, 48033",
+    "Vehicle stored per 22651(h)(1) VC; towed by United Towing at (925) 888-8880; keys went with tow",
+    "WMVARS/MVARS: YES; WMVARS checked YES on report",
+    "Subject was on parole for 289(a)(1) PC at time of arrest, confirmed through GGCC DMV driving history check",
+    "Officers found subject asleep in driver seat of Tesla parked on right shoulder of I-580, just west of Isabel Avenue",
+    "Subject wore an orange '21+' wristband on his right wrist (suggesting recent attendance at age-restricted event)",
+    "Upon contact, officer smelled strong, distinct odor of alcoholic beverage emitting from within the vehicle and from subject's breath and person",
+    "Subject was confused and disoriented upon waking; stated he believed he was in a parking lot",
+    "Subject admitted he drove the vehicle to the location, from a party in Oakland, headed to Stockton",
+    "Subject stated he had been parked on the shoulder approximately 7 minutes",
+    "Subject denied consuming any alcoholic beverages — both initially through the window and again after exiting the vehicle",
+    "Subject's driver seat was adjusted to the stature of a person of Newanforbi's height",
+    "Objective signs: strong breath odor of alcohol, red and watery eyes, slurred speech, compliant demeanor, worn clothing (black shirt, green pants, black slides)",
+    "HGN test: lack of smooth pursuit, distinct and sustained nystagmus at maximum deviation, onset of nystagmus prior to 45 degrees, lack of convergence — observed in both eyes",
+    "Modified Romberg Balance: subject estimated 30 seconds as 43 seconds; displayed eyelid flutters",
+    "One Leg Stand: subject declined to perform, stated it was difficult",
+    "Walk and Turn: subject declined to perform, stated it was difficult",
+    "PAS admonishment given by arresting officer at 0111; subject refused PAS test",
+    "Implied Consent Admonishment (Section 23612 CVC) administered; subject refused all chemical testing",
+    "Blood draw warrant obtained: affidavit approved by Judge A. Sekany at approximately 0234 hours (Warrant WAR913372)",
+    "Blood draw conducted at CHP Dublin Area Office at 0238 hours; two vials of blood drawn from subject's right arm by phlebotomist Aziza Ghaleb",
+    "Blood sample sealed and secured in CHP Dublin Area Blood Evidence Locker for DOJ analysis; results pending",
+    "Subject was diabetic (box checked YES for diabetic/epileptic); stated he does not take insulin",
+    "Subject stated he is pre-diabetic (noted under 'Are you sick or injured?')",
+    "Subject stated last sleep was 'Right now' (i.e., when found asleep in car); last ate 7 minutes prior — a hot dog at 11:30 PM",
+    "Subject stated he was driving from Oakland to Stockton; had been in Livermore when stopped; denied drinking anything",
+    "FST location: dirt shoulder; conditions clear, cool, and dry with patrol vehicle lights and flashlight",
+    "Officer noted that FST notes were taken on 3x5 notepad, transferred to the report, and thrown out upon completion of the report",
+    "All times in report were taken by the officer's iPhone, unless otherwise stated",
+    "Miranda/Admonition of Rights: box checked 'NOT ADVISED' — subject was NOT advised of Miranda rights",
+    "Misdemeanor Incarceration checkboxes: Item 3 checked (arrested under circumstances in CVC 40302/40303); Item 6 checked (release would jeopardize prosecution of the offense or any other offenses); Item 7 checked (would be reasonably likely to continue the offense or the safety of persons or property would be imminently endangered if released)",
+    "Recommendation forwarded to Alameda County District Attorney's office for charges: 23152(a) VC (DUI Alcohol), 23152(b) VC (.08% BAC, pending), and enhancement 23578 VC (Chemical Test Refusal)",
+    "Dispatch notified at 0326; ID: A13903",
+    "JUS 8715 (fingerprint card) required: YES; subject was fingerprinted"
+  ],
+  "dates": [
+    {
+      "event": "Date/time of incident (vehicle found on freeway shoulder)",
+      "date": "11/01/2024 at 0055"
+    },
+    {
+      "event": "Date/time of arrest",
+      "date": "11/01/2024 at 0112"
+    },
+    {
+      "event": "PAS admonishment given and PAS refused",
+      "date": "11/01/2024 at 0111"
+    },
+    {
+      "event": "Blood draw warrant affidavit approved by Judge A. Sekany (WAR913372)",
+      "date": "11/01/2024 at approximately 0234"
+    },
+    {
+      "event": "Blood draw conducted at CHP Dublin Area Office by phlebotomist Aziza Ghaleb",
+      "date": "11/01/2024 at 0238"
+    },
+    {
+      "event": "Subject booked at Santa Rita Jail for 23152(a) VC",
+      "date": "11/01/2024 at 0325"
+    },
+    {
+      "event": "Dispatch notified",
+      "date": "11/01/2024 at 0326"
+    },
+    {
+      "event": "Report reviewed/signed by Sgt. Den, ID 11747",
+      "date": "11/05/2024"
+    },
+    {
+      "event": "Subject's date of birth",
+      "date": "09/16/1996"
+    },
+    {
+      "event": "Subject's last meal (hot dog)",
+      "date": "11/01/2024 at approximately 23:30 (11:30 PM, prior to incident)"
+    }
+  ],
+  "arguments": [
+    "Officer's stated basis for DUI arrest under CVC 23152(a) per 40300.5 VC: (1) subject displayed objective signs and symptoms of intoxication; (2) subject admitted driving the vehicle to this location; (3) driver's seat was adjusted to subject's stature; (4) subject's answers to Pre-FST questions; (5) subject's poor performance on FSTs; (6) subject stated he had not consumed any alcoholic beverages since stopping on the shoulder — implying he had been drinking before stopping",
+    "Officer formed opinion that subject drove while under the influence of alcohol, supporting a 40300.5 VC arrest on a freeway shoulder rather than requiring in-motion observation of a traffic violation",
+    "Refusal of PAS and all chemical testing (Implied Consent, 23612 CVC) used as basis for blood draw warrant and recommended 23578 VC enhancement (Chemical Test Refusal)",
+    "Incarceration justified on grounds that release would jeopardize prosecution and subject would likely continue the offense or endanger persons or property (Items 6 and 7 of Misdemeanor Incarceration section)",
+    "Recommendation to Alameda County DA includes the 23578 VC Chemical Test Refusal enhancement, which if proven would preclude probation bargaining on the underlying DUI",
+    "Subject's parole status (289(a)(1) PC) was confirmed and disclosed in the report, which has potential implications for bail, detention, and parole revocation proceedings separate from the DUI charges"
+  ],
+  "evidence_cited": [
+    "Officer's direct observation: subject asleep in driver seat of Tesla on freeway shoulder at 0055 hours",
+    "Strong, distinct odor of alcoholic beverage from within vehicle, subject's breath, and person",
+    "Subject's red and watery eyes, slurred speech, and confused/disoriented demeanor upon waking",
+    "Subject's orange '21+' wristband, consistent with recent attendance at an age-restricted venue",
+    "Subject's admission that he drove the vehicle from a party in Oakland to this location",
+    "Subject's admission that he had been parked on the shoulder approximately 7 minutes",
+    "Subject's denial of any alcohol consumption (treated as inconsistent with physical observations)",
+    "Driver's seat position adjusted to subject's stature",
+    "HGN test results: lack of smooth pursuit, distinct/sustained nystagmus at maximum deviation, onset prior to 45 degrees, lack of convergence in both eyes",
+    "Modified Romberg Balance: 30-second estimate reported as 43 actual seconds; eyelid flutters",
+    "Refusal of One Leg Stand and Walk and Turn tests (subject stated tests were difficult)",
+    "PAS refusal (administered at 0111; subject refused)",
+    "Chemical test refusal after Implied Consent Admonishment (23612 CVC)",
+    "Blood draw warrant WAR913372, approved by Judge A. Sekany at 0234",
+    "Two vials of blood drawn at 0238 by phlebotomist Aziza Ghaleb at CHP Dublin Area Office",
+    "Blood samples sealed and stored in CHP Dublin Area Blood Evidence Locker; DOJ analysis pending (results listed as 'Pending', Sample ID RJ68845)",
+    "DMV driving history via GGCC: license valid, subject on parole for 289(a)(1) PC",
+    "California Driver License F7953179 (Valid, CA)",
+    "WMVARS/vehicle data confirming vehicle registration to PV Holding Corp.",
+    "Watson Advisement: subject acknowledged understanding (DO YOU UNDERSTAND: YES; READ VERBATIM: YES)",
+    "Officer Melano (ID 023054) as witness/partner present throughout incident",
+    "Patrol vehicle number 1633363 identified in narrative",
+    "3x5 notepad FST notes — notably destroyed after transfer to report"
+  ],
+  "procedural_significance": "This 5-page CHP DUI Arrest-Investigation Report (Citation RJ68845, File 202400898) documents a warrantless welfare-check stop that escalated into a DUI arrest of Brendan Ngehsi Newanforbi on November 1, 2024, on I-580 eastbound near Isabel Avenue. Several features carry significant procedural weight. First, there was no traffic violation observed — the contact was initiated as a welfare check on a stationary vehicle on the freeway shoulder. The arrest for DUI was therefore premised entirely on 40300.5 VC, which authorizes arrest without in-progress observation of a moving violation when the officer determines the person drove while impaired. The sufficiency of this probable cause basis is litigable. Second, Miranda rights were explicitly NOT administered — the report's Admonition of Rights section has 'NOT ADVISED' checked. Any incriminating statements made by the subject after custody attached (including admissions about driving from Oakland and that he had not consumed alcohol since stopping) may be suppressible under Miranda/Berkemer v. McCarty. Third, the original FST field notes were destroyed — the officer documented that notes were taken on a 3x5 notepad, transferred to the report, and thrown out. This destruction of primary evidence may support a spoliation argument or at minimum an instruction to the jury regarding lost evidence. Fourth, the subject's refusal of all chemical testing triggered a blood draw warrant (WAR913372), approved by Judge A. Sekany in approximately 99 minutes from arrest. The blood results are still pending, making 23152(b) VC a contingent charge. The 23578 VC Chemical Test Refusal enhancement is recommended, which if sustained eliminates the defendant's ability to receive a plea bargain to wet reckless under some county policies. Fifth, the subject's active parole status for 289(a)(1) PC (forcible sexual penetration) was confirmed and flagged, meaning this arrest likely triggered a parole hold or revocation proceeding in addition to the new criminal case. Sixth, the report reflects no notation of any detention certificate or PC §849(b)(1) release — the subject was held and transported to Santa Rita Jail, consistent with full custodial arrest. The vehicle was stored per 22651(h)(1) VC (vehicle left unattended on a highway), and the registered owner (PV Holding Corp.) and legal owner (Bank of New York Mellow Trust Company) are entities, not the subject, suggesting a leased or fleet vehicle. The absence of any independent witness other than Officer Melano (the partner), the contested nature of the subject's intoxication (subject denied drinking; is pre-diabetic, which can produce physiological signs mimicking intoxication), and the reliance on subjective FST observations by a single officer team create multiple avenues for defense challenge."
+}

@@ -1,0 +1,130 @@
+{
+  "doc_type": "California DMV DS-367 Age 21 and Older Officer's Statement / Notice of Administrative Per Se Suspension and Temporary Driver License — Chemical Test Refusal (CVC §§13353, 13353.1, 13353.2 & 13389)",
+  "key_facts": [
+    "Driver: Newanforbi, Brendan N.",
+    "Driver License Number: F7953179, State: CA, Non-commercial",
+    "Date of Birth: 01/16/1996; Sex: M; Hair: BLK; Eyes: BRN; Height: 5'08\"; Weight: 185 lbs",
+    "Mailing Address: 1455 Cat Tail Dr, Stockton, CA 95004",
+    "Law Enforcement Agency Case Number: RS68845",
+    "Detention/Arrest Date: 11/01/2024",
+    "Arresting Officer: MEZA, Badge/ID Number: 23295, Agency: CHP (California Highway Patrol), Area: 390, Telephone: (915) 818-0466",
+    "Partner Officer: Melano, ID 023054, also CHP",
+    "Court Code: 01435",
+    "Contact location: Livermore, Alameda County, CA — right shoulder of I-580 just west of Isabel Avenue",
+    "Contact time: 11/01/2024 at 12:55 AM (0055 hours per narrative)",
+    "Arrest time: 11/01/2024 at 1:12 AM (0112 hours per narrative)",
+    "Blood test drawn: 11/01/2024 at 7:38 AM",
+    "Chemical Test Admonition administered: 11/01/2024 at approximately 0120 hours (form shows 01:20 AM)",
+    "Vehicle: Gray Tesla Model Y (S/V), License Plate/VIN: 9EAX768; Not a commercial vehicle; no hazardous materials",
+    "Driver license surrendered (attached to form); not suspended/revoked at time of arrest",
+    "Violation checked: Chemical Test Refusal (not 0.08% BAC chemical test results)",
+    "Arrest type statistical categories checked: Alcohol Use only (Cannabis Use and Other Drug Use not checked)",
+    "Arrest authority: CVC §23152(a) — driving while under the influence of alcohol, arrest made under CVC §40300.5 (arrest without warrant at scene)",
+    "Officer observed driver asleep in the driver seat of a Tesla parked on the right shoulder of I-580",
+    "Driver was wearing an orange '21+' wristband on his right wrist at time of contact",
+    "Officer detected distinct odor of alcoholic beverage from within the vehicle",
+    "Driver initially stated he believed he was in a parking lot; had to be corrected that he was on the side of the freeway",
+    "Driver stated he had been parked approximately 7 minutes",
+    "Driver admitted to driving the vehicle to that location from a party in Oakland",
+    "Driver denied consuming alcoholic beverages despite objective symptoms",
+    "Objective symptoms of intoxication noted: bloodshot/watery eyes, odor of alcoholic beverage, slurred speech, and 'pulse FSTs' (Field Sobriety Tests) — noted under 'Other'",
+    "Unsteady gait was NOT checked as a symptom",
+    "PAS test: No PAS results recorded — PAS section left blank; no PAS certification completed",
+    "Breath chemical test: Not completed — all breath test result fields left blank",
+    "Blood test collected: 11/01/2024 at 7:38 AM (blood draw, laboratory results pending at time of form completion)",
+    "Urine test: Not conducted",
+    "Driver response to chemical test admonition: Fields for driver responses to breath test and blood test offers are blank — consistent with refusal designation but specific refusal statements not transcribed on the form",
+    "Order of Suspension/Revocation: Served by arresting officer MEZA on 11/01/2024",
+    "Suspension effective: 30 days from issue date (approximately 12/01/2024)",
+    "Suspension basis checked on Page 3: Chemical Test Refusal",
+    "Driver has 10 days from receipt of notice to request a DMV hearing",
+    "First-offense chemical test refusal penalty: 1-year administrative suspension",
+    "Reissue fee required: $125 plus SR-22 proof of financial responsibility",
+    "Form executed in: City of Livermore, County of Alameda on 11/01/2024",
+    "The form header on Page 1 shows a handwritten note '10N' in the upper right corner, possibly indicating a unit or beat designation",
+    "Driving not observed by the officer — driver admitted to driving; no Observation/Arrest section completed for a different observing officer",
+    "No DUI probation boxes checked — this is not treated as a DUI probation case"
+  ],
+  "dates": [
+    {
+      "event": "Detention/Arrest Date (header)",
+      "date": "11/01/2024"
+    },
+    {
+      "event": "Officer contact with driver on right shoulder of I-580, Livermore",
+      "date": "11/01/2024 at 12:55 AM (0055 hours)"
+    },
+    {
+      "event": "Driver placed under arrest for CVC §23152(a) per 40300.5 VC",
+      "date": "11/01/2024 at 01:12 AM (0112 hours)"
+    },
+    {
+      "event": "Chemical Test Admonition administered",
+      "date": "11/01/2024 at approximately 01:20 AM"
+    },
+    {
+      "event": "Blood test collected",
+      "date": "11/01/2024 at 07:38 AM"
+    },
+    {
+      "event": "DS-367 form executed (Officer's certification)",
+      "date": "11/01/2024"
+    },
+    {
+      "event": "Order of Suspension/Revocation served on driver by arresting officer",
+      "date": "11/01/2024"
+    },
+    {
+      "event": "Temporary Driver License expiration / Suspension effective date (30 days from issue)",
+      "date": "Approximately 12/01/2024"
+    },
+    {
+      "event": "Deadline for driver to request DMV hearing (10 days from receipt of notice)",
+      "date": "Approximately 11/11/2024"
+    },
+    {
+      "event": "Deadline to request department review after hearing decision",
+      "date": "15 days from date of hearing decision notice"
+    },
+    {
+      "event": "Deadline to file writ of mandamus at superior court after hearing decision",
+      "date": "30 days from date of hearing decision notice"
+    }
+  ],
+  "arguments": [
+    "The officer lacked probable cause to arrest under CVC §40300.5: The driver was found asleep in a vehicle parked on the freeway shoulder, not observed driving. Arrest without a warrant under §40300.5 requires an independent basis (e.g., reasonable cause to believe the person drove while impaired). The officer's reasonable cause rested solely on the admission of driving (which the driver gave without Miranda warnings), the orange wristband, odor of alcohol, and objective symptoms — all post-driving observations.",
+    "The admission of driving is the linchpin of the arrest and may be challengeable: Because no officer observed the driving, the prosecution and DMV must rely on the driver's admission. The circumstances under which the admission was obtained (driver woken from sleep, confused and disoriented, interrogated without advisement) may raise issues of voluntariness or coercion.",
+    "Chemical test refusal vs. blood test collected: The form checks 'Chemical Test Refusal' as the violation, yet a blood test was collected at 07:38 AM on 11/01/2024 — approximately 6 hours and 26 minutes after arrest. The coexistence of a 'refusal' designation and a subsequently collected blood sample raises the question of whether a true, unequivocal refusal occurred or whether the driver ultimately submitted. If the driver submitted to blood testing, the refusal-based suspension may be improper.",
+    "Blood test collected nearly 6.5 hours after arrest at 07:38 AM: Under California law and Title 17 CCR, blood draw timing and chain of custody are critical. A sample drawn 6.5 hours after the time of driving may not accurately reflect BAC at the time of driving, and results should be evaluated with retrograde extrapolation analysis.",
+    "Absence of PAS test data: The PAS section is entirely blank. If a PAS test was offered and refused, or if it was not offered at all, the record is incomplete. The failure to administer or record a PAS test may be relevant to the completeness of the chemical test admonition process.",
+    "Driving not observed — CVC §40300.5 arrest prerequisites: Because neither the arresting officer nor Officer Melano observed driving, the arrest was warrantless under §40300.5. The DMV hearing will require the officer to establish each §40300.5 predicate: (1) the person was involved in a traffic accident, or (2) the person was observed in or about a vehicle blocking traffic, or (3) the person was found in or about a vehicle located in a roadway. Being parked on the shoulder of I-580 may or may not satisfy the 'blocking traffic' or 'in or about a roadway' prongs depending on the precise location.",
+    "Driver's statement that he had been parked approximately 7 minutes cuts against an inference of recent impaired driving: A 7-minute delay between stopping driving and officer contact, combined with no observations of the vehicle in motion, makes it difficult to establish contemporaneous impairment at the time of actual driving.",
+    "Driver explicitly denied alcohol consumption: The narrative records that when asked about alcohol consumption, the driver responded 'no.' This denial, if not impeached by the blood test results, supports a defense of no knowing or willful impaired driving.",
+    "Orange '21+' wristband as pretext or inference: The officer's specific notation of the wristband suggests it was used to infer the driver had been at an event serving alcohol. This is circumstantial at best and does not establish actual impairment.",
+    "Officer's printed name and badge number discrepancy between pages: Page 1 lists Officer MEZA, Badge 23295; Page 3 (Suspension Order) repeats this. However, the telephone number area code listed is (915) — a Texas area code — which may be a transcription error for (916) or another California prefix, and may indicate a clerical error on the form.",
+    "Field Sobriety Tests referenced but not detailed: The narrative references a 'DUI evaluation' was conducted and 'pulse FSTs' are noted under Objective Symptoms, but no standardized field sobriety test (SFST) results (HGN, Walk and Turn, One Leg Stand) are documented on the form. Absence of documented FST results weakens the probable cause basis if challenged.",
+    "The suspension is administrative and independent of any criminal court sanction: The APS suspension proceeds on a preponderance standard at the DMV, but any result does not bind or preclude the criminal case, and vice versa."
+  ],
+  "evidence_cited": [
+    "DS-367 Officer's Statement (this document), completed by Officer Meza, Badge 23295, CHP",
+    "Driver's admission to driving the vehicle from a party in Oakland to the location on I-580",
+    "Driver's admission of approximately 7 minutes parked on the freeway shoulder",
+    "Officer's personal observation: distinct odor of alcoholic beverage from within the vehicle",
+    "Officer's personal observation: driver asleep in driver seat of Tesla on freeway right shoulder",
+    "Officer's personal observation: bloodshot/watery eyes and slurred speech",
+    "Officer's personal observation: driver appeared confused and disoriented upon waking",
+    "Orange '21+' wristband observed on driver's right wrist",
+    "Driver's statement that he believed he was in a parking lot (disorientation)",
+    "Driver's denial of alcohol consumption despite objective symptoms",
+    "'Pulse FSTs' — field sobriety test evaluation referenced in Objective Symptoms section",
+    "Blood sample collected 11/01/2024 at 07:38 AM (laboratory results not yet reported on this form)",
+    "Driver license surrendered and attached to the DS-367",
+    "CHP patrol vehicle unit 1633363 — officer was on duty in full uniform",
+    "Partner Officer Melano, ID 023054, present as witness in patrol vehicle",
+    "Vehicle: Gray Tesla Model Y, License Plate 9EAX768",
+    "CHP Case Number: RS68845",
+    "Chemical Test Admonition as read per CVC §§23154, 23612",
+    "Other documents in matter-07 folder potentially cross-referencing this arrest: Arrest Report F7953179, DAD 2024-12-04, DS2044 Notification of Discovery, FAC Newanforbi v Candelaria, F7953179 Discovery Response, Newanforbi v. Candelaria"
+  ],
+  "procedural_significance": "This DS-367 is the foundational document initiating the administrative per se (APS) suspension of Brendan Newanforbi's California driving privilege. The form simultaneously serves as (1) the officer's sworn statement supporting probable cause for the arrest, (2) the notice of suspension/revocation order, and (3) the temporary driver license valid for 30 days. The critical procedural tension in this document is the designation of 'Chemical Test Refusal' as the grounds for suspension, while the form also reflects that a blood draw was in fact collected at 07:38 AM on 11/01/2024 — approximately 6.5 hours post-arrest. If the blood sample was collected, a question arises whether the refusal was unequivocal, whether the driver ultimately consented, or whether the blood was drawn involuntarily. The resolution of this issue determines whether the suspension is properly grounded in refusal (CVC §13353 — 1-year first-offense suspension) or should have been based on BAC results (CVC §13353.2 — 4-month first-offense suspension), which are meaningfully different in duration and legal theory. The arrest itself is warrantless and made under CVC §40300.5 because no officer observed the driving. This means the APS hearing will turn on whether the officer had reasonable cause to believe the driver drove while impaired and whether the §40300.5 statutory prerequisites are satisfied. The driver's spontaneous admission to having driven from a party in Oakland is the primary evidence of actual driving, and the circumstances of that admission — woken from sleep, confused, not yet under Miranda — may be challenged in the parallel criminal proceeding, though Miranda does not directly apply to the APS administrative hearing. The 10-day deadline to request a DMV hearing from the date of receipt of the notice is the immediate procedural action item. Failure to timely request a hearing results in the suspension becoming effective 30 days after issuance without any administrative review. The existence of a civil complaint captioned 'Newanforbi v. Candelaria' in the matter folder suggests this matter has expanded beyond the DUI arrest into civil litigation, possibly a civil rights or excessive force claim, which would make the DS-367's contents relevant not only to the DMV and criminal proceedings but also as evidence in the civil action regarding the lawfulness of the stop and arrest."
+}

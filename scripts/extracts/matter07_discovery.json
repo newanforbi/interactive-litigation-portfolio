@@ -1,0 +1,91 @@
+{
+  "doc_type": "California DMV Driver Safety Branch administrative discovery package and respondent's discovery response, concerning a license suspension action for refusal to submit to chemical testing under Vehicle Code §13353, in the matter of Brendan Ngehsi Ngwanforbi (Driver License No. F7953179). The package comprises: (1) DS 2044 Notification of Discovery — the DMV's disclosure of records provided to the respondent per Government Code §11507.6; (2) Notice of Stay (DS2030) — staying the license suspension pending administrative hearing; (3) Request for Discovery (DS2053) — the DMV's reciprocal demand for the respondent's evidence; (4) Notice of Hearing Appointment (DS2304) — scheduling the remote administrative hearing; and (5) F7953179 Discovery Response — respondent's personal statement of facts and legal defense filed in response to the DMV's discovery request.",
+
+  "key_facts": [
+    "Respondent is Brendan Ngehsi Ngwanforbi, residing at 1455 Cat Tail Dr, Stockton, CA 95204.",
+    "Driver License Number: F7953179; license class A with Doubles/Triples and Tank Vehicle endorsements.",
+    "Booking/Arrest Number: RJ68845.",
+    "The underlying incident occurred on November 1, 2024, at approximately 12:30 a.m., when respondent was parked on the shoulder of a freeway with the vehicle off, key not in the ignition, and respondent asleep in the driver's seat.",
+    "Officer Santiago Meza-Gonzalez approached respondent's vehicle initially as a welfare check.",
+    "The welfare check was escalated into a DUI investigation. Respondent contends this escalation lacked specific, articulable facts or probable cause.",
+    "The officer claimed to detect an odor of alcohol from the passenger side of the vehicle — a distance respondent characterizes as making such a determination highly implausible.",
+    "The officer cited observations of 'red and watery eyes,' 'slurred speech,' and an odor of alcohol as the basis for the DUI investigation.",
+    "Respondent argues these physical symptoms are consistent with being abruptly awakened from sleep and were not corroborated by objective evidence of impairment such as erratic driving.",
+    "Field Sobriety Tests (FSTs) were administered on an uneven dirt shoulder, a condition acknowledged by Officer Melano as unsuitable for balance-based tests.",
+    "Respondent refused to submit to chemical (blood) testing.",
+    "A blood sample decision followed the escalation; respondent contends this evidence is inadmissible as fruit of the poisonous tree.",
+    "No criminal charges were filed against respondent despite the officer's detailed report, which respondent argues underscores the insufficiency of the evidence.",
+    "The DMV issued a suspension of respondent's driving privilege effective December 1, 2024, pursuant to Vehicle Code §13353 (refusal to submit to chemical testing).",
+    "The suspension was stayed pending the outcome of the administrative hearing/department review.",
+    "The incident occurred immediately after Halloween, during a period of heightened law enforcement targeting alcohol-related offenses.",
+    "The DMV's discovery was prepared and served by authorized DMV employee C. Winston on December 4, 2024.",
+    "Service of the DMV discovery package was effected by email.",
+    "Respondent submitted his discovery response on December 9, 2024, signed by Brendan Ngehsi Ngwanforbi.",
+    "The DMV case is handled by the Legal Affairs Division, Driver Safety Branch, 4700 Broadway, 2nd Floor, Sacramento, CA 95820.",
+    "The financial responsibility file number field on the DS 2044 cover form appears blank — no separate financial responsibility case number is listed beyond the driver license number.",
+    "The document set references an internal DMV system identifier of DSMS234 associated with respondent's file."
+  ],
+
+  "dates": [
+    {
+      "event": "Underlying incident — respondent found asleep in parked vehicle on freeway shoulder; welfare check escalated to DUI investigation by Officer Santiago Meza-Gonzalez",
+      "date": "November 1, 2024 (approximately 12:30 a.m.)"
+    },
+    {
+      "event": "DMV suspension of respondent's driving privilege effective date (Vehicle Code §13353 — refusal of chemical testing)",
+      "date": "December 1, 2024"
+    },
+    {
+      "event": "DMV Notice of Stay issued — suspension stayed pending administrative hearing; DMV discovery package prepared and signed by C. Winston",
+      "date": "December 4, 2024"
+    },
+    {
+      "event": "DMV discovery package served on respondent (DS 2044, DS2030, DS2053, DS2304) — served by email",
+      "date": "December 4, 2024"
+    },
+    {
+      "event": "Respondent submitted Notice of Response to Request for Discovery (Personal Statement of Facts and Defense), signed by Brendan Ngehsi Ngwanforbi",
+      "date": "December 9, 2024"
+    },
+    {
+      "event": "Remote administrative hearing scheduled before Hearing Officer Diana Candelaria, via Microsoft Teams, at 09:00 AM",
+      "date": "January 24, 2025"
+    }
+  ],
+
+  "arguments": [
+    "1. IMPROPER ESCALATION WITHOUT PROBABLE CAUSE: The welfare check by Officer Meza-Gonzalez was escalated into a DUI investigation without specific, articulable facts or probable cause as required by Terry v. Ohio (1968) 392 U.S. 1. The scope of the encounter was improperly extended beyond its initial community caretaking purpose without clear and specific justification, in violation of Florida v. Royer (1983) 460 U.S. 491.",
+    "2. OFFICER'S CLAIMED ODOR DETECTION IS IMPLAUSIBLE: The officer's claim to have detected an odor of alcohol from the passenger side of the vehicle is physically implausible given the distance involved, and the escalation relied on subjective observations that failed to meet the legal threshold for reasonable suspicion.",
+    "3. HOLIDAY ENFORCEMENT BIAS: The incident occurred during a post-Halloween heightened enforcement period, raising concerns that systemic pressures and law enforcement quotas may have influenced the officer's actions, undermining the fairness of the encounter under People v. Reyes (2011) 195 Cal.App.4th 946 and Brown v. Texas (1979) 443 U.S. 47.",
+    "4. LACK OF PROBABLE CAUSE FOR DUI INVESTIGATION: Observations of red and watery eyes and slurred speech were not corroborated by any objective evidence of volitional movement or impairment such as erratic driving or unsafe behavior. Under Mercer v. DMV (1991) 53 Cal.3d 753, DUI investigations require objective evidence of impairment. Under People v. Torres (2009) 173 Cal.App.4th 977, physical symptoms without corroborating driving evidence are insufficient for a DUI arrest. Alternative explanations (being abruptly awakened from sleep) were not considered.",
+    "5. FRUIT OF THE POISONOUS TREE — FST AND BLOOD EVIDENCE INADMISSIBLE: All evidence derived from the unlawful escalation, including FST performance and the blood sample decision, is inadmissible under the fruit of the poisonous tree doctrine per Wong Sun v. United States (1963) 371 U.S. 471 and People v. Medina (1972) 6 Cal.3d 484. FSTs were additionally conducted on an uneven dirt shoulder acknowledged by Officer Melano as unsuitable for balance-based testing.",
+    "6. REFUSAL WAS REASONABLE AND LAWFUL: Respondent's refusal to submit to chemical testing was not willful defiance but a reasoned response to an investigation that lacked legitimacy. Under McDonnell v. DMV (1975) 45 Cal.App.3d 653, a refusal must be clear, unequivocal, and intentional, and misunderstanding or distrust of the officer's motives in confusing or disorienting circumstances can affect the validity of a refusal.",
+    "7. ABSENCE OF CRIMINAL CHARGES UNDERMINES DMV ACTION: No charges were filed by the prosecution despite the officer's detailed report, demonstrating that the evidence was insufficient to meet even the minimal threshold for criminal proceedings. Under Brown v. Illinois (1975) 422 U.S. 590, failures in filing charges indicate weaknesses in the evidence and undermine the validity of law enforcement actions.",
+    "8. OVERALL CONCLUSION: The suspension of respondent's driving privilege is unwarranted because the escalation of the welfare check was procedurally improper, lacked probable cause, violated fundamental constitutional rights, produced inadmissible evidence, and the absence of criminal charges confirms the insufficiency of the evidence."
+  ],
+
+  "evidence_cited": [
+    "Driving Record Printout — provided by DMV as part of discovery disclosure (DS 2044)",
+    "Notice of Hearing (DS2304) — included in DMV discovery package",
+    "Notice of Stay (DS2030) — included in DMV discovery package; documents stay of suspension effective December 1, 2024, pending hearing",
+    "Officer's Statement, DS 367 (DS 367M) — included in DMV discovery package; prepared by arresting/investigating officer(s)",
+    "Arrest/Incident Report(s) — included in DMV discovery package; underlying law enforcement record of the November 1, 2024 incident",
+    "DMV witness list — C. Winston identified as the authorized DMV employee who may be called to testify on behalf of the Department",
+    "Officer Santiago Meza-Gonzalez — identified in respondent's statement as the officer who initiated the welfare check and escalated to DUI investigation",
+    "Officer Melano — identified in respondent's statement as acknowledging the uneven dirt shoulder was unsuitable for balance-based FSTs",
+    "Field Sobriety Tests (FSTs) — referenced by respondent as conducted on uneven dirt shoulder; results challenged as inadmissible",
+    "Blood sample — referenced by respondent as obtained following the escalation; challenged as inadmissible fruit of the poisonous tree",
+    "Terry v. Ohio (1968) 392 U.S. 1 — cited for requirement of specific, articulable facts to justify escalating an encounter",
+    "Florida v. Royer (1983) 460 U.S. 491 — cited for prohibition against extending scope of encounter beyond initial purpose without specific justification",
+    "People v. Reyes (2011) 195 Cal.App.4th 946 — cited regarding law enforcement actions influenced by quotas or systemic pressures",
+    "Brown v. Texas (1979) 443 U.S. 47 — cited against detentions based on generalized motivations rather than specific facts",
+    "Mercer v. DMV (1991) 53 Cal.3d 753 — cited for requirement of objective evidence of volitional movement or impairment for DUI investigations",
+    "People v. Torres (2009) 173 Cal.App.4th 977 — cited for insufficiency of physical symptoms alone (red eyes, slurred speech) without corroborating driving evidence",
+    "Wong Sun v. United States (1963) 371 U.S. 471 — cited for fruit of the poisonous tree exclusionary rule",
+    "People v. Medina (1972) 6 Cal.3d 484 — cited for prohibition against using findings from unlawful search/detention to retroactively justify initial actions",
+    "McDonnell v. DMV (1975) 45 Cal.App.3d 653 — cited for standard governing validity of refusal to submit to chemical testing",
+    "Brown v. Illinois (1975) 422 U.S. 590 — cited regarding failure to file charges as indicative of evidentiary weakness"
+  ],
+
+  "procedural_significance": "This matter involves an administrative license suspension action by the California DMV against Brendan Ngehsi Ngwanforbi (DL F7953179) under Vehicle Code §13353 — refusal to submit to chemical testing — arising from an incident on November 1, 2024. The DMV imposed a suspension effective December 1, 2024, but immediately stayed it pending an administrative hearing scheduled for January 24, 2025, before Hearing Officer Diana Candelaria via Microsoft Teams remote conference.\n\nThe DS 2044 Notification of Discovery establishes that the DMV has complied with its statutory discovery obligation under Government Code §11507.6 by providing the respondent with five categories of records: (1) Driving Record Printout, (2) Notice of Hearing, (3) Notice of Stay, (4) Officer's Statement (DS 367/DS 367M), and (5) Arrest/Incident Report(s). The DMV simultaneously filed a reciprocal Request for Discovery (DS2053) demanding the respondent produce any statements, witness information, or other relevant evidence in his possession.\n\nThe Discovery Response filed by the respondent on December 9, 2024 is a substantive personal statement of facts and legal defense — not a privilege log or formal objection to production. Respondent does not appear to withhold any specifically requested documents; rather, the response constitutes the affirmative evidence respondent intends to present at the hearing. No formal claims of privilege are asserted. The response is legally significant because it: (a) places before the hearing officer a detailed factual narrative challenging the legality of the initial stop escalation, the adequacy of probable cause, the conditions under which FSTs were administered, and the voluntariness of any refusal; (b) invokes the Fourth Amendment exclusionary rule (fruit of the poisonous tree) to challenge the admissibility of all evidence derived from the allegedly unlawful escalation, including FST results and the blood draw decision; and (c) argues that the prosecution's failure to file criminal charges independently undermines the evidentiary basis for the administrative suspension.\n\nNotably, the respondent holds a Class A commercial driver's license with Doubles/Triples and Tank Vehicle endorsements, meaning a sustained suspension carries significantly greater professional and economic consequences than for a standard Class C licensee. The hearing will be governed by Vehicle Code §14100 et seq. (Chapter 3, Division 6) and conducted by an independent hearing officer who will examine both the DMV's official records and the arresting agency's records, with all testimony recorded. The outcome of the January 24, 2025 hearing will determine whether the §13353 refusal suspension is upheld, modified, or set aside."
+}
