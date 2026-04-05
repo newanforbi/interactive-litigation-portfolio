@@ -73,6 +73,17 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => (
             ))}
           </div>
         </div>
+
+        {c.documents && c.documents.length > 0 && (
+          <div style={{ marginTop: 18 }}>
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Documents</div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+              {c.documents.map((doc, i) => (
+                <a key={i} href={doc.path} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, padding: "4px 10px", borderRadius: 4, background: `${NAVY}`, color: "#7DD3FC", border: `1px solid ${BORDER_BLUE}50`, textDecoration: "none" }}>{doc.label}</a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     )}
   </div>
