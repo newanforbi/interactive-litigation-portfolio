@@ -1,9 +1,9 @@
 {
   "doc_type": "Petition for Writ of Habeas Corpus (Immediate Discharge from Parole)",
   "key_facts": [
-    "Petitioner: Brendan Ngehsi Newanforbi, CDC No. BF3571, age 29, residing at 1455 Cat Tail Drive, Stockton, CA 95204",
+    "Petitioner: Brendan Ngehsi Newanforbi, CDC No. [REDACTED ID], age 29, residing at [REDACTED ADDRESS], Stockton, CA 95204",
     "Petitioner was convicted on January 18, 2018 in Santa Clara County Superior Court and sentenced to six years in state prison for violations of Penal Code sections 289(a)(1)(A) and 220(a)(1)",
-    "Because offenses require registration under Penal Code section 290, Petitioner is subject to a maximum parole term of ten years under Penal Code section 3000(b)(2)(B)",
+    "Because offenses require registration under Penal Code section [REDACTED], Petitioner is subject to a maximum parole term of ten years under Penal Code section 3000(b)(2)(B)",
     "Petitioner was released to parole on December 2, 2020, with a controlling discharge date of December 2, 2030",
     "As of the filing date (March 31, 2026), Petitioner has served over five years on parole with zero revocations, zero new criminal offenses, and zero arrests",
     "CSRA Score: 2 (Low Risk); LS/CMI Score: 5 (Level 2 Below Average Risk) — less than half the regulatory retention threshold of 11 under 15 CCR § 3574(f)(1); Stable-2007 Score: 6 (Moderate)",
@@ -24,12 +24,12 @@
   "dates": [
     {"event": "Conviction in Santa Clara County Superior Court (PC §§ 289(a)(1)(A), 220(a)(1))", "date": "January 18, 2018"},
     {"event": "Release to parole (controlling discharge date December 2, 2030)", "date": "December 2, 2020"},
-    {"event": "Technical violation — failure to attend sex offender treatment (Verbal Reprimand)", "date": "2025-03-04"},
+    {"event": "Technical violation — failure to attend [REDACTED] treatment (Verbal Reprimand)", "date": "2025-03-04"},
     {"event": "FedEx Office offer letter extended to Petitioner ($20.50/hr, Retail Customer Service Associate)", "date": "March 25, 2025"},
     {"event": "FedEx Office anticipated start date / training conflict with HOPE Program", "date": "April 8, 2025"},
-    {"event": "15 CCR § 3574 (Sex Offender Treatment regulations) effective date", "date": "April 17, 2025"},
+    {"event": "15 CCR § 3574 ([REDACTED] Treatment regulations) effective date", "date": "April 17, 2025"},
     {"event": "Petitioner coerced to resign from FedEx Office (approximate date)", "date": "April 17, 2025"},
-    {"event": "Technical violation — failure to attend sex offender treatment (PACT Referral, Verbal Reprimand)", "date": "2025-06-26"},
+    {"event": "Technical violation — failure to attend [REDACTED] treatment (PACT Referral, Verbal Reprimand)", "date": "2025-06-26"},
     {"event": "Technical violation — failure to charge GPS device for one full hour (COP Verbal Reprimand)", "date": "2025-07-15"},
     {"event": "Technical violation — failure to properly charge GPS device (PACT Referral, Verbal Reprimand)", "date": "2025-08-18"},
     {"event": "Prior habeas petition denied by Judge Geffon", "date": "August 27, 2025"},
@@ -42,7 +42,7 @@
   "arguments": [
     "CDCR Policy 19-03 exceeds statutory authority: Penal Code § 3008(d)(2) uses 'up to' the entire parole period, creating a discretionary range; Policy 19-03's mandatory 6.5-year minimum converts that discretion into a categorical bar, rendering the statutory language surplusage (People v. Rizo; In re Gadlin (2020) 10 Cal.5th 915)",
     "Policy 19-03 is an invalid 'underground regulation' because it imposes a binding rule of general application (mandatory minimum supervision duration) without being adopted through the APA notice-and-comment process; it is therefore void under Tidewater Marine Western, Inc. v. Bradshaw (1996) 14 Cal.4th 557",
-    "The 'incomplete treatment' denial ground violates 15 CCR § 3574(d) (effective April 17, 2025), which explicitly states supervised persons may complete a sex offender management program before discharge, and § 3574(e), which decouples treatment status from parole discharge eligibility",
+    "The 'incomplete treatment' denial ground violates 15 CCR § 3574(d) (effective April 17, 2025), which explicitly states supervised persons may complete a [REDACTED] management program before discharge, and § 3574(e), which decouples treatment status from parole discharge eligibility",
     "CDCR's use of the obsolete Form 1502-DR instead of the mandated Form 3043 violates 15 CCR § 3574(f) and deprived Petitioner of the objective actuarial thresholds that would have demonstrated ineligibility for retention; the form substituted subjective narrative criteria for objective numerical thresholds",
     "The denial violates substantive due process: under In re Lawrence (2008) 44 Cal.4th 1181 and In re Taylor (2015) 60 Cal.4th 1019, parole decisions must be based on 'some evidence' of current dangerousness with a rational nexus to individual circumstances; the denial contains no individualized finding of current public safety risk despite Petitioner's validated low-risk scores",
     "The denial violates procedural due process: no advance notice, no opportunity to be heard, no neutral decision-maker, no CTM conducted per § 3574(c), no written good-cause finding on Form 3043, no treatment provider signature, no 30-day written notice (Morrissey v. Brewer; Board of Pardons v. Allen; Accardi doctrine)",
@@ -53,8 +53,8 @@
   ],
   "evidence_cited": [
     "CDCR Discharge Review Report (Form 1502-DR), dated December 1, 2025 (Exhibit A)",
-    "In re Dwyer, San Mateo Super. Ct. Case No. SC-080355A/HC-3020, Order dated March 20, 2023 — CDCR officials testified under oath that agency policy prohibits completion of sex offender management programs prior to discharge (Exhibit B)",
-    "15 Cal. Code Regs. § 3574 (Sex Offender Treatment regulations, effective April 17, 2025) including CDCR Form 3043 (Exhibit C)",
+    "In re Dwyer, San Mateo Super. Ct. Case No. SC-080355A/HC-3020, Order dated March 20, 2023 — CDCR officials testified under oath that agency policy prohibits completion of [REDACTED] management programs prior to discharge (Exhibit B)",
+    "15 Cal. Code Regs. § 3574 ([REDACTED] Treatment regulations, effective April 17, 2025) including CDCR Form 3043 (Exhibit C)",
     "Centerline Wage Reference (Exhibit D) — documenting CDL earning capacity (~$72,000/year)",
     "FedEx Office employment offer letter (March 25, 2025, $20.50/hr, Stockton location) and related email correspondence from Danielle Sutton and Iesha Celestine (Exhibit E)",
     "Alliance for Constitutional Sex Offense Laws v. Macomber, Sacramento Super. Ct. Case No. 23STCP02378 (Exhibit F)",
@@ -62,8 +62,8 @@
     "Stable-2007 Score of 6 (Moderate) — at threshold of 4 or higher for retention",
     "Federal W-2 wage statements confirming employment with at least six commercial carriers (2022–2024): earnings of $39,553 (2022), $11,145 (2023), $55,894 (2024)",
     "Unit Supervisor Gary Noguchi's own comments in the Discharge Review Report conceding Petitioner 'should be commended for maintaining compliance with parole supervision' and has 'no restitution obligations'",
-    "Treatment compliance records: active participation in HOPE provider sex offender treatment, Core Phase (Block 1, Module 4 of 7); Victim Empathy homework presented; relapse prevention plan developed",
+    "Treatment compliance records: active participation in HOPE provider [REDACTED] treatment, Core Phase (Block 1, Module 4 of 7); Victim Empathy homework presented; relapse prevention plan developed",
     "Record of approximately seven clinician changes in five years and provider's admitted loss of completed homework"
   ],
-  "procedural_significance": "This petition is a direct challenge to a December 1, 2025 administrative discharge denial, distinct from a prior habeas petition denied August 27, 2025 (which raised different claims about the length of the parole term). The case is significant on multiple fronts: it tests the validity of CDCR Policy 19-03 as a potential 'underground regulation' under the APA; it asserts the newly adopted 15 CCR § 3574 (effective April 17, 2025) as binding authority that the Department itself violated eight months after enactment; it challenges the systemic practice — confirmed under oath in In re Dwyer — of treating sex offender treatment completion as structurally impossible before parole discharge; and it raises a novel 'state-induced unemployment as pretext' theory that implicates the same HOPE Program Director Katie Palacios and Parole Agent A. Derrick who appear as defendants in related civil matter Newanforbi v. Palacios et al. (STK-CV-UF-2026-0001032). The petition is filed in Santa Clara County Superior Court (the committing court) and seeks immediate discharge effective December 2, 2025, a declaration that Policy 19-03 is ultra vires, and a declaration that use of the obsolete Form 1502-DR renders the December 2025 determination void. The Government Tort Claim filed February 10, 2026 preserves related damages claims."
+  "procedural_significance": "This petition is a direct challenge to a December 1, 2025 administrative discharge denial, distinct from a prior habeas petition denied August 27, 2025 (which raised different claims about the length of the parole term). The case is significant on multiple fronts: it tests the validity of CDCR Policy 19-03 as a potential 'underground regulation' under the APA; it asserts the newly adopted 15 CCR § 3574 (effective April 17, 2025) as binding authority that the Department itself violated eight months after enactment; it challenges the systemic practice — confirmed under oath in In re Dwyer — of treating [REDACTED] treatment completion as structurally impossible before parole discharge; and it raises a novel 'state-induced unemployment as pretext' theory that implicates the same HOPE Program Director Katie Palacios and Parole Agent A. Derrick who appear as defendants in related civil matter Newanforbi v. Palacios et al. (STK-CV-UF-2026-0001032). The petition is filed in Santa Clara County Superior Court (the committing court) and seeks immediate discharge effective December 2, 2025, a declaration that Policy 19-03 is ultra vires, and a declaration that use of the obsolete Form 1502-DR renders the December 2025 determination void. The Government Tort Claim filed February 10, 2026 preserves related damages claims."
 }
