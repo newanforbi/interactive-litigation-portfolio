@@ -94,6 +94,25 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       </div>
     </div>
 
+    {/* Pertinent Filings */}
+    <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}`, marginBottom: 28 }}>
+      <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Pertinent Filings</h3>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        {[
+          { title: "Newanforbi v. Urrea, et al.", type: "Federal" },
+          { title: "Newanforbi v. Dodd, et al.", type: "State Tort" },
+          { title: "Newanforbi v. Macomber", type: "Federal" },
+          { title: "Newanforbi v. Candelaria, et al", type: "Federal" },
+          { title: "Newanforbi v. Rojo, et al.", type: "Federal" }
+        ].map((f, i) => (
+          <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", background: NAVY, borderRadius: 8, border: `1px solid ${BORDER_BLUE}30` }}>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#CBD5E1" }}>{f.title}</span>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: f.type === "State Tort" ? "#FBBF24" : "#60A5FA", background: f.type === "State Tort" ? "#FBBF2420" : "#60A5FA20", borderRadius: 4, padding: "2px 8px" }}>{f.type}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
     {/* Courts Overview */}
     <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
       <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif" }}>Jurisdictional Distribution</h3>
