@@ -116,7 +116,7 @@ Using ONLY information present in the extractions above, produce a JSON object (
 that updates these fields for the matter:
 
 {
-  "key_facts": "Rich, detailed narrative paragraph (400–700 words). Include: the Nov. 1 2024 incident on I-580, Tesla rental, cup of [REDACTED] vs. alcohol allegation, PAS refusal, fabricated DUI report (slurred speech/alcohol odor), no charges filed, 5-day parole hold, officer names and badge numbers, and any relevant legal standards cited in the complaint. Weave in case theory.",
+  "key_facts": "Rich, detailed narrative paragraph (400–700 words). Include: the Nov. 1 2024 incident on I-580, Tesla rental, cup of  vs. alcohol allegation, PAS refusal, fabricated DUI report (slurred speech/alcohol odor), no charges filed, 5-day parole hold, officer names and badge numbers, and any relevant legal standards cited in the complaint. Weave in case theory.",
   "procedural_status": "Detailed chronological narrative. Include filing date, docket events with dates, service of process, MTD filing, opposition, reply, and current status.",
   "evidence": ["Array of specific evidence items extracted from the documents — dashcam, DUI report, declarations, etc."],
   "damages": "Dollar range string e.g. '$150,000 – $400,000+' — use complaint's prayer for relief if present",
