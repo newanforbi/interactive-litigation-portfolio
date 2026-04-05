@@ -1,0 +1,79 @@
+{
+  "doc_type": "California Online Government Claim Form (GCP Intake Form) filed with the Department of General Services, Office of Risk and Insurance Management (ORIM), pursuant to Government Code Section 910, against the California Department of Corrections and Rehabilitation (CDCR)",
+  "key_facts": [
+    "Claimant is Brendan Ngehsi Newanforbi, inmate/parolee identification number BF3571, residing at 1455 Cat Tail Drive, Stockton, California 95204.",
+    "Claim is filed pro se (no attorney or representative) against the California Department of Corrections and Rehabilitation (CDCR).",
+    "The incident date is December 1, 2025, representing the first date of the ongoing incident involving a defective November 2025 Discharge Review Report (CDCR Form 1502-DR).",
+    "The incident location is 612 Carlton Avenue, Stockton, California 95203.",
+    "The defective Discharge Review Report unlawfully retained claimant on parole beyond the mandatory discharge period required by Penal Code § 3001(a)(2) and 15 CCR § 3574.",
+    "Defendants applied fabricated eligibility rules, including a nonexistent '6.5-year' minimum and a '10-year parole term' exclusion, neither of which exist in law or regulation.",
+    "Defendants inserted another parolee's name ('Eagan') into the official Discharge Review Report justification — a copy-paste error that contaminated the official record.",
+    "Defendants omitted every mandatory procedural safeguard required by 15 CCR § 3574, including the Case Transfer Memorandum (CTM), Form 3043, and written good-cause findings.",
+    "Defendants failed to serve the Discharge Review Report on the claimant.",
+    "The defective report was given final approval on November 19, 2025.",
+    "As a result, claimant has been subjected to ongoing unlawful parole supervision including: 24/7 GPS monitoring, curfew, travel and association restrictions, warrantless searches, and mandatory HOPE sex-offender treatment multiple times per week — all without lawful authority.",
+    "Loss of liberty is valued at a minimum of $100 per day since November 19, 2025 (final approval date), with approximately 84 days of accrued damages to the date of claim presentation (February 10, 2026), totaling at least $8,400 at the time of filing.",
+    "Out-of-pocket compliance costs include transportation to HOPE treatment (approximately 30 miles round-trip per session, multiple times per week at IRS standard mileage rate), 6–8 hours per week time value, program fees, polygraph examinations, mandated assessments, and GPS equipment maintenance and charging costs.",
+    "Claimant alleges severe emotional distress including chronic anxiety, sleep disruption, hypervigilance, humiliation from being labeled 'non-compliant' and 'failed treatment' on a procedurally void and factually erroneous official document.",
+    "Total damages claimed exceed $25,000 (unlimited civil jurisdiction) and continue to accrue daily.",
+    "Punitive damages are sought against individual defendants Moua, Noguchi, Dodd, and Rojo for willful and oppressive conduct.",
+    "No insurance carrier claim has been filed.",
+    "The claim does not involve a state-owned vehicle.",
+    "A verified Complaint for Damages is referenced as Exhibit A and attached to the claim.",
+    "The Discharge Review Report (Discharge_Review_Report.pdf) was attached as a supporting document.",
+    "The claim was declared under penalty of perjury and signed electronically by Brendan Ngehsi Newanforbi on March 21, 2026.",
+    "A $25 filing fee was required upon submission."
+  ],
+  "dates": [
+    {
+      "event": "CDCR Discharge Review Report (Form 1502-DR) final approval date — the event triggering unlawful parole retention",
+      "date": "November 19, 2025"
+    },
+    {
+      "event": "Date of Incident (first date of ongoing unlawful parole supervision)",
+      "date": "December 1, 2025"
+    },
+    {
+      "event": "Claim presentation / calculation cutoff date for accrued loss-of-liberty damages (approximately 84 days from November 19, 2025)",
+      "date": "February 10, 2026"
+    },
+    {
+      "event": "Declaration date — claimant's electronic signature and submission of the government claim form",
+      "date": "March 21, 2026"
+    },
+    {
+      "event": "Reference date: Dwyer court decision condemning related CDCR practices",
+      "date": "2023"
+    },
+    {
+      "event": "Reference date: April 2025 regulatory amendments to 15 CCR relevant to parole discharge procedures",
+      "date": "April 2025"
+    }
+  ],
+  "arguments": [
+    "California Penal Code § 3001(a)(2) and 15 CCR § 3574 mandatorily required claimant's discharge from parole after one year unless CDCR demonstrated good cause supported by mandatory procedural safeguards — conditions defendants failed to satisfy.",
+    "The Discharge Review Report (CDCR Form 1502-DR) is procedurally void because defendants omitted the Case Transfer Memorandum (CTM), Form 3043, and written good-cause findings, each of which are mandatory prerequisites under 15 CCR § 3574.",
+    "The 'Eagan' copy-paste error — inserting another parolee's name into the official justification section of claimant's Discharge Review Report — renders the report factually erroneous and legally deficient on its face.",
+    "Defendants fabricated eligibility rules (a nonexistent '6.5-year' minimum discharge threshold and a '10-year parole term' exclusion) that have no basis in California law or regulation, constituting an ultra vires exercise of authority.",
+    "Failure to serve the Discharge Review Report on claimant violated claimant's due process rights and deprived him of an opportunity to contest the continued parole supervision.",
+    "The conditions of ongoing parole supervision — 24/7 GPS monitoring, curfew, travel and association restrictions, warrantless searches, and mandatory HOPE treatment — constitute custodial restraint for purposes of calculating per-diem liberty damages.",
+    "Being labeled 'non-compliant' or 'failed treatment' under HOPE is structurally impossible under that program's own blanket policy, making such designations in the official record arbitrary and tortious.",
+    "Individual defendants Moua, Noguchi, Dodd, and Rojo acted willfully and oppressively with conscious disregard of judicially condemned practices as established in Dwyer (2023) and in light of the April 2025 regulatory amendments, supporting an award of punitive damages.",
+    "No statutory cap applies to general or punitive damages in this matter.",
+    "Damages continue to accrue daily until discharge or final judgment, with the total already far exceeding $25,000 and supporting unlimited civil jurisdiction."
+  ],
+  "evidence_cited": [
+    "CDCR Discharge Review Report (Form 1502-DR), November 2025 — the defective document at the center of the claim; attached as Discharge_Review_Report.pdf",
+    "Verified Complaint for Damages — referenced as Exhibit A to the claim, containing prayer for relief on pages 21–22 with per-diem minimums expressly pled",
+    "California Penal Code § 3001(a)(2) — statutory authority requiring mandatory parole discharge after one year absent good cause",
+    "15 CCR § 3574 — regulatory provision requiring mandatory procedural safeguards (CTM, Form 3043, good-cause findings) for parole discharge review",
+    "Court orders in Dwyer v. [CDCR] (2023) — judicial precedent condemning the same or similar CDCR practices underlying this claim",
+    "Court orders in Macomber — referenced alongside Dwyer as binding or persuasive authority on CDCR parole discharge obligations",
+    "April 2025 regulatory amendments to 15 CCR — post-Dwyer changes to parole discharge regulations that individual defendants consciously disregarded",
+    "IRS standard mileage rate — used to calculate transportation costs to HOPE treatment sessions",
+    "HOPE sex-offender treatment program records and policies — referenced to establish that 'non-compliant' and 'failed treatment' designations are structurally impossible under the program's blanket policy",
+    "GPS monitoring records — evidence of 24/7 custodial restraint imposed without lawful authority",
+    "Polygraph examination records and mandated assessment records — out-of-pocket compliance cost evidence"
+  ],
+  "procedural_significance": "This document is a California Government Tort Claim filed under Government Code § 910, which is a mandatory administrative prerequisite to filing a civil lawsuit against the State of California and its agencies. The timely presentation of this claim to CDCR/DGS ORIM is a jurisdictional condition precedent; failure to exhaust this step would bar claimant from suing in court. The claim was declared and signed on March 21, 2026, establishing the government's six-month period to accept, reject, or allow the claim to be deemed rejected by operation of law (Gov. Code § 912.4), after which claimant may file suit. The claim covers both the individual defendants (Moua, Noguchi, Dodd, Rojo) for punitive damages and the state agency (CDCR) for compensatory damages. The unlimited civil case type designation (over $25,000) determines the superior court division with jurisdiction. The accruing daily damages and the ongoing nature of the parole supervision conditions support arguments for both immediate injunctive relief and a continuing-tort theory of accrual. The 'Eagan' copy-paste error and fabricated eligibility rules documented here will also be central evidence in the parallel verified Complaint for Damages."
+}
