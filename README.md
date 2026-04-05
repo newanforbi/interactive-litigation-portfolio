@@ -40,7 +40,7 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
 Three purely equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. All three target the Secretary of CDCR in his official capacity:
 - **Matter 9** (Writ of Mandate, Sacramento): Compels CDCR to conduct a lawful, individualized discharge determination. Hearing set 05/29/2026, Dept. 13A.
-- **Matter 10** (Habeas Corpus, Santa Clara): Challenges continued compelled sex offender treatment as unlawful restraint after five-plus years of parole with no new convictions. Awaiting OSC.
+- **Matter 10** (Habeas Corpus, Santa Clara): Challenges continued compelled [REDACTED] treatment as unlawful restraint after five-plus years of parole with no new convictions. Awaiting OSC.
 - **Matter 19** (Habeas Corpus, Santa Clara): Seeks immediate and unconditional discharge from parole. Filed 04/03/2026; OSC anticipated 06/05/2026. Companion to Matter 10, targeting the parole term itself rather than treatment conditions.
 
 ---
