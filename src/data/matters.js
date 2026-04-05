@@ -243,7 +243,7 @@ export const cases = [
       documents: []
     },
     {
-      number: 15, caption: "Newanforbi v. Moua et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
+      number: 15, caption: "Newanforbi v. Dodd, et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
       claims: "Mandatory Duty Breach, False Imprisonment, IIED, Econ. Interference", status: "Filed 05/29/2026",
       filed: "May 29, 2026", judge: "TBD", cluster: 2, type: "State",
       defendants: "Long Moua (#7472); Gary Noguchi (#7284); Keely Dodd (#6462); Andrew Derrick (#6910); Joseelyn Rojo; CDCR; DOES 1-20",
