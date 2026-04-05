@@ -91,25 +91,25 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
           </div>
         ))}
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#64748B", marginTop: 12, fontStyle: "italic" }}>Click a cluster to filter matters →</div>
-      </div>
-    </div>
 
-    {/* Pertinent Filings */}
-    <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}`, marginBottom: 28 }}>
-      <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Pertinent Filings</h3>
-      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-        {[
-          { title: "Newanforbi v. Urrea, et al.", type: "Federal" },
-          { title: "Newanforbi v. Dodd, et al.", type: "State Tort" },
-          { title: "Newanforbi v. Macomber", type: "Federal" },
-          { title: "Newanforbi v. Candelaria, et al", type: "Federal" },
-          { title: "Newanforbi v. Rojo, et al.", type: "Federal" }
-        ].map((f, i) => (
-          <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", background: NAVY, borderRadius: 8, border: `1px solid ${BORDER_BLUE}30` }}>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#CBD5E1" }}>{f.title}</span>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: f.type === "State Tort" ? "#FBBF24" : "#60A5FA", background: f.type === "State Tort" ? "#FBBF2420" : "#60A5FA20", borderRadius: 4, padding: "2px 8px" }}>{f.type}</span>
+        {/* Pertinent Filings */}
+        <div style={{ marginTop: 24, borderTop: `1px solid ${NAVY}`, paddingTop: 16 }}>
+          <h4 style={{ fontSize: 13, fontWeight: 700, color: GOLD, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5, textTransform: "uppercase" }}>Pertinent Filings</h4>
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {[
+              { title: "Newanforbi v. Urrea, et al.", matter: 13 },
+              { title: "Newanforbi v. Dodd, et al.", matter: 15 },
+              { title: "Newanforbi v. Macomber", matter: 11 },
+              { title: "Newanforbi v. Candelaria, et al", matter: 7 },
+              { title: "Newanforbi v. Rojo, et al.", matter: 16 }
+            ].map((f, i) => (
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "#0F172A", borderRadius: 6, border: `1px solid ${BORDER_BLUE}25` }}>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: "#CBD5E1" }}>{f.title}</span>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: "#94A3B8", background: "#1E293B", borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
 
