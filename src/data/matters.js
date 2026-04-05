@@ -10,7 +10,7 @@ export const cases = [
       damages: "$175,000 – $450,000+, comprising: 1+ year of lost CDL-dependent wages and reduced future earning capacity from CDL suspension; compensation for approximately 5-day unlawful parole hold without judicial review; emotional distress, fear, and stigma from wrongful arrest and dangerous jail conditions (confinement with menacing homicide suspect); and any recoverable costs under applicable civil rights statutes.",
       risk: "Significant. The primary risk is qualified immunity on both remaining counts: under Wesby and Kisela, Plaintiff must identify precedent that 'squarely governs' these specific facts — an officer encountering a visible cup during a late-night welfare check and escalating to DUI investigation — and no such clearly established authority has been cited. Second, the Iqbal/Twombly pleading risk is acute: key facts that could defeat qualified immunity (e.g., that the cup contained no alcohol and was not in plain view, and that officers fabricated observations) appeared for the first time in the Opposition rather than the Complaint, leaving the operative pleading facially thin. Third, Plaintiff's strategic concessions have narrowed the case to individual-capacity claims on Counts I and II only, eliminating Monell as a path to broader liability. Leave to amend will likely be necessary to cure these pleading deficiencies and incorporate the factual allegations needed to overcome qualified immunity at the 12(b)(6) stage.",
       evidence: [
-        "CHP arrest report (F7953179)",
+        "CHP arrest report",
         "Chemical test advisements",
         "Administrative chemical refusal designation",
         "Class A CDL suspension record (through February 2026)",
@@ -19,7 +19,7 @@ export const cases = [
         "Empty container recovered during warrantless search",
         "DA declination to file charges",
         "CHP Video Transcript (Exhibit A — dashcam footage)",
-        "CHP Discovery Response (F7953179)",
+        "CHP Discovery Response",
         "CHP post-incident correspondence (characterizing arrest as 'detention')",
         "Centerline Wage Reference (CDL wage documentation)"
       ],
@@ -29,9 +29,9 @@ export const cases = [
         { label: "Opposition to Motion to Dismiss (Dec. 22, 2025)", path: "/documents/matter-01/Opposition for Motion to Dismiss.pdf" },
         { label: "Reply — CHP (Jan. 5, 2026)", path: "/documents/matter-01/Reply - CHP.pdf" },
         { label: "Initial Scheduling Order (Oct. 28, 2025)", path: "/documents/matter-01/02_Initial_Scheduling_Order.pdf" },
-        { label: "CHP Arrest Report (F7953179)", path: "/documents/matter-01/Arrest Report F7953179.pdf" },
+        { label: "CHP Arrest Report", path: "/documents/matter-01/Arrest Report.pdf" },
         { label: "CHP Video Transcript (Exhibit A)", path: "/documents/matter-01/Exhibit_A_CHP_Video_Transcript.pdf" },
-        { label: "Discovery Response (F7953179)", path: "/documents/matter-01/F7953179_Discovery-Response.pdf" },
+        { label: "Discovery Response", path: "/documents/matter-01/Discovery-Response.pdf" },
         { label: "Centerline Wage Reference", path: "/documents/matter-01/Centerline Wage Reference.pdf" }
       ]
     },
