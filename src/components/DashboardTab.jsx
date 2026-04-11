@@ -79,7 +79,15 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
           { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" },
           { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" }
         ].map(cl => (
-          <div key={cl.n} style={{ marginBottom: 16, cursor: "pointer" }} onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}>
+          <div
+            key={cl.n}
+            role="button"
+            tabIndex={0}
+            style={{ marginBottom: 16, cursor: "pointer" }}
+            onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}
+            onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setClusterFilter(cl.n); setActiveTab("Matters"); } }}
+            aria-label={`Filter matters by cluster: ${cl.label}`}
+          >
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#CBD5E1" }}>{cl.label}</span>
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{clusterCounts[cl.n]} matters</span>

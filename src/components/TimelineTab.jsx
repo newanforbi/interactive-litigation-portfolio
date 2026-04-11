@@ -1,12 +1,17 @@
+import { useMemo } from "react";
 import { PORTFOLIO } from "../data";
 import { CARD_BG, NAVY, GOLD, DARK_BG } from "../constants";
 import { getPDTMidnight, parseEventDatePDT } from "../utils/dateUtils";
 
 export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
-  const cutoff = getPDTMidnight();
-  const sorted = [...PORTFOLIO.timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
-  const pastEvents = sorted.filter(t => parseEventDatePDT(t.date) < cutoff);
-  const recentEvents = sorted.filter(t => parseEventDatePDT(t.date) >= cutoff);
+  const cutoff = useMemo(() => getPDTMidnight(), []);
+  const { pastEvents, recentEvents } = useMemo(() => {
+    const sorted = [...PORTFOLIO.timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
+    return {
+      pastEvents: sorted.filter(t => parseEventDatePDT(t.date) < cutoff),
+      recentEvents: sorted.filter(t => parseEventDatePDT(t.date) >= cutoff),
+    };
+  }, [cutoff]);
 
   const renderEvent = (t, i) => {
     const typeColors = { filing: "#34D399", hearing: "#F472B6", ruling: "#60A5FA", event: "#94A3B8", milestone: GOLD };
