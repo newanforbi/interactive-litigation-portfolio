@@ -62,15 +62,8 @@ export const cases = [
         "Huybers Declaration (8_Dhuybers.pdf)",
         "FedEx Records (job offer, training schedule, forced resignation ~Apr. 17, 2025)",
         "Form 1502-DR (Nov. 2025 Discharge Review)",
-        "CDCR Form 22 (abandoned agent-change request — chilling effect incident)",
         "Comparator A Sworn Declaration (28 U.S.C. § 1746) — white parolee, casino trip, Form 602 assistance",
-        "Comparator B Sworn Declaration (28 U.S.C. § 1746) — Black parolee, 'shot' remarks, park arrest",
-        "December 31, 2025 Missed-Work Records (anxiety/depression)",
-        "August 2025 New Parole Conditions (signed Noguchi)",
-        "PACT Meeting Attendance Records",
-        "Good Faith Declaration",
-        "Notice of CASOMB",
-        "Summons Returned Executed"
+        "Comparator B Sworn Declaration (28 U.S.C. § 1746) — Black parolee, 'shot' remarks, park arrest"
       ],
       documents: [
         { label: "Original Complaint (Doc 1, Jan. 5, 2026)", path: "/documents/matter-03/2.Newanforbi v. Derrick.pdf" },
@@ -119,20 +112,13 @@ export const cases = [
       damages: "$250,000 - $750,000+", risk: "Markedly favorable risk profile: neither HOPE nor Palacios can invoke qualified immunity or sovereign immunity — both are private contractors, not government employees. The Dwyer condemnation of HOPE's blanket retention policy functions as near-dispositive estoppel on the core theory; continued enforcement after Dwyer strengthens Plaintiff's showing of willfulness supporting punitive damages (Cal. Civ. Code § 3294). The $9,690/year per-parolee financial conflict is affirmative evidence of fraud and negligence, directly attacking the reliability of Palacios's clinical judgment. HOPE is also exposed to state-actor liability under West v. Atkins in parallel federal Matter 6. Favorable findings in Matters 3, 5, or 6 create compounding collateral estoppel pressure across all proceedings.",
       evidence: [
         "Dwyer order — judicial condemnation of HOPE's blanket retention policy, admitted under oath; establishes prior finding of unlawful practice directly applicable to Defendants' continued conduct",
-        "Alameda Contract — billing rate documentation establishing HOPE's fee-for-service structure: $85 per group session, $600 per polygraph examination, ~$9,690/year financial incentive per retained parolee",
-        "HOPE billing records — corroborate the fee-for-service financial conflict of interest and document revenues generated from Plaintiff's continued retention",
-        "Form 1502-DR (November 2025 Discharge Review Report) — incorporates Palacios's 'ringleader' and Derrick's 'disruptive' characterizations; facially defective; used to deny discharge and justify escalated supervision",
-        "CTM records (mid-2025 Clinical Treatment Meeting) — document Palacios's 'ringleader' label, Derrick's negative oral report on Plaintiff's speech, and Noguchi's on-the-spot denial of reassignment",
-        "HOPE Group Session Camera Recordings — Stockton facility (5403 N. Pershing Ave., Suite 200); sessions Palacios facilitated after clinician resignation are direct evidence of speech-suppression conduct",
-        "Palacios 'ringleader' characterization records — clinical documentation and CTM minutes reflecting the label and its downstream incorporation into parole records",
-        "'Doing better when spoke less' observation — on-record speech-suppression statement by Palacios during facilitated group session; subject to camera recording",
-        "Clinician Ms. Jackie independent corroboration — contemporaneous observation noting behavioral change in Plaintiff consistent with chilling effect of Palacios's remark",
-        "FedEx records — job offer, training schedule (Modesto, April 1, 2025, $20/hr, ~30 hrs/week), scheduling accommodation denial, and forced resignation (~April 17, 2025) — economic harm linked to grace-period revocation",
-        "CDCR Form 22 (abandoned agent-change request) — documents chilling effect and intimidation environment Palacios helped create",
-        "POS-010 (filed March 3, 2026) — proof of personal service on Palacios by San Joaquin County Sheriff on February 24, 2026",
-        "NAR — executed by HOPE Psychotherapy Inc., d/b/a HOPE Program, confirming service on March 26, 2026; service complete as to all defendants",
-        "SLB Stipulation (state case, Apr. 27, 2026) — written record tethered exclusively to STK-CV-UF-2026-1032; confirms Palacios's extended state response deadline with all defenses reserved",
-        "SLB Stipulation (federal Doc. 22, filed Apr. 2, 2026) — separate instrument in 2:26-cv-00004-DJC-JDP; confirms parallel defense posture and cross-matter monitoring obligation"
+        "Alameda Contract — billing rate documentation: $85 per group session, $600 per polygraph, ~$9,690/year financial incentive per retained parolee",
+        "Form 1502-DR (November 2025 Discharge Review Report) — incorporates Palacios's 'ringleader' and Derrick's 'disruptive' characterizations; facially defective; used to deny discharge",
+        "CTM records (mid-2025) — document Palacios's 'ringleader' label, Derrick's negative oral report on Plaintiff's speech, and Noguchi's on-the-spot denial of reassignment",
+        "HOPE Group Session Camera Recordings — Stockton facility; sessions Palacios facilitated are direct evidence of speech-suppression conduct",
+        "Clinician Ms. Jackie independent corroboration — contemporaneous observation noting behavioral change consistent with chilling effect of Palacios's remark",
+        "FedEx records — job offer, training schedule, scheduling accommodation denial, and forced resignation (~April 17, 2025)",
+        "CDCR Form 22 (abandoned agent-change request) — documents chilling effect and intimidation environment Palacios helped create"
       ],
       documents: []
     },
@@ -162,7 +148,7 @@ export const cases = [
       procedural_status: "Nov. 1, 2024: CHP stop; custodial arrest under CVC §40300.5; DS-367 issued; blood drawn (warrant WAR913372, 02:34 AM); booked at Santa Rita Jail. CHP later issued Detention Certificate under PC §849(b)(1) repudiating the arrest; no charges filed. Dec. 1, 2024: CDL suspension effective under VC §13353, stayed pending APS hearing. Dec. 4, 2024: DMV serves DS2044 (APS Case 34739340); Candelaria identified as hearing officer. Dec. 9, 2024: Plaintiff files Discovery Response — six legal grounds, ten case-law citations. Jan. 24, 2025: APS hearing via Microsoft Teams. Feb. 11, 2025: Candelaria sustains one-year CDL suspension and commercial disqualification; Detention Certificate and Mercer v. DMV dismissed as 'unpersuasive' without analysis. May 29, 2026: Federal §1983 complaint filed, USDC E.D. Cal.",
       damages: "$226,117 pleaded (FAC) + §1983 punitive damages. Economic breakdown: lost wages $114,894; benefits loss $28,723; career impact $75,000; out-of-pocket (reissue fee, SR-22, costs) $7,500. CDL suspended Feb 20, 2025 – Feb 19, 2026; commercial disqualification. Plaintiff started at Centerline Drivers Oct 30, 2024 (two days pre-incident) at $33.35/$50.03/hr. Punitive damages against Candelaria individually for deliberate disregard of Knudsen and Mercer. Cascading harm: CDL loss cited as aggravating factor in November 2025 Discharge Review across litigation cluster.",
       risk: "Qualified immunity rebutted on multiple grounds: Bell v. Burson (1971) clearly established due process rights for license suspension; Knudsen v. DMV and California DUI Lawyers Ass'n directly condemned the dual prosecutor/adjudicator role at DMV APS hearings before February 2025 — Candelaria cannot claim ignorance of precedent governing her own role. Under Knudsen's structural error doctrine, Plaintiff may not need to show prejudice on the merits — the bias itself is the constitutional violation. The DS-367's internal contradictions (refusal checked yet blood drawn; no driving observed) independently undermine the evidentiary basis for suspension. The Detention Certificate is the strongest single piece of evidence: CHP's own agency repudiated the arrest, and Candelaria's refusal to address it without analysis is the clearest evidence of a predetermined outcome.",
-      evidence: ["CHP Detention Certificate (Form CHP-01991, Case RJ68845, dated Nov 5 2024, PC §849(b)(1)) — formally repudiates arrest; Candelaria's refusal to address it is core due process violation", "DS-367 (Officer Meza-Gonzalez #023295, Case RS68845) — internally contradictory: refusal checked yet blood drawn 07:38 AM; PAS blank; no driving observed; DS-367 claims alcohol odor 'from within vehicle and person'", "CHP Dashcam audio — Officer Melano identifies the only liquid present as urine; Meza-Gonzalez refuses to smell it; directly contradicts DS-367 alcohol odor claim; also shows Plaintiff walked calmly and answered coherently", "Blood draw warrant WAR913372 (Judge A. Sekany, 02:34 AM Nov 1 2024) — existence directly contradicts 'Chemical Test Refusal' designation", "CHP Arrest Report F7953179 — welfare-check basis, no moving violation, warrantless arrest CVC §40300.5, pre-diabetic condition, Miranda not administered", "FST field notes — destroyed after transfer to Arrest Report; potential spoliation; walk-and-turn declined due to uneven terrain (acknowledged by Candelaria's own decision)", "DS2044 Notification of Discovery (Case 34739340, C. Winston, Dec 4 2024) — five disclosed documents; confirms Candelaria as hearing officer", "Respondent's Discovery Response (Dec 9 2024) — six legal grounds; ten case-law citations including Mercer v. DMV; shows arguments properly raised then dismissed without analysis", "APS Decision (Case 34739340, Feb 11 2025, Candelaria) — conclusory; dismisses Detention Certificate and Mercer v. DMV as 'unpersuasive'; decision language characterized in FAC as advocacy rather than neutral adjudication", "Centerline Drivers employment records — start date Oct 30 2024 (two days pre-incident); $33.35/$50.03/hr rate; Lily Transportation–Toyota Dedicated route, San Ramon", "W-2 earnings records (Centerline and prior carriers; 2024: $55,894; 2023: $11,145; 2022: $39,553) — economic harm baseline", "CDL suspension order — Feb 20 2025 through Feb 19 2026; $125 reissue fee; mandatory 3-year SR-22", "California DUI Lawyers Ass'n v. DMV — precedent condemning dual prosecutor/adjudicator role", "Knudsen v. DMV — directly condemns same structural bias at DMV APS proceedings", "Mercer v. DMV — binding authority on Detention Certificate effect in APS proceedings", "Bell v. Burson, 402 U.S. 535 (1971) — clearly established due process for license suspension; rebuts qualified immunity", "Mathews v. Eldridge, 424 U.S. 319 (1976) — governing balancing test; structural bias satisfies deprivation prong"],
+      evidence: ["CHP Detention Certificate (Form CHP-01991, Case RJ68845, Nov 5 2024, PC §849(b)(1)) — formally repudiates arrest; Candelaria's refusal to address it is core due process violation", "DS-367 (Officer Meza-Gonzalez #023295, Case RS68845) — internally contradictory: refusal checked yet blood drawn 07:38 AM; PAS blank; no driving observed; claims alcohol odor 'from within vehicle and person'", "CHP Dashcam audio — Melano identifies the only liquid as urine; Meza-Gonzalez refuses to smell it; directly contradicts DS-367 alcohol odor claim", "Blood draw warrant WAR913372 (Judge A. Sekany, 02:34 AM Nov 1 2024) — existence directly contradicts 'Chemical Test Refusal' designation", "APS Decision (Case 34739340, Feb 11 2025, Candelaria) — conclusory; dismisses Detention Certificate and Mercer v. DMV as 'unpersuasive' without analysis", "Centerline Drivers employment records — start date Oct 30 2024 (two days pre-incident); $33.35/$50.03/hr; Lily Transportation–Toyota route, San Ramon", "CDL suspension order — Feb 20 2025 through Feb 19 2026; $125 reissue fee; mandatory 3-year SR-22", "Knudsen v. DMV — directly condemns dual prosecutor/adjudicator structural bias at DMV APS proceedings", "Mercer v. DMV — binding authority on Detention Certificate effect in APS proceedings"],
       documents: []
     },
     {
@@ -262,21 +248,13 @@ export const cases = [
       defendants: "Long Moua (#7472); Gary Noguchi (#7284); Keely Dodd (#6462); Andrew Derrick (#6910); Joseelyn Rojo; CDCR; DOES 1-20. Punitive damages sought individually against Moua, Noguchi, Dodd, and Rojo for willful and oppressive conduct.",
       evidence: [
         "Form 1502-DR (10 defects) — Discharge_Review_Report.pdf (attached to Gov. Claim)",
-        "Verified Complaint for Damages (Exhibit A to Gov. Claim) — prayer for relief on pp. 21–22 with per-diem minimums expressly pled",
         "W-2 wage statements (6 carriers)",
-        "Centerline wage notice ($33.35/$50.03)",
         "Dwyer v. CDCR court orders (2023) — condemning same/similar CDCR practices",
-        "ACSOL v. Macomber ruling — persuasive/binding authority on CDCR parole discharge obligations",
         "Section 3574/NCR 25-01",
         "Gov. Claim + deemed rejection (Gov. Code §912.4(c))",
         "April 2025 regulatory amendments to 15 CCR — post-Dwyer changes consciously disregarded by individual defendants",
-        "HOPE  treatment program records and policies — establish 'non-compliant'/'failed treatment' designations are structurally impossible under program's blanket policy",
-        "GPS monitoring records — evidence of 24/7 custodial restraint imposed without lawful authority",
-        "Polygraph examination records and mandated assessment records — out-of-pocket compliance cost evidence",
-        "IRS standard mileage rate calculations — transportation costs to HOPE treatment sessions",
-        "California Penal Code § 3001(a)(2) and 15 CCR § 3574 — mandatory discharge statutes",
-        "CHP arrest report and CHP correspondence characterizing I-580 encounter as 'detention' (Nov. 1, 2024 incident underlying parole hold)",
-        "Administrative chemical refusal designation — triggered CDL suspension until February 2026"
+        "HOPE treatment program records and policies — establish 'non-compliant'/'failed treatment' designations are structurally impossible under program's blanket policy",
+        "GPS monitoring records — evidence of 24/7 custodial restraint imposed without lawful authority"
       ],
       documents: [
         { label: "Complaint — Newanforbi v. Dodd et al.", path: "/documents/matter-15/Newanforbi v. Dodd, et al..pdf" },
