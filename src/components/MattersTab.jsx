@@ -6,7 +6,12 @@ import { StatusBadge, ClusterBadge, TypeBadge } from "./Badges";
 const MatterCard = ({ matter: c, isOpen, onToggle }) => (
   <div style={{ background: CARD_BG, borderRadius: 10, border: isOpen ? `1px solid ${GOLD}40` : `1px solid ${NAVY}`, overflow: "hidden", transition: "border-color 0.3s" }}>
     {/* Header row */}
-    <div onClick={onToggle} style={{ padding: "16px 22px", cursor: "pointer", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
+    <button
+      onClick={onToggle}
+      aria-expanded={isOpen}
+      aria-controls={`matter-detail-${c.number}`}
+      style={{ width: "100%", padding: "16px 22px", cursor: "pointer", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", background: "transparent", border: "none", textAlign: "left", color: "inherit" }}
+    >
       <div style={{ width: 36, height: 36, borderRadius: 8, background: NAVY, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 700, color: GOLD, flexShrink: 0 }}>{c.number}</div>
       <div style={{ flex: 1, minWidth: 200 }}>
         <div style={{ fontSize: 16, fontWeight: 700, color: "white", marginBottom: 3 }}>{c.caption}</div>
@@ -17,12 +22,12 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => (
         <TypeBadge type={c.type} />
         <StatusBadge status={c.status} />
       </div>
-      <div style={{ color: "#64748B", fontSize: 18, transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0)" }}>▾</div>
-    </div>
+      <div aria-hidden="true" style={{ color: "#64748B", fontSize: 18, transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0)" }}>▾</div>
+    </button>
 
     {/* Expanded detail */}
     {isOpen && (
-      <div style={{ padding: "0 22px 22px", borderTop: `1px solid ${NAVY}` }}>
+      <div id={`matter-detail-${c.number}`} style={{ padding: "0 22px 22px", borderTop: `1px solid ${NAVY}` }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, paddingTop: 18 }}>
           <div>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Defendants</div>
@@ -85,8 +90,13 @@ export const MattersTab = ({ filteredCases, clusterFilter, setClusterFilter, typ
     <div>
       {/* Filters */}
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 20, alignItems: "center" }}>
-        <input value={searchQuery} onChange={e => setSearchQuery(e.target.value)} placeholder="Search matters…"
-          style={{ flex: "1 1 200px", padding: "10px 16px", borderRadius: 8, border: `1px solid ${NAVY}`, background: CARD_BG, color: "#E2E8F0", fontFamily: "'DM Sans', sans-serif", fontSize: 13, outline: "none" }} />
+        <input
+          value={searchQuery}
+          onChange={e => setSearchQuery(e.target.value)}
+          placeholder="Search matters…"
+          aria-label="Search matters by caption, case number, or keywords"
+          style={{ flex: "1 1 200px", padding: "10px 16px", borderRadius: 8, border: `1px solid ${NAVY}`, background: CARD_BG, color: "#E2E8F0", fontFamily: "'DM Sans', sans-serif", fontSize: 13, outline: "none" }}
+        />
         {[null, 1, 2, 3, 4].map(c => (
           <button key={c ?? "all"} onClick={() => setClusterFilter(c)} style={{
             padding: "8px 14px", borderRadius: 6, border: clusterFilter === c ? `1px solid ${GOLD}` : `1px solid ${NAVY}`,
@@ -107,14 +117,26 @@ export const MattersTab = ({ filteredCases, clusterFilter, setClusterFilter, typ
 
       {/* Matter Cards */}
       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-        {filteredCases.map(c => (
-          <MatterCard
-            key={c.number}
-            matter={c}
-            isOpen={expandedMatter === c.number}
-            onToggle={() => setExpandedMatter(expandedMatter === c.number ? null : c.number)}
-          />
-        ))}
+        {filteredCases.length === 0 ? (
+          <div style={{ padding: "40px 24px", textAlign: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "#64748B" }}>
+            No matters match your current filters.{" "}
+            <button
+              onClick={() => { setClusterFilter(null); setTypeFilter(null); setSearchQuery(""); }}
+              style={{ background: "none", border: "none", color: GOLD, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: 14, textDecoration: "underline", padding: 0 }}
+            >
+              Clear all filters
+            </button>
+          </div>
+        ) : (
+          filteredCases.map(c => (
+            <MatterCard
+              key={c.number}
+              matter={c}
+              isOpen={expandedMatter === c.number}
+              onToggle={() => setExpandedMatter(expandedMatter === c.number ? null : c.number)}
+            />
+          ))
+        )}
       </div>
     </div>
   );

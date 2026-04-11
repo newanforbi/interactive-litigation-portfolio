@@ -29,7 +29,6 @@ export default function LitigationPortfolio() {
 
   return (
     <div style={{ minHeight: "100vh", background: DARK_BG, color: "#E2E8F0", fontFamily: "'Cormorant Garamond', 'Georgia', serif" }}>
-      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       <style>{`@keyframes clockPulse { 0%,100%{opacity:1} 50%{opacity:0.25} }`}</style>
 
       {/* Header */}
@@ -42,7 +41,7 @@ export default function LitigationPortfolio() {
           </div>
           <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
             {tabs.map(t => (
-              <button key={t} onClick={() => setActiveTab(t)} style={{
+              <button key={t} onClick={() => setActiveTab(t)} aria-current={activeTab === t ? "page" : undefined} style={{
                 padding: "8px 18px", borderRadius: 6, border: activeTab === t ? `1px solid ${GOLD}` : "1px solid transparent",
                 background: activeTab === t ? `${GOLD}18` : "transparent", color: activeTab === t ? GOLD : "#94A3B8",
                 fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, cursor: "pointer", transition: "all 0.2s",
@@ -64,8 +63,12 @@ export default function LitigationPortfolio() {
         <div style={{ color: GOLD, fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, textTransform: "uppercase", whiteSpace: "nowrap" }}>
           ⚖ Deadline Clock
         </div>
+        {/* Screen-reader announcement for clock (updates every minute is sufficient) */}
+        <div aria-live="polite" aria-atomic="true" style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap" }}>
+          {showClock && timeLeft.label ? `Deadline: ${timeLeft.label}. ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.mins} minutes remaining.` : ""}
+        </div>
         {showClock && <>
-          <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+          <div aria-hidden="true" style={{ display: "flex", gap: 4, alignItems: "center" }}>
             {[{ v: timeLeft.days, l: "Days" }, { v: timeLeft.hours, l: "Hrs" }, { v: timeLeft.mins, l: "Min" }, { v: timeLeft.secs, l: "Sec" }].map(({ v, l }, i) => (
               <div key={l} style={{ display: "flex", alignItems: "center", gap: 4 }}>
                 {i > 0 && <span style={{ color: "#334155", fontSize: 18, lineHeight: 1, paddingBottom: 10 }}>:</span>}
@@ -82,7 +85,7 @@ export default function LitigationPortfolio() {
             {timeLeft.label}
           </div>
         </>}
-        <button onClick={() => setShowClock(v => !v)} style={{
+        <button onClick={() => setShowClock(v => !v)} aria-expanded={showClock} aria-controls="deadline-clock-display" style={{
           position: "absolute", right: 16, top: "50%", transform: "translateY(-50%)",
           padding: "4px 10px", borderRadius: 5, border: `1px solid #475569`,
           background: "transparent", color: "#64748B", fontFamily: "'DM Sans', sans-serif",
