@@ -293,7 +293,7 @@ export const cases = [
       causes: ["Civil Rights Violation (42 USC 1983)"],
       key_facts: "Actions by Barocio in connection with parole supervision. Part of broader pattern of constitutional violations by CDCR agents.",
       procedural_status: "Filed 01/22/2026. Clerk's Notice of Docket Correction (04/02/2026): case redesignated as Prisoner Civil Rights action; new case no. 2:26-cv-0191 DJC CSK (PC). Consent/Decline of U.S. Magistrate Judge Jurisdiction form (Doc 5-1) issued 04/02/2026 by Mag. Chi Soo Kim; response due within 30 days (by ~05/02/2026).",
-      damages: "TBD", risk: "",
+      damages: "$150,000", risk: "",
       evidence: ["Parole supervision records"],
       documents: [
         { label: "Doc 5-1 — Consent/Decline of U.S. Magistrate Judge Jurisdiction (04/02/2026)", path: "/documents/matter-18/doc-5-1-consent-decline-magistrate.pdf" }
