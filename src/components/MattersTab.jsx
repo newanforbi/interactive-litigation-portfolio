@@ -10,7 +10,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => (
       onClick={onToggle}
       aria-expanded={isOpen}
       aria-controls={`matter-detail-${c.number}`}
-      style={{ width: "100%", padding: "16px 22px", cursor: "pointer", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", background: "transparent", border: "none", textAlign: "left", color: "inherit" }}
+      style={{ width: "100%", padding: "16px 22px", cursor: "pointer", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", background: "transparent", border: "none", textAlign: "left", color: "inherit", font: "inherit", lineHeight: "inherit", margin: 0 }}
     >
       <div style={{ width: 36, height: 36, borderRadius: 8, background: NAVY, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 700, color: GOLD, flexShrink: 0 }}>{c.number}</div>
       <div style={{ flex: 1, minWidth: 200 }}>

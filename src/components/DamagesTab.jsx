@@ -56,7 +56,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => (
         const total = PORTFOLIO.damages_table.reduce((s, d) => s + d[v], 0);
         const isActive = v === damagesView;
         return (
-          <button key={v} onClick={() => setDamagesView(v)} aria-pressed={isActive} style={{ background: isActive ? NAVY : CARD_BG, borderRadius: 10, padding: 20, border: isActive ? `1px solid ${GOLD}40` : `1px solid ${NAVY}`, cursor: "pointer", textAlign: "center", transition: "all 0.3s", fontFamily: "inherit" }}>
+          <button key={v} onClick={() => setDamagesView(v)} aria-pressed={isActive} style={{ width: "100%", background: isActive ? NAVY : CARD_BG, borderRadius: 10, padding: 20, border: isActive ? `1px solid ${GOLD}40` : `1px solid ${NAVY}`, cursor: "pointer", textAlign: "center", transition: "all 0.3s", color: "inherit", font: "inherit", margin: 0 }}>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: isActive ? GOLD : "#64748B", fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>{v}</div>
             <div style={{ fontSize: 26, fontWeight: 700, color: isActive ? "white" : "#94A3B8" }}>{formatCurrency(total)}{v === "aggressive" && "+"}</div>
           </button>
