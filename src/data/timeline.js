@@ -79,7 +79,7 @@ export const timeline = [
     { date: "Jul. 6, 2026", event: "Case Management Conference, 2:30 PM, Dept. 518, Hayward — Judge Mark Fickes", matters: "2", type: "hearing", upcoming: true },
     { date: "Aug. 12, 2026", event: "CMC, San Joaquin Superior Court", matters: "12", type: "hearing", upcoming: true },
     { date: "Aug. 19, 2026", event: "Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS)", matters: "7,8", type: "filing", upcoming: true },
-    { date: "Sep. 27, 2026", event: "Suit filing deadline — Moua state tort (6 months from 03/27/2026 deemed rejection per Gov. Code §945.6(a)(1))", matters: "15", type: "filing", upcoming: true },
+    { date: "Sep. 27, 2026", event: "Suit filing deadline — Dodd state tort (6 months from 03/27/2026 deemed rejection per Gov. Code §945.6(a)(1))", matters: "15", type: "filing", upcoming: true },
     { date: "Oct. 10, 2026", event: "Suit filing deadline — Derrick state tort (est. 6 months from ~04/10/2026 deemed rejection)", matters: "4", type: "filing", upcoming: true },
     { date: "Oct. 13, 2026", event: "CMC, San Joaquin Superior Court", matters: "5", type: "hearing", upcoming: true },
     { date: "Oct. 16, 2026", event: "Suit filing deadline — Urrea state tort (est. 6 months from ~04/16/2026 deemed rejection per Gov. Code §945.6)", matters: "14", type: "filing", upcoming: true }
