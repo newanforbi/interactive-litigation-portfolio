@@ -16,8 +16,9 @@ export const getPDTMidnight = (date = new Date()) => {
 };
 
 // Parse a timeline date string (e.g. "Mar. 27, 2026") as midnight Pacific time.
+// Strips a leading "~" (approximate date marker) before parsing.
 export const parseEventDatePDT = (dateStr) => {
-  const temp = new Date(dateStr.replace(/\./g, ""));
+  const temp = new Date(dateStr.replace(/^~/, "").replace(/\./g, ""));
   // Use same offset logic: all portfolio dates are in PDT (Mar–Oct 2026 = UTC-7)
   return new Date(Date.UTC(temp.getFullYear(), temp.getMonth(), temp.getDate(), 7, 0, 0));
 };
