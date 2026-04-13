@@ -300,7 +300,7 @@ export const cases = [
       ]
     },
     {
-      number: 19, caption: "Newanforbi v. Macomber", case_no: "TBD (Santa Clara Sup. Ct.)", court: "Santa Clara Sup. Ct.",
+      number: 19, caption: "Newanforbi v. Macomber", case_no: "C2604791", court: "Santa Clara Sup. Ct.",
       claims: "Habeas Corpus — Immediate Discharge from Parole (PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)", status: "Filed 04/03/2026; OSC anticipated 06/05/2026",
       filed: "April 3, 2026", judge: "TBD", cluster: 4, type: "State",
       defendants: "Jeffrey Macomber, Secretary of CDCR (official capacity)",
