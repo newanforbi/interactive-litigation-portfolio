@@ -18,3 +18,7 @@ export const ClusterBadge = ({ cluster }) => {
 export const TypeBadge = ({ type }) => (
   <span style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: type === "Federal" ? "#38BDF8" : "#FB923C", border: `1px solid ${type === "Federal" ? "#38BDF840" : "#FB923C40"}`, fontWeight: 600 }}>{type}</span>
 );
+
+export const ArchiveBadge = () => (
+  <span style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: "#94A3B8", border: "1px solid #94A3B840", fontWeight: 700, letterSpacing: 1, textTransform: "uppercase" }}>Archive</span>
+);

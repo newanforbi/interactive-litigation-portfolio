@@ -92,7 +92,7 @@ export const cases = [
     {
       number: 4, caption: "Newanforbi v. Derrick et al.", case_no: "TBD", court: "San Joaquin Sup. Ct.",
       claims: "IIED, Bane Act, Intentional/Negligent Econ. Interference, Negligent Supervision, NIED", status: "Filed 05/29/2026",
-      filed: "May 29, 2026", judge: "TBD", cluster: 2, type: "State",
+      filed: "May 29, 2026", judge: "TBD", cluster: 2, type: "State", archived: true,
       defendants: "Andrew Jackson Derrick (individually); Gary Noguchi (individually); State of California / CDCR; DOES 1-20",
       causes: ["IIED", "Bane Act (Civ. Code §52.1)", "Intentional Interference w/ Econ. Adv.", "Negligent Interference w/ Econ. Adv.", "Negligent Supervision", "NIED"],
       key_facts: "State law parallel to Matter 3. Bane Act claim based on Derrick's speech suppression threats and witness intimidation. Intentional and negligent economic interference: documented FedEx relationship ($20/hr) destroyed. Negligent supervision: Noguchi had actual knowledge of retaliation and failed to intervene. CDCR vicariously liable under §815.2(a). Must file within 6 months of deemed rejection (~Sep. 2026).",
@@ -125,7 +125,7 @@ export const cases = [
     {
       number: 6, caption: "Newanforbi v. HOPE et al.", case_no: "2:26-cv-00195-TLN-AC", court: "USDC E.D. Cal.",
       claims: "42 USC 1983: Procedural Due Process (Discharge Review)", status: "Filed 01/22/2026",
-      filed: "January 22, 2026", judge: "Hon. Troy L. Nunley / Mag. Claire", cluster: 2, type: "Federal",
+      filed: "January 22, 2026", judge: "Hon. Troy L. Nunley / Mag. Claire", cluster: 2, type: "Federal", archived: true,
       defendants: "HOPE Psychotherapy Inc.; Katie Palacios; Macomber; Bishop; Dodd; Moua; Noguchi; Derrick; Rojo",
       causes: ["Procedural Due Process (14th Amend.) — Systemic challenge to discharge review framework"],
       key_facts: "Broadest systemic challenge. Defendants fabricated '10-year parole term' ineligibility rule. HOPE's blanket retention policy judicially condemned in Dwyer. Discharge Review Report facially defective. Targets entire discharge review apparatus.",
@@ -226,7 +226,7 @@ export const cases = [
     {
       number: 14, caption: "Newanforbi v. Urrea et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
       claims: "False Imprisonment, Bane Act, IIED, Negligent Supervision", status: "Filed 05/29/2026",
-      filed: "May 29, 2026", judge: "TBD", cluster: 2, type: "State",
+      filed: "May 29, 2026", judge: "TBD", cluster: 2, type: "State", archived: true,
       defendants: "Glenn Urrea, Parole Agent (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Keely Dodd (#6462), Parole Administrator (individually); State of California / CDCR; DOES 1-10",
       causes: ["False Imprisonment", "Bane Act (Civ. Code §52.1)", "IIED", "Negligent Supervision (against CDCR)"],
       key_facts: "State tort parallel to federal Matter 13. On Nov. 1, 2024, at the precise moment Plaintiff was eligible for release from Santa Rita Jail on the DUI detention, Agent Urrea placed a parole hold based on Special Condition 063 — a Halloween curfew ('Operation Boo') categorically applied without individualized nexus to Plaintiff's adult-victim commitment offense. Five days of arbitrary imprisonment. No written notice, no hearing, no neutral decision-maker. Housed with dangerous cellmate; transported to holding tank for court appearance that never occurred; released only after bail bond company intervened. Cascading harm: arrest triggered DMV APS suspension (Dec. 4, 2024), CDL commercially disqualified, lost Centerline Drivers employment on his first scheduled shift. Ongoing lost wages: $104,000–$143,620 over ~65 weeks ($1,600–$2,209/week). Nov. 2025 Discharge Review cited Plaintiff's unemployment — caused by Defendants' own conduct — as aggravating factor to deny discharge. Condition 063 reaffirmed in Aug. 2025 update, demonstrating systemic practice.",
