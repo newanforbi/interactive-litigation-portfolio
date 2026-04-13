@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PORTFOLIO } from "../data";
 import { CARD_BG, NAVY, GOLD, BORDER_BLUE, CLUSTER_NAVY } from "../constants";
-import { StatusBadge, ClusterBadge, TypeBadge } from "./Badges";
+import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
 
 const MatterCard = ({ matter: c, isOpen, onToggle }) => (
   <div style={{ background: CARD_BG, borderRadius: 10, border: isOpen ? `1px solid ${GOLD}40` : `1px solid ${NAVY}`, overflow: "hidden", transition: "border-color 0.3s" }}>
@@ -21,6 +21,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => (
         <ClusterBadge cluster={c.cluster} />
         <TypeBadge type={c.type} />
         <StatusBadge status={c.status} />
+        {c.archived && <ArchiveBadge />}
       </div>
       <div aria-hidden="true" style={{ color: "#64748B", fontSize: 18, transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0)" }}>▾</div>
     </button>
