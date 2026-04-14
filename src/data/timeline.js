@@ -82,5 +82,8 @@ export const timeline = [
     { date: "Sep. 27, 2026", event: "Suit filing deadline — Dodd state tort (6 months from 03/27/2026 deemed rejection per Gov. Code §945.6(a)(1))", matters: "15", type: "filing", upcoming: true },
     { date: "Oct. 10, 2026", event: "Suit filing deadline — Derrick state tort (est. 6 months from ~04/10/2026 deemed rejection)", matters: "4", type: "filing", upcoming: true },
     { date: "Oct. 13, 2026", event: "CMC, San Joaquin Superior Court", matters: "5", type: "hearing", upcoming: true },
-    { date: "Oct. 16, 2026", event: "Suit filing deadline — Urrea state tort (est. 6 months from ~04/16/2026 deemed rejection per Gov. Code §945.6)", matters: "14", type: "filing", upcoming: true }
+    { date: "Oct. 16, 2026", event: "Suit filing deadline — Urrea state tort (est. 6 months from ~04/16/2026 deemed rejection per Gov. Code §945.6)", matters: "14", type: "filing", upcoming: true },
+    { date: "May 4, 2026", event: "Respondents' Opposition Brief due — Writ of Mandate (26WM000028); Sacramento Local Rule 2.26(D) (25 days before May 29 hearing). Administrative record must also be lodged by this date.", matters: "9", type: "filing", upcoming: true },
+    { date: "May 14, 2026", event: "Petitioner's Reply Brief due — Writ of Mandate (26WM000028); Sacramento Local Rule 2.26(D) (15 days before May 29 hearing). 20-page limit.", matters: "9", type: "filing", upcoming: true },
+    { date: "May 28, 2026", event: "Tentative ruling posted by 2:00 p.m. — Writ of Mandate (26WM000028), Dept. 13A (Local Rule 1.06). Contact clerk to request oral argument if contesting; must notify all parties.", matters: "9", type: "ruling", upcoming: true }
 ];
