@@ -165,14 +165,14 @@ export const cases = [
     },
     {
       number: 9, caption: "Newanforbi v. Macomber", case_no: "26WM000028", court: "Sacramento Sup. Ct.",
-      claims: "Writ of Mandate (CCP §1085)", status: "Filed 01/30/2026; Hearing 05/29/2026, Dept. 13A",
+      claims: "Writ of Mandate (CCP §1085)", status: "Served 04/13/2026; Hearing 05/29/2026, Dept. 13A",
       filed: "January 30, 2026", judge: "Hon. James P. Arguelles", cluster: 4, type: "State",
       defendants: "Jeff Macomber, Secretary of CDCR",
       causes: ["Writ of Mandate (CCP §1085) — Compel ministerial duty to conduct individualized discharge determination"],
       key_facts: "Challenges November 2025 Discharge Review decision. CDCR abused discretion: facial scoring errors in Form 1502-DR, retaliatory input from compromised agents, wrong legal standard, blanket denial based on treatment non-completion.",
-      procedural_status: "Opening Brief filed. Hearing 03/27/2026 VACATED per Minute Order 03/10/2026 — service by mail insufficient; must serve per CCP §1096. Re-set: 05/29/2026, 11:00 a.m., Dept. 13A, Tani G. Cantil-Sakauye Courthouse, 500 G Street, Sacramento. Dept. 32 relocated to Dept. 13A effective 04/20/2026; Hon. Arguelles remains.",
+      procedural_status: "Opening Brief filed. Hearing 03/27/2026 VACATED per Minute Order 03/10/2026 — service by mail insufficient; must serve per CCP §1096. Re-set: 05/29/2026, 11:00 a.m., Dept. 13A, Tani G. Cantil-Sakauye Courthouse, 500 G Street, Sacramento. Dept. 32 relocated to Dept. 13A effective 04/20/2026; Hon. Arguelles remains. Petition for Writ of Mandate W/Hearing served on Jeffrey Macomber 04/13/2026 at 12:20 PM (issued 04/02/2026; Attempt 1; $50.00 fee; signed: Sandra Moreno, Legal Secretary).",
       damages: "Equitable: Vacate denial; order new review or discharge", risk: "",
-      evidence: ["Admin. Record", "Form 1502-DR", "Opening Brief"],
+      evidence: ["Admin. Record", "Form 1502-DR", "Opening Brief", "Proof of Service (04/13/2026)"],
       documents: []
     },
     {
