@@ -3,20 +3,26 @@ import { PORTFOLIO } from "../data";
 import { CARD_BG, NAVY, GOLD, DARK_BG } from "../constants";
 import { getPDTMidnight, parseEventDatePDT } from "../utils/dateUtils";
 
+const TYPE_COLORS = { filing: "#34D399", hearing: "#F472B6", ruling: "#60A5FA", event: "#94A3B8", milestone: GOLD };
+
+// Parse each timeline entry once at module load; reused across renders.
+const TIMELINE_WITH_TS = PORTFOLIO.timeline
+  .map(t => ({ ...t, _ts: parseEventDatePDT(t.date).getTime() }))
+  .sort((a, b) => a._ts - b._ts);
+
 export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
-  const cutoff = useMemo(() => getPDTMidnight(), []);
+  const cutoffTs = useMemo(() => getPDTMidnight().getTime(), []);
   const { pastEvents, recentEvents } = useMemo(() => {
-    const sorted = [...PORTFOLIO.timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
-    return {
-      pastEvents: sorted.filter(t => parseEventDatePDT(t.date) < cutoff),
-      recentEvents: sorted.filter(t => parseEventDatePDT(t.date) >= cutoff),
-    };
-  }, [cutoff]);
+    const past = [], recent = [];
+    for (const t of TIMELINE_WITH_TS) {
+      (t._ts < cutoffTs ? past : recent).push(t);
+    }
+    return { pastEvents: past, recentEvents: recent };
+  }, [cutoffTs]);
 
   const renderEvent = (t, i) => {
-    const typeColors = { filing: "#34D399", hearing: "#F472B6", ruling: "#60A5FA", event: "#94A3B8", milestone: GOLD };
-    const col = typeColors[t.type] || "#94A3B8";
-    const isUpcoming = t.upcoming && parseEventDatePDT(t.date) >= cutoff;
+    const col = TYPE_COLORS[t.type] || "#94A3B8";
+    const isUpcoming = t.upcoming && t._ts >= cutoffTs;
     return (
       <div key={i} style={{ position: "relative", marginBottom: 20, paddingLeft: 24 }}>
         <div style={{ position: "absolute", left: -26, top: 5, width: 12, height: 12, borderRadius: "50%", background: isUpcoming ? col : DARK_BG, border: `2px solid ${col}`, boxShadow: isUpcoming ? `0 0 12px ${col}60` : "none" }} />

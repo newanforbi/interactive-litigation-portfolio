@@ -3,35 +3,60 @@ import { CARD_BG, NAVY, GOLD, BORDER_BLUE } from "../constants";
 
 const formatCurrency = (n) => "$" + n.toLocaleString();
 
+// One-pass aggregation over cases — computed once at module load.
 const totalMatters = PORTFOLIO.cases.length;
-const federalCount = PORTFOLIO.cases.filter(c => c.type === "Federal").length;
-const stateCount = PORTFOLIO.cases.filter(c => c.type === "State").length;
+const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0 };
+const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [] };
+const courtCounts = {};
+let federalCount = 0;
+let stateCount = 0;
+for (const c of PORTFOLIO.cases) {
+  if (c.type === "Federal") federalCount++;
+  else if (c.type === "State") stateCount++;
+  if (clusterCounts[c.cluster] !== undefined) {
+    clusterCounts[c.cluster]++;
+    clusterNumberLists[c.cluster].push(c.number);
+  }
+  courtCounts[c.court] = (courtCounts[c.court] || 0) + 1;
+}
 
-const aggregateExposure = {
-  conservative: formatCurrency(PORTFOLIO.damages_table.reduce((s, r) => s + r.conservative, 0)),
-  moderate: formatCurrency(PORTFOLIO.damages_table.reduce((s, r) => s + r.moderate, 0)),
-  aggressive: formatCurrency(PORTFOLIO.damages_table.reduce((s, r) => s + r.aggressive, 0)) + "+",
-};
-
-const clusterCounts = {
-  1: PORTFOLIO.cases.filter(c => c.cluster === 1).length,
-  2: PORTFOLIO.cases.filter(c => c.cluster === 2).length,
-  3: PORTFOLIO.cases.filter(c => c.cluster === 3).length,
-  4: PORTFOLIO.cases.filter(c => c.cluster === 4).length,
-};
-
-const clusterMatters = (n) => {
-  const nums = PORTFOLIO.cases.filter(c => c.cluster === n).map(c => c.number).sort((a, b) => a - b);
+const formatRanges = (nums) => {
   if (!nums.length) return "—";
+  const sorted = [...nums].sort((a, b) => a - b);
   const ranges = [];
-  let start = nums[0], end = nums[0];
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] === end + 1) { end = nums[i]; }
-    else { ranges.push(start === end ? `${start}` : `${start}–${end}`); start = end = nums[i]; }
+  let start = sorted[0], end = sorted[0];
+  for (let i = 1; i < sorted.length; i++) {
+    if (sorted[i] === end + 1) { end = sorted[i]; }
+    else { ranges.push(start === end ? `${start}` : `${start}–${end}`); start = end = sorted[i]; }
   }
   ranges.push(start === end ? `${start}` : `${start}–${end}`);
   return ranges.join(", ");
 };
+const clusterMattersStr = {
+  1: formatRanges(clusterNumberLists[1]),
+  2: formatRanges(clusterNumberLists[2]),
+  3: formatRanges(clusterNumberLists[3]),
+  4: formatRanges(clusterNumberLists[4]),
+};
+
+const moderateExposure = formatCurrency(
+  PORTFOLIO.damages_table.reduce((s, r) => s + r.moderate, 0)
+);
+
+const CLUSTERS = [
+  { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
+  { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
+  { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" },
+  { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" },
+];
+
+const PERTINENT_FILINGS = [
+  { title: "Newanforbi v. Urrea, et al.", matter: 13 },
+  { title: "Newanforbi v. Dodd, et al.", matter: 15 },
+  { title: "Newanforbi v. Macomber", matter: 11 },
+  { title: "Newanforbi v. Candelaria, et al", matter: 7 },
+  { title: "Newanforbi v. Rojo, et al.", matter: 16 },
+];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => (
   <div>
@@ -40,7 +65,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       {[
         { label: "Active Matters", value: totalMatters, sub: `${federalCount} Federal · ${stateCount} State` },
         { label: "Jurisdictions", value: PORTFOLIO.jurisdictions.length, sub: "Courts across CA" },
-        { label: "Aggregate Exposure", value: aggregateExposure.moderate, sub: "Moderate estimate" },
+        { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
         { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
       ].map((s, i) => (
         <div key={i} style={{ background: CARD_BG, borderRadius: 10, padding: "20px 22px", border: `1px solid ${NAVY}`, position: "relative", overflow: "hidden" }}>
@@ -73,12 +98,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       {/* Cluster Breakdown */}
       <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
         <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Case Clusters</h3>
-        {[
-          { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
-          { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
-          { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" },
-          { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" }
-        ].map(cl => (
+        {CLUSTERS.map(cl => (
           <div
             key={cl.n}
             role="button"
@@ -92,7 +112,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#CBD5E1" }}>{cl.label}</span>
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{clusterCounts[cl.n]} matters</span>
             </div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: "#475569", marginBottom: 6 }}>Matters {clusterMatters(cl.n)}</div>
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: "#475569", marginBottom: 6 }}>Matters {clusterMattersStr[cl.n]}</div>
             <div style={{ height: 6, background: "#1E293B", borderRadius: 3, overflow: "hidden" }}>
               <div style={{ height: "100%", width: `${(clusterCounts[cl.n] / totalMatters) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
             </div>
@@ -104,13 +124,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
         <div style={{ marginTop: 24, borderTop: `1px solid ${NAVY}`, paddingTop: 16 }}>
           <h4 style={{ fontSize: 13, fontWeight: 700, color: GOLD, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5, textTransform: "uppercase" }}>Pertinent Filings</h4>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-            {[
-              { title: "Newanforbi v. Urrea, et al.", matter: 13 },
-              { title: "Newanforbi v. Dodd, et al.", matter: 15 },
-              { title: "Newanforbi v. Macomber", matter: 11 },
-              { title: "Newanforbi v. Candelaria, et al", matter: 7 },
-              { title: "Newanforbi v. Rojo, et al.", matter: 16 }
-            ].map((f, i) => (
+            {PERTINENT_FILINGS.map((f, i) => (
               <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "#0F172A", borderRadius: 6, border: `1px solid ${BORDER_BLUE}25` }}>
                 <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: "#CBD5E1" }}>{f.title}</span>
                 <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: "#94A3B8", background: "#1E293B", borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
@@ -125,15 +139,12 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
     <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
       <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif" }}>Jurisdictional Distribution</h3>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-        {PORTFOLIO.jurisdictions.map(j => {
-          const count = PORTFOLIO.cases.filter(c => c.court === j).length;
-          return (
-            <div key={j} style={{ background: NAVY, borderRadius: 8, padding: "12px 18px", border: `1px solid ${BORDER_BLUE}30`, flex: "1 1 180px" }}>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#94A3B8", marginBottom: 4 }}>{j}</div>
-              <div style={{ fontSize: 24, fontWeight: 700, color: "white" }}>{count}</div>
-            </div>
-          );
-        })}
+        {PORTFOLIO.jurisdictions.map(j => (
+          <div key={j} style={{ background: NAVY, borderRadius: 8, padding: "12px 18px", border: `1px solid ${BORDER_BLUE}30`, flex: "1 1 180px" }}>
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#94A3B8", marginBottom: 4 }}>{j}</div>
+            <div style={{ fontSize: 24, fontWeight: 700, color: "white" }}>{courtCounts[j] || 0}</div>
+          </div>
+        ))}
       </div>
     </div>
   </div>
