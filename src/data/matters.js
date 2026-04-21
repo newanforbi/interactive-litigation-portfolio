@@ -168,12 +168,12 @@ export const cases = [
     },
     {
       number: 9, caption: "Newanforbi v. Macomber", case_no: "26WM000028", court: "Sacramento Sup. Ct.",
-      claims: "Writ of Mandate (CCP §1085)", status: "Served 04/13/2026; Hearing 05/29/2026, Dept. 13A",
+      claims: "Writ of Mandate (CCP §1085)", status: "AG Demurrer — Hearing 05/29/2026, Dept. 13A; Merits Hearing targeted Aug. 27, 2026",
       filed: "January 30, 2026", judge: "Hon. James P. Arguelles", cluster: 4, type: "State",
       defendants: "Jeff Macomber, Secretary of CDCR",
       causes: ["Writ of Mandate (CCP §1085) — Compel ministerial duty to conduct individualized discharge determination"],
       key_facts: "Challenges November 2025 Discharge Review decision. CDCR abused discretion: facial scoring errors in Form 1502-DR, retaliatory input from compromised agents, wrong legal standard, blanket denial based on treatment non-completion.",
-      procedural_status: "Opening Brief filed. Hearing 03/27/2026 VACATED per Minute Order 03/10/2026 — service by mail insufficient; must serve per CCP §1096. Re-set: 05/29/2026, 11:00 a.m., Dept. 13A, Tani G. Cantil-Sakauye Courthouse, 500 G Street, Sacramento. Dept. 32 relocated to Dept. 13A effective 04/20/2026; Hon. Arguelles remains. Petition for Writ of Mandate W/Hearing served on Jeffrey Macomber 04/13/2026 at 12:20 PM (issued 04/02/2026; Attempt 1; $50.00 fee; signed: Sandra Moreno, Legal Secretary).",
+      procedural_status: "Opening Brief filed. Hearing 03/27/2026 VACATED per Minute Order 03/10/2026 — service by mail insufficient; must serve per CCP §1096. Re-set: 05/29/2026, 11:00 a.m., Dept. 13A. Dept. 32 relocated to Dept. 13A effective 04/20/2026; Hon. Arguelles remains. Petition served on Jeffrey Macomber 04/13/2026 at 12:20 PM. AG filed Demurrer (CCP §430.10) on 05/04/2026 — argues other action pending (federal 2:25-cv-01460) and insufficient facts. Petitioner's Opposition to Demurrer due 05/14/2026. Demurrer Hearing: 05/29/2026, 11:00 a.m., Dept. 13A. POST-DEMURRER PHASE (expected): Answer 06/08, Traverse 06/09, Admin. Record 06/15, Opening Brief on Merits 06/29, AG Opposition 07/29, Reply 07/30 (sniper), Tentative 08/26 @ 2:00 p.m., Merits Hearing 08/27/2026, 11:00 a.m., Dept. 13A.",
       damages: "Equitable: Vacate denial; order new review or discharge", risk: "",
       evidence: ["Admin. Record", "Form 1502-DR", "Opening Brief", "Proof of Service (04/13/2026)"],
       documents: []
