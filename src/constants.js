@@ -6,7 +6,7 @@ export const BORDER_BLUE = "#CAD4DF";
 export const DARK_BG = "#0F1A2E";
 export const CARD_BG = "#162034";
 
-// Deadline clock — counts down to Mar 28 2026 midnight PDT (Palacios federal default).
-// Freezes at 00:00:00:00 until Apr 1 2026, then auto-advances to the next upcoming event.
-export const DEFAULT_DEADLINE = new Date("2026-03-28T00:00:00-07:00"); // midnight PDT Mar 28
-export const CLOCK_FREEZE_UNTIL = new Date("2026-04-01T00:00:00-07:00"); // midnight PDT Apr 1
+// Historical deadline clock anchors — both dates are now past; the clock auto-advances
+// to the next upcoming event from the timeline. Kept for reference only.
+export const DEFAULT_DEADLINE = new Date("2026-03-28T00:00:00-07:00"); // Palacios federal default (expired)
+export const CLOCK_FREEZE_UNTIL = new Date("2026-04-01T00:00:00-07:00"); // freeze-until anchor (expired)

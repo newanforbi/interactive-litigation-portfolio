@@ -7,7 +7,7 @@ export const PORTFOLIO = {
   plaintiff: "Brendan Ngehsi Newanforbi",
   representation: "Pro Se / In Propria Persona",
   contact: { address: ", Stockton, CA 95204" },
-  prepared_date: "March 15, 2026",
+  prepared_date: "May 6, 2026",
   jurisdictions: ["USDC E.D. Cal.", "San Joaquin Sup. Ct.", "Alameda Sup. Ct.", "Sacramento Sup. Ct.", "Santa Clara Sup. Ct."],
   cases,
   timeline,
